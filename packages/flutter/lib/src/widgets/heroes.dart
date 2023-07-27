@@ -712,7 +712,7 @@ class _HeroFlight {
         newManifest.toHero.startFlight();
         heroRectTween = manifest.createHeroRectTween(begin: heroRectTween.end, end: newManifest.toHeroLocation);
       } else {
-        // TODO(hansmuller): Use ReverseTween here per github.com/flutter/flutter/pull/12203.
+        // TODO(hansmuller): Use ReverseTween here per github.com/LionelPerrault/flutter/pull/12203.
         heroRectTween = manifest.createHeroRectTween(begin: heroRectTween.end, end: heroRectTween.begin);
       }
     } else {
@@ -978,7 +978,7 @@ class HeroController extends NavigatorObserver {
     //
     // This can happen in a route pop transition when a fromHero is no longer
     // mounted, or kept alive by the [KeepAlive] mechanism but no longer visible.
-    // TODO(LongCatIsLooong): resume aborted flights: https://github.com/flutter/flutter/issues/72947
+    // TODO(LongCatIsLooong): resume aborted flights: https://github.com/LionelPerrault/flutter/issues/72947
     for (final _HeroState toHero in toHeroes.values) {
       toHero.endFlight();
     }

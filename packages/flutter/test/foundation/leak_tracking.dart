@@ -43,7 +43,7 @@ class WeakSet {
 /// More about leak tracking:
 /// https://github.com/dart-lang/leak_tracker.
 ///
-/// See https://github.com/flutter/devtools/issues/3951 for plans
+/// See https://github.com/LionelPerrault/devtools/issues/3951 for plans
 /// on leak tracking.
 @isTest
 void testWidgetsWithLeakTracking(

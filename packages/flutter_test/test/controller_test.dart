@@ -559,7 +559,7 @@ void main() {
   testWidgets(
     'WidgetTester.tap appears in stack trace on error',
     (WidgetTester tester) async {
-      // Regression test from https://github.com/flutter/flutter/pull/123946
+      // Regression test from https://github.com/LionelPerrault/flutter/pull/123946
       await tester.pumpWidget(
           const MaterialApp(home: Scaffold(body: Text('target'))));
 

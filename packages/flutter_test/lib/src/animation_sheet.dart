@@ -15,7 +15,7 @@ import 'package:flutter/widgets.dart';
 /// This class does not support Web, because the animation sheet utilizes taking
 /// screenshots, which is unsupported on the Web. Tests that use this class must
 /// be noted with `skip: isBrowser`.
-/// (https://github.com/flutter/flutter/issues/56001)
+/// (https://github.com/LionelPerrault/flutter/issues/56001)
 ///
 /// Using this class includes the following steps:
 ///
@@ -70,7 +70,7 @@ import 'package:flutter/widgets.dart';
 ///     animationSheet.collate(800),
 ///     matchesGoldenFile('inkwell.press.animation.png'),
 ///   );
-/// }, skip: isBrowser); // Animation sheet does not support browser https://github.com/flutter/flutter/issues/56001
+/// }, skip: isBrowser); // Animation sheet does not support browser https://github.com/LionelPerrault/flutter/issues/56001
 /// ```
 /// {@end-tool}
 ///

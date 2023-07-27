@@ -44,7 +44,7 @@ void main() {
   });
 
   group('getMaxChildIndexForScrollOffset', () {
-    // Regression test for https://github.com/flutter/flutter/issues/68182
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/68182
 
     const double genericItemExtent = 600.0;
     const double extraValueToNotHaveRoundingIssues = 1e-10;

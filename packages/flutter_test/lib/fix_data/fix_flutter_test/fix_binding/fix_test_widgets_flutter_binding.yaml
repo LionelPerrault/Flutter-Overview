@@ -20,7 +20,7 @@
 
 version: 1
 transforms:
-  # Changes made in https://github.com/flutter/flutter/pull/89952
+  # Changes made in https://github.com/LionelPerrault/flutter/pull/89952
   - title: "Remove timeout"
     date: 2023-03-30
     element:
@@ -31,7 +31,7 @@ transforms:
       - kind: 'removeParameter'
         name: 'timeout'
 
-  # Changes made in https://github.com/flutter/flutter/pull/89952
+  # Changes made in https://github.com/LionelPerrault/flutter/pull/89952
   # The related deprecation for `addTime` doesn't have a fix as the method is
   # being removed completely.
   - title: "Remove additionalTime"

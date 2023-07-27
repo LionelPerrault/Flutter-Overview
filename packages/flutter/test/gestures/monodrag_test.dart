@@ -11,7 +11,7 @@ void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
   test('acceptGesture tolerates a null lastPendingEventTimestamp', () {
-    // Regression test for https://github.com/flutter/flutter/issues/112403
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/112403
     // and b/249091367
     final DragGestureRecognizer recognizer = VerticalDragGestureRecognizer();
     const PointerDownEvent event = PointerDownEvent(timeStamp: Duration(days: 10));
@@ -36,7 +36,7 @@ void main() {
   });
 
   testGesture('do not crash on up event for a pending pointer after winning arena for another pointer', (GestureTester tester) {
-    // Regression test for https://github.com/flutter/flutter/issues/75061.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/75061.
 
     final VerticalDragGestureRecognizer v = VerticalDragGestureRecognizer()
       ..onStart = (_) { };

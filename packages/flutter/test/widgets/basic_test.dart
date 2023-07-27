@@ -457,7 +457,7 @@ void main() {
       final UniqueKey key1 = UniqueKey();
       final UniqueKey key2 = UniqueKey();
       // The point size of the font must be a multiple of 4 until
-      // https://github.com/flutter/flutter/issues/122066 is resolved.
+      // https://github.com/LionelPerrault/flutter/issues/122066 is resolved.
       const double fontSize1 = 52;
       const double fontSize2 = 12;
 
@@ -508,11 +508,11 @@ void main() {
     });
 
     testWidgets('baseline aligned children account for a larger, no-baseline child size', (WidgetTester tester) async {
-      // Regression test for https://github.com/flutter/flutter/issues/58898
+      // Regression test for https://github.com/LionelPerrault/flutter/issues/58898
       final UniqueKey key1 = UniqueKey();
       final UniqueKey key2 = UniqueKey();
       // The point size of the font must be a multiple of 4 until
-      // https://github.com/flutter/flutter/issues/122066 is resolved.
+      // https://github.com/LionelPerrault/flutter/issues/122066 is resolved.
       const double fontSize1 = 52;
       const double fontSize2 = 12;
 

@@ -808,7 +808,7 @@ void main() {
     // not be decoded again.
     imageStream.addListener(ImageStreamListener((ImageInfo info, bool syncCall) {}));
     expect(oneFrameCodec.numFramesAsked, 1);
-  });  // https://github.com/flutter/flutter/issues/82532
+  });  // https://github.com/LionelPerrault/flutter/issues/82532
 
   test('Multi-frame complete unsubscribes to chunk events when disposed', () async {
     final FakeCodec codec = await FakeCodec.fromData(Uint8List.fromList(kTransparentImage));

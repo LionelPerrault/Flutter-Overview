@@ -314,7 +314,7 @@ String _formatParseWarning(String content) {
   return 'Could not parse gradle version from: \n'
       '$content \n'
       'If there is a version please look for an existing bug '
-      'https://github.com/flutter/flutter/issues/'
+      'https://github.com/LionelPerrault/flutter/issues/'
       ' and if one does not exist file a new issue.';
 }
 

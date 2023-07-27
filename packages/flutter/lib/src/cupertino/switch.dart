@@ -498,7 +498,7 @@ const double _kTrackInnerLength = _kTrackInnerEnd - _kTrackInnerStart;
 const double _kSwitchWidth = 59.0;
 const double _kSwitchHeight = 39.0;
 // Label sizes and padding taken from xcode inspector.
-// See https://github.com/flutter/flutter/issues/4830#issuecomment-528495360
+// See https://github.com/LionelPerrault/flutter/issues/4830#issuecomment-528495360
 const double _kOnLabelWidth = 1.0;
 const double _kOnLabelHeight = 10.0;
 const double _kOnLabelPaddingHorizontal = 11.0;
@@ -507,11 +507,11 @@ const double _kOffLabelPaddingHorizontal = 12.0;
 const double _kOffLabelRadius = 5.0;
 const CupertinoDynamicColor _kOffLabelColor = CupertinoDynamicColor.withBrightnessAndContrast(
   debugLabel: 'offSwitchLabel',
-  // Source: https://github.com/flutter/flutter/pull/39993#discussion_r321946033
+  // Source: https://github.com/LionelPerrault/flutter/pull/39993#discussion_r321946033
   color: Color.fromARGB(255, 179, 179, 179),
-  // Source: https://github.com/flutter/flutter/pull/39993#issuecomment-535196665
+  // Source: https://github.com/LionelPerrault/flutter/pull/39993#issuecomment-535196665
   darkColor: Color.fromARGB(255, 179, 179, 179),
-  // Source: https://github.com/flutter/flutter/pull/127776#discussion_r1244208264
+  // Source: https://github.com/LionelPerrault/flutter/pull/127776#discussion_r1244208264
   highContrastColor: Color.fromARGB(255, 255, 255, 255),
   darkHighContrastColor: Color.fromARGB(255, 255, 255, 255),
 );

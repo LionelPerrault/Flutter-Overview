@@ -18,7 +18,7 @@
 # * Fixes in this file are from the Services library. *
 version: 1
 transforms:
-  # Changes made in https://github.com/flutter/flutter/pull/122446
+  # Changes made in https://github.com/LionelPerrault/flutter/pull/122446
   - title: "Migrate to empty 'text' string"
     date: 2023-06-26
     element:
@@ -32,7 +32,7 @@ transforms:
         argumentValue:
           expression: "''"
 
-  # Changes made in https://github.com/flutter/flutter/pull/60320
+  # Changes made in https://github.com/LionelPerrault/flutter/pull/60320
   - title: "Migrate to 'viewId'"
     date: 2020-07-05
     element:
@@ -43,7 +43,7 @@ transforms:
       - kind: 'rename'
         newName: 'viewId'
 
-  # Changes made in https://github.com/flutter/flutter/pull/60320
+  # Changes made in https://github.com/LionelPerrault/flutter/pull/60320
   - title: "Migrate to 'viewId'"
     date: 2020-07-05
     element:
@@ -54,7 +54,7 @@ transforms:
       - kind: 'rename'
         newName: 'viewId'
 
-  # Changes made in https://github.com/flutter/flutter/pull/81303
+  # Changes made in https://github.com/LionelPerrault/flutter/pull/81303
   - title: "Migrate to 'setEnabledSystemUIMode'"
     date: 2021-06-08
     element:

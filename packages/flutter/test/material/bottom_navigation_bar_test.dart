@@ -1834,7 +1834,7 @@ void main() {
   });
 
   testWidgetsWithLeakTracking('BottomNavigationBar handles items.length changes', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/10322
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/10322
 
     Widget buildFrame(int itemCount) {
       return MaterialApp(
@@ -1872,7 +1872,7 @@ void main() {
   });
 
   testWidgetsWithLeakTracking('BottomNavigationBar change backgroundColor test', (WidgetTester tester) async {
-    // Regression test for: https://github.com/flutter/flutter/issues/19653
+    // Regression test for: https://github.com/LionelPerrault/flutter/issues/19653
 
     Color backgroundColor = Colors.red;
 
@@ -1931,7 +1931,7 @@ void main() {
   });
 
   group('BottomNavigationBar shifting backgroundColor with transition', () {
-    // Regression test for: https://github.com/flutter/flutter/issues/22226
+    // Regression test for: https://github.com/LionelPerrault/flutter/issues/22226
     Widget runTest() {
       int currentIndex = 0;
       return MaterialApp(

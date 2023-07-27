@@ -142,7 +142,7 @@ class AndroidValidator extends DoctorValidator {
         messages.add(ValidationMessage.error(_userMessages.androidBadSdkDir(kAndroidHome, androidHomeDir)));
       } else {
         // Instruct user to set [kAndroidSdkRoot] and not deprecated [kAndroidHome]
-        // See https://github.com/flutter/flutter/issues/39301
+        // See https://github.com/LionelPerrault/flutter/issues/39301
         messages.add(ValidationMessage.error(_userMessages.androidMissingSdkInstructions(_platform)));
       }
       return ValidationResult(ValidationType.missing, messages);
@@ -336,7 +336,7 @@ class AndroidLicenseValidator extends DoctorValidator {
       );
       process.stdin.write('n\n');
       // We expect logcat streams to occasionally contain invalid utf-8,
-      // see: https://github.com/flutter/flutter/pull/8864.
+      // see: https://github.com/LionelPerrault/flutter/pull/8864.
       final Future<void> output = process.stdout
         .transform<String>(const Utf8Decoder(reportErrors: false))
         .transform<String>(const LineSplitter())

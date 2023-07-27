@@ -1068,7 +1068,7 @@ Future<void> main() async {
   });
 
   testWidgets('Aborted flight', (WidgetTester tester) async {
-    // See https://github.com/flutter/flutter/issues/5798
+    // See https://github.com/LionelPerrault/flutter/issues/5798
     const Key heroABKey = Key('AB hero');
     const Key heroBCKey = Key('BC hero');
 
@@ -1399,7 +1399,7 @@ Future<void> main() async {
   });
 
   testWidgets('Hero createRectTween for Navigator that is not full screen', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/25272
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/25272
 
     RectTween createRectTween(Rect? begin, Rect? end) {
       return RectTween(begin: begin, end: end);
@@ -1698,7 +1698,7 @@ Future<void> main() async {
     expect(find.text('baz'), findsOneWidget);
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/77720.
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/77720.
   testWidgets("toHero's shuttle builder over fromHero's shuttle builder", (WidgetTester tester) async {
     await tester.pumpWidget(MaterialApp(
       home: Material(
@@ -1928,7 +1928,7 @@ Future<void> main() async {
   });
 
   testWidgets('Can push/pop on outer Navigator if nested Navigator contains Heroes', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/28042.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/28042.
 
     const String heroTag = 'You are my hero!';
     final GlobalKey<NavigatorState> rootNavigator = GlobalKey();
@@ -2252,7 +2252,7 @@ Future<void> main() async {
   });
 
   testWidgets('Heroes fly on pushReplacement', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/28041.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/28041.
 
     const String heroTag = 'foo';
     final GlobalKey<NavigatorState> navigator = GlobalKey();
@@ -2470,8 +2470,8 @@ Future<void> main() async {
 
   testWidgets(
     "Hero works with images that don't have both width and height specified",
-    // Regression test for https://github.com/flutter/flutter/issues/32356
-    // and https://github.com/flutter/flutter/issues/31503
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/32356
+    // and https://github.com/LionelPerrault/flutter/issues/31503
     (WidgetTester tester) async {
       final GlobalKey<NavigatorState> navigatorKey = GlobalKey();
       const Key imageKey1 = Key('image1');
@@ -2555,7 +2555,7 @@ Future<void> main() async {
     },
   );
 
-  // Regression test for https://github.com/flutter/flutter/issues/38183.
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/38183.
   testWidgets('Remove user gesture driven flights when the gesture is invalid', (WidgetTester tester) async {
     transitionFromUserGestures = true;
     await tester.pumpWidget(MaterialApp(
@@ -2584,7 +2584,7 @@ Future<void> main() async {
     expect(tester.takeException(), isNull);
   }, variant: const TargetPlatformVariant(<TargetPlatform>{ TargetPlatform.iOS,  TargetPlatform.macOS }));
 
-  // Regression test for https://github.com/flutter/flutter/issues/40239.
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/40239.
   testWidgets(
     'In a pop transition, when fromHero is null, the to hero should eventually become visible',
     (WidgetTester tester) async {

@@ -894,7 +894,7 @@ void main() {
   });
 
   // The output of vswhere.exe is known to contain bad UTF8.
-  // See: https://github.com/flutter/flutter/issues/102451
+  // See: https://github.com/LionelPerrault/flutter/issues/102451
   group('Correctly handles bad UTF-8 from vswhere.exe output', () {
     late VisualStudioFixture fixture;
     late VisualStudio visualStudio;

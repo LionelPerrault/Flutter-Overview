@@ -34,7 +34,7 @@ void main() {
   });
 
   test('Repaint boundary can get new parent after markNeedsCompositingBitsUpdate', () {
-    // Regression test for https://github.com/flutter/flutter/issues/24029.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/24029.
 
     final RenderRepaintBoundary repaintBoundary = RenderRepaintBoundary();
     layout(repaintBoundary, phase: EnginePhase.flushSemantics);

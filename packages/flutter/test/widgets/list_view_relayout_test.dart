@@ -37,7 +37,7 @@ void main() {
   });
 
   testWidgets('Underflowing ListView should relayout for additional children', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/5950
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/5950
 
     await tester.pumpWidget(
       Directionality(
@@ -178,7 +178,7 @@ void main() {
   });
 
   testWidgets('Overflowing ListView should become scrollable', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/5920
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/5920
     // When a ListView's viewport hasn't overflowed, scrolling is disabled.
     // When children are added that cause it to overflow, scrolling should
     // be enabled.

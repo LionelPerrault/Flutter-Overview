@@ -92,7 +92,7 @@ void main() {
   });
 
   test('allowedButtonsFilter should work the same when null or not specified', () {
-    // Regression test for https://github.com/flutter/flutter/pull/122227
+    // Regression test for https://github.com/LionelPerrault/flutter/pull/122227
 
     final ImmediateMultiDragGestureRecognizer recognizer1 = ImmediateMultiDragGestureRecognizer();
     // ignore: avoid_redundant_argument_values

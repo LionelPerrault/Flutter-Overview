@@ -685,7 +685,7 @@ void main() {
   });
 
   group('generateLocalizations', () {
-    // Regression test for https://github.com/flutter/flutter/issues/119593
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/119593
     testWithoutContext('other logs from flutter_tools does not affect gen-l10n', () async {
       _standardFlutterDirectoryL10nSetup(fs);
 
@@ -1374,7 +1374,7 @@ import 'output-localization-file_zh.dart';
 '''));
     });
 
-    // Regression test for https://github.com/flutter/flutter/issues/88356
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/88356
     testWithoutContext('full output file suffix is retained', () {
       setupLocalizations(<String, String>{
         'en': singleMessageArbFileString,
@@ -1878,7 +1878,7 @@ import 'output-localization-file_en.dart' deferred as output-localization-file_e
     group('error handling tests', () {
       testWithoutContext('syntax/code-gen errors properly logs errors per message', () {
         // TODO(thkim1011): Fix error handling so that long indents don't get truncated.
-        // See https://github.com/flutter/flutter/issues/120490.
+        // See https://github.com/LionelPerrault/flutter/issues/120490.
         try {
           setupLocalizations(<String, String>{
             'en': '''
@@ -2454,7 +2454,7 @@ NumberFormat.decimalPatternDigits(
 '''));
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/125461.
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/125461.
   testWithoutContext('dollar signs are escaped properly when there is a select clause', () {
     const String dollarSignWithSelect = r'''
 {

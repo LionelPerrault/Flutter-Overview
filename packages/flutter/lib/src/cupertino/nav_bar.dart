@@ -149,7 +149,7 @@ Widget _wrapWithBackground({
     }
     // [SystemUiOverlayStyle.light] and [SystemUiOverlayStyle.dark] set some system
     // navigation bar properties,
-    // Before https://github.com/flutter/flutter/pull/104827 those properties
+    // Before https://github.com/LionelPerrault/flutter/pull/104827 those properties
     // had no effect, now they are used if there is no AnnotatedRegion on the
     // bottom of the screen.
     // For backward compatibility, create a `SystemUiOverlayStyle` without the
@@ -334,7 +334,7 @@ class CupertinoNavigationBar extends StatefulWidget implements ObstructingPrefer
   /// {@endtemplate}
   final Widget? trailing;
 
-  // TODO(xster): https://github.com/flutter/flutter/issues/10469 implement
+  // TODO(xster): https://github.com/LionelPerrault/flutter/issues/10469 implement
   // support for double row navigation bars.
 
   /// {@template flutter.cupertino.CupertinoNavigationBar.backgroundColor}

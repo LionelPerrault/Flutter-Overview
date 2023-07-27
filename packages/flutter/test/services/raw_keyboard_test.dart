@@ -147,7 +147,7 @@ void main() {
           expect(RawKeyboard.instance.keysPressed, isEmpty, reason: 'on $platform');
         }
       }
-    }, skip: isBrowser); // https://github.com/flutter/flutter/issues/61021
+    }, skip: isBrowser); // https://github.com/LionelPerrault/flutter/issues/61021
 
     testWidgets('keysPressed is correct when modifier is released before key', (WidgetTester tester) async {
       for (final String platform in <String>['linux', 'android', 'macos', 'fuchsia', 'windows', 'ios']) {
@@ -168,7 +168,7 @@ void main() {
         );
         // TODO(gspencergoog): Switch to capital A when the new key event code
         // is finished that can simulate real keys.
-        // https://github.com/flutter/flutter/issues/33521
+        // https://github.com/LionelPerrault/flutter/issues/33521
         // This should really be done with a simulated capital A, but the event
         // simulation code doesn't really support that, since it only can
         // simulate events that appear in the key maps (and capital letters
@@ -198,7 +198,7 @@ void main() {
         await simulateKeyUpEvent(LogicalKeyboardKey.keyA, platform: platform, physicalKey: PhysicalKeyboardKey.keyA);
         expect(RawKeyboard.instance.keysPressed, isEmpty, reason: 'on $platform');
       }
-    }, skip: isBrowser); // https://github.com/flutter/flutter/issues/76741
+    }, skip: isBrowser); // https://github.com/LionelPerrault/flutter/issues/76741
 
     testWidgets('keysPressed modifiers are synchronized with key events on macOS', (WidgetTester tester) async {
       expect(RawKeyboard.instance.keysPressed, isEmpty);
@@ -378,7 +378,7 @@ void main() {
       );
     }
 
-    // Regression test for https://github.com/flutter/flutter/issues/93278 .
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/93278 .
     //
     // GTK has some weird behavior where the tested key event sequence will
     // result in a AltRight down event without Alt bitmask.
@@ -399,7 +399,7 @@ void main() {
       );
     }, skip: isBrowser); // [intended] This is a GTK-specific test.
 
-    // Regression test for https://github.com/flutter/flutter/issues/114591 .
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/114591 .
     //
     // On Linux, CapsLock can be remapped to a non-modifier key.
     testWidgets('CapsLock should not be release when remapped on Linux', (WidgetTester tester) async {
@@ -416,7 +416,7 @@ void main() {
       );
     }, skip: isBrowser); // [intended] This is a GTK-specific test.
 
-    // Regression test for https://github.com/flutter/flutter/issues/114591 .
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/114591 .
     //
     // On Web, CapsLock can be remapped to a non-modifier key.
     testWidgets('CapsLock should not be release when remapped on Web', (WidgetTester _) async {
@@ -893,7 +893,7 @@ void main() {
     }, skip: isBrowser); // [intended] This is an Android-specific group.
 
     testWidgets('Allows inconsistent modifier for Web - Alt graph', (WidgetTester _) async {
-      // Regression test for https://github.com/flutter/flutter/issues/113836
+      // Regression test for https://github.com/LionelPerrault/flutter/issues/113836
       final List<RawKeyEvent> events = <RawKeyEvent>[];
       RawKeyboard.instance.addListener(events.add);
       addTearDown(() {
@@ -922,7 +922,7 @@ void main() {
     }, skip: !isBrowser); // [intended] This is a Browser-specific test.
 
     testWidgets('Allows inconsistent modifier for Web - Alt right', (WidgetTester _) async {
-      // Regression test for https://github.com/flutter/flutter/issues/113836
+      // Regression test for https://github.com/LionelPerrault/flutter/issues/113836
       final List<RawKeyEvent> events = <RawKeyEvent>[];
       RawKeyboard.instance.addListener(events.add);
       addTearDown(() {

@@ -173,7 +173,7 @@ void main() {
   }
 
   // TODO(jsimmons): need a localization test that uses deferred loading
-  // (see https://github.com/flutter/flutter/issues/61911)
+  // (see https://github.com/LionelPerrault/flutter/issues/61911)
   testWithoutContext('generated l10n classes produce expected localized strings', () async {
     await project.setUpIn(tempDir);
     flutter = FlutterRunTestDriver(tempDir);

@@ -228,7 +228,7 @@ void main() {
     expect(getPixel(20, 20), equals(0x00000080));
     expect(getPixel(image.width - 1, 0), equals(0x00000000));
     expect(getPixel(image.width - 1, 20), equals(0xffffffff));
-  }, skip: isBrowser); // https://github.com/flutter/flutter/issues/49857
+  }, skip: isBrowser); // https://github.com/LionelPerrault/flutter/issues/49857
 
   test('RenderRepaintBoundary can capture images of itself synchronously', () async {
     RenderRepaintBoundary boundary = RenderRepaintBoundary();
@@ -316,7 +316,7 @@ void main() {
     expect(getPixel(20, 20), equals(0x00000080));
     expect(getPixel(image.width - 1, 0), equals(0x00000000));
     expect(getPixel(image.width - 1, 20), equals(0xffffffff));
-  }, skip: isBrowser); // https://github.com/flutter/flutter/issues/49857
+  }, skip: isBrowser); // https://github.com/LionelPerrault/flutter/issues/49857
 
   test('RenderOpacity does not composite if it is transparent', () {
     final RenderOpacity renderOpacity = RenderOpacity(
@@ -701,7 +701,7 @@ void main() {
     renderBox.markNeedsCompositedLayerUpdate();
 
     pumpFrame(phase: EnginePhase.composite, onErrors: expectAssertionError);
-  }, skip: kIsWeb); // https://github.com/flutter/flutter/issues/102086
+  }, skip: kIsWeb); // https://github.com/LionelPerrault/flutter/issues/102086
 
   test('RenderObject with repaint boundary asserts when a composited layer is replaced during painting', () {
     final ConditionalRepaintBoundary childBox = ConditionalRepaintBoundary(isRepaintBoundary: true);
@@ -719,7 +719,7 @@ void main() {
     renderBox.markNeedsPaint();
 
     pumpFrame(phase: EnginePhase.composite, onErrors: expectAssertionError);
-  }, skip: kIsWeb); // https://github.com/flutter/flutter/issues/102086
+  }, skip: kIsWeb); // https://github.com/LionelPerrault/flutter/issues/102086
 
   test('RenderObject with repaint boundary asserts when a composited layer tries to update its own offset', () {
     final ConditionalRepaintBoundary childBox = ConditionalRepaintBoundary(isRepaintBoundary: true);
@@ -737,7 +737,7 @@ void main() {
     renderBox.markNeedsPaint();
 
     pumpFrame(phase: EnginePhase.composite, onErrors: expectAssertionError);
-  }, skip: kIsWeb); // https://github.com/flutter/flutter/issues/102086
+  }, skip: kIsWeb); // https://github.com/LionelPerrault/flutter/issues/102086
 
   test('RenderObject markNeedsPaint while repaint boundary, and then updated to no longer be a repaint boundary with '
     'calling markNeedsCompositingBitsUpdate 1', () {
@@ -903,7 +903,7 @@ void main() {
     expect(debugPaintClipRect(Clip.hardEdge), paintsExactlyCountTimes(#drawParagraph, 1));
 
     // RenderClipPath.debugPaintSize does not draw when clipBehavior is Clip.none
-    // Regression test for https://github.com/flutter/flutter/issues/105969
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/105969
     expect(debugPaintClipRect(Clip.none), paintsExactlyCountTimes(#drawPath, 0));
     expect(debugPaintClipRect(Clip.none), paintsExactlyCountTimes(#drawParagraph, 0));
   });

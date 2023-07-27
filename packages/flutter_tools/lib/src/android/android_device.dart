@@ -1032,7 +1032,7 @@ class AdbLogReader extends DeviceLogReader {
 
     // Start the adb logcat process and filter the most recent logs since `lastTimestamp`.
     // Some devices (notably LG) will only output logcat via shell
-    // https://github.com/flutter/flutter/issues/51853
+    // https://github.com/LionelPerrault/flutter/issues/51853
     final List<String> args = <String>[
       'shell',
       '-x',
@@ -1072,7 +1072,7 @@ class AdbLogReader extends DeviceLogReader {
 
   void _start() {
     // We expect logcat streams to occasionally contain invalid utf-8,
-    // see: https://github.com/flutter/flutter/pull/8864.
+    // see: https://github.com/LionelPerrault/flutter/pull/8864.
     const Utf8Decoder decoder = Utf8Decoder(reportErrors: false);
     _adbProcess.stdout.transform<String>(decoder)
       .transform<String>(const LineSplitter())

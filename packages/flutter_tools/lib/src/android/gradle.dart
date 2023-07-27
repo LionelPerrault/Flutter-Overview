@@ -955,7 +955,7 @@ void _exitWithUnsupportedProjectMessage(Usage usage, Terminal terminal) {
 }
 
 /// Returns [true] if the current app uses AndroidX.
-// TODO(egarciad): https://github.com/flutter/flutter/issues/40800
+// TODO(egarciad): https://github.com/LionelPerrault/flutter/issues/40800
 // Remove `FlutterManifest.usesAndroidX` and provide a unified `AndroidProject.usesAndroidX`.
 bool isAppUsingAndroidX(Directory androidDirectory) {
   final File properties = androidDirectory.childFile('gradle.properties');

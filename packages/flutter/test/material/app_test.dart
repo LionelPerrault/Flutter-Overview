@@ -388,13 +388,13 @@ void main() {
     expect(tester.takeException(), isFlutterError);
     expect(log, <String>['onGenerateRoute /', 'onUnknownRoute /']);
 
-    // Work-around for https://github.com/flutter/flutter/issues/65655.
+    // Work-around for https://github.com/LionelPerrault/flutter/issues/65655.
     await tester.pumpWidget(Container());
     expect(tester.takeException(), isAssertionError);
   });
 
   testWidgets('MaterialApp with builder and no route information works.', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/18904
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/18904
     await tester.pumpWidget(
       MaterialApp(
         builder: (BuildContext context, Widget? child) {
@@ -405,7 +405,7 @@ void main() {
   });
 
   testWidgets("WidgetsApp doesn't rebuild routes when MediaQuery updates", (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/37878
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/37878
     addTearDown(tester.platformDispatcher.clearAllTestValues);
     addTearDown(tester.view.reset);
 

@@ -760,7 +760,7 @@ void main() {
     doubleTap.dispose();
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/73667
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/73667
   testGesture('Unfinished DoubleTap does not prevent competing Tap', (GestureTester tester) {
     int tapCount = 0;
     final DoubleTapGestureRecognizer doubleTap = DoubleTapGestureRecognizer()

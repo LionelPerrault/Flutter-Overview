@@ -76,7 +76,7 @@ class _HoverFeedbackState extends State<HoverFeedback> {
 }
 
 void main() {
-  // Regression test for https://github.com/flutter/flutter/issues/73330
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/73330
   testWidgets('hitTestBehavior test - HitTestBehavior.deferToChild/opaque', (WidgetTester tester) async {
     bool onEnter = false;
     await tester.pumpWidget(Center(
@@ -796,7 +796,7 @@ void main() {
   });
 
   testWidgets('works with transform', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/31986.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/31986.
     final Key key = UniqueKey();
     const double scaleFactor = 2.0;
     const double localWidth = 150.0;
@@ -1824,7 +1824,7 @@ void main() {
     expect(tester.binding.hasScheduledFrame, isFalse);
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/67044
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/67044
   testWidgets('Handle mouse events should ignore the detached MouseTrackerAnnotation', (WidgetTester tester) async {
     await tester.pumpWidget(MaterialApp(
       home: Center(

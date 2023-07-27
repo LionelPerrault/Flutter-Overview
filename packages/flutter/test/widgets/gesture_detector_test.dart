@@ -877,7 +877,7 @@ void main() {
   });
 
   testWidgets('supportedDevices update test', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/111716
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/111716
     bool didStartPan = false;
     Offset? panDelta;
     bool didEndPan = false;

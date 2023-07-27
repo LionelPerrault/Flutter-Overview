@@ -500,7 +500,7 @@ void main() {
     expect(localizations.okButtonLabel, '確定');
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/36704.
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/36704.
   testWidgets('kn arb file should be properly Unicode escaped', (WidgetTester tester) async {
     final File file = File(
       path.join(rootDirectoryPath, 'lib', 'src', 'l10n', 'material_kn.arb'),
@@ -529,7 +529,7 @@ void main() {
     }
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/110451.
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/110451.
   testWidgets('Finnish translation for tab label', (WidgetTester tester) async {
     const Locale locale = Locale('fi');
     expect(GlobalCupertinoLocalizations.delegate.isSupported(locale), isTrue);

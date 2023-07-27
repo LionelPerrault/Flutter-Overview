@@ -30,7 +30,7 @@ void main() {
     await tester.pumpWidget(widget);
 
     // The following pointer event sequence was causing the issue described
-    // in https://github.com/flutter/flutter/issues/12470 by triggering 2 tap
+    // in https://github.com/LionelPerrault/flutter/issues/12470 by triggering 2 tap
     // events on the second detector.
     final TestGesture gesture1 = await tester.startGesture(const Offset(400.0, 10.0));
     final TestGesture gesture2 = await tester.startGesture(const Offset(400.0, 210.0));

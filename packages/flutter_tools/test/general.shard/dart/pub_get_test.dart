@@ -704,7 +704,7 @@ exit code: 66
     expect(processManager, hasNoRemainingExpectations);
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/116627
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/116627
   testWithoutContext('pub get suppresses progress output', () async {
     final BufferLogger logger = BufferLogger.test();
     final FileSystem fileSystem = MemoryFileSystem.test();

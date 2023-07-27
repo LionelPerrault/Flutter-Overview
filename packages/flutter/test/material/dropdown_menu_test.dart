@@ -252,7 +252,7 @@ void main() {
   });
 
   testWidgets('The width property update test', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/120567
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/120567
     final ThemeData themeData = ThemeData();
     final List<DropdownMenuEntry<ShortMenu>> shortMenuItems = <DropdownMenuEntry<ShortMenu>>[];
 
@@ -1337,7 +1337,7 @@ void main() {
   });
 
   testWidgets('The menu has the same width as the input field in ListView', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/123631
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/123631
     await tester.pumpWidget(MaterialApp(
       home: Scaffold(
         body: ListView(

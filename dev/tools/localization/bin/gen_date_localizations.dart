@@ -229,7 +229,7 @@ Set<String> _supportedLocales() {
   // of the intl package APIs before Flutter populates its set of supported i18n
   // date patterns and symbols may cause problems.
   //
-  // For more context, see https://github.com/flutter/flutter/issues/67644.
+  // For more context, see https://github.com/LionelPerrault/flutter/issues/67644.
   final Set<String> supportedLocales = <String>{
     'en_US',
   };

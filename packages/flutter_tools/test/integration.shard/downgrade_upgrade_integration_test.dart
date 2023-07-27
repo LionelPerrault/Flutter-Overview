@@ -52,7 +52,7 @@ void main() {
     exitCode = await processUtils.stream(<String>[
       'git',
       'clone',
-      'https://github.com/flutter/flutter.git',
+      'https://github.com/LionelPerrault/flutter.git',
     ], workingDirectory: parentDirectory.path, trace: true);
     expect(exitCode, 0);
 

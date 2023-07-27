@@ -185,7 +185,7 @@ void main() {
     skip: kIsWeb, // [intended]
   );
 
-  // Regression test for https://github.com/flutter/flutter/issues/126312.
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/126312.
   testWidgets('when open input connection in didUpdateWidget, should not throw', (WidgetTester tester) async {
     final Key key = GlobalKey();
 
@@ -228,7 +228,7 @@ void main() {
   });
 
   testWidgets('Text with selection can be shown on the screen when the keyboard shown', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/119628
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/119628
     addTearDown(tester.view.reset);
 
     final ScrollController scrollController = ScrollController();
@@ -274,7 +274,7 @@ void main() {
     expect(offsetAfter, isNot(0.0));
   });
 
-  // Related issue: https://github.com/flutter/flutter/issues/98115
+  // Related issue: https://github.com/LionelPerrault/flutter/issues/98115
   testWidgets('ScheduleShowCaretOnScreen with no animation when the view changes metrics', (WidgetTester tester) async {
     addTearDown(tester.view.reset);
 
@@ -321,7 +321,7 @@ void main() {
     expect(offsetAfter, isNot(0.0));
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/34538.
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/34538.
   testWidgets('RTL arabic correct caret placement after trailing whitespace', (WidgetTester tester) async {
     final TextEditingController controller = TextEditingController();
     await tester.pumpWidget(
@@ -374,7 +374,7 @@ void main() {
     expect(caretXPosition, lessThan(previousCaretXPosition));
 
     expect(state.currentTextEditingValue.text, equals('گیگ '));
-  }, skip: isBrowser); // https://github.com/flutter/flutter/issues/78550.
+  }, skip: isBrowser); // https://github.com/LionelPerrault/flutter/issues/78550.
 
   testWidgets('has expected defaults', (WidgetTester tester) async {
     await tester.pumpWidget(
@@ -1032,7 +1032,7 @@ void main() {
   }, skip: kIsWeb, variant: const TargetPlatformVariant(<TargetPlatform>{ TargetPlatform.iOS })); // [intended]
 
   testWidgets('EditableText does not derive selection color from DefaultSelectionStyle', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/103341.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/103341.
     const TextEditingValue value = TextEditingValue(
       text: 'test test',
       selection: TextSelection(affinity: TextAffinity.upstream, baseOffset: 5, extentOffset: 7),
@@ -1546,7 +1546,7 @@ void main() {
     expect(tester.testTextInput.setClientArgs!['inputAction'], equals('TextInputAction.done'));
   });
 
-  // Test case for https://github.com/flutter/flutter/issues/123523.
+  // Test case for https://github.com/LionelPerrault/flutter/issues/123523.
   testWidgets(
       'The focus and callback behavior are correct when TextInputClient.onConnectionClosed message received',
       (WidgetTester tester) async {
@@ -1769,7 +1769,7 @@ void main() {
   testWidgets(
     'kept-alive EditableText does not crash when layout is skipped',
     (WidgetTester tester) async {
-      // Regression test for https://github.com/flutter/flutter/issues/84896.
+      // Regression test for https://github.com/LionelPerrault/flutter/issues/84896.
       EditableText.debugDeterministicCursor = true;
       const Key key = ValueKey<String>('EditableText');
       await tester.pumpWidget(
@@ -2167,7 +2167,7 @@ void main() {
   }, skip: kIsWeb, variant: const TargetPlatformVariant(<TargetPlatform>{ TargetPlatform.android, TargetPlatform.fuchsia })); // [intended]
 
   testWidgets('can show the toolbar after clearing all text', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/35998.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/35998.
     await tester.pumpWidget(
       MaterialApp(
         home: EditableText(
@@ -2242,7 +2242,7 @@ void main() {
   });
 
   testWidgets('can dynamically disable select all option in toolbar - cupertino', (WidgetTester tester) async {
-    // Regression test: https://github.com/flutter/flutter/issues/40711
+    // Regression test: https://github.com/LionelPerrault/flutter/issues/40711
     await tester.pumpWidget(
       MaterialApp(
         home: EditableText(
@@ -2271,7 +2271,7 @@ void main() {
   });
 
   testWidgets('can dynamically disable select all option in toolbar - material', (WidgetTester tester) async {
-    // Regression test: https://github.com/flutter/flutter/issues/40711
+    // Regression test: https://github.com/LionelPerrault/flutter/issues/40711
     await tester.pumpWidget(
       MaterialApp(
         home: EditableText(
@@ -3579,7 +3579,7 @@ void main() {
   testWidgets(
     'finalizeEditing should reset the input connection when shouldUnfocus is true but the unfocus is cancelled',
     (WidgetTester tester) async {
-      // Regression test for https://github.com/flutter/flutter/issues/84240 .
+      // Regression test for https://github.com/LionelPerrault/flutter/issues/84240 .
       Widget widget = MaterialApp(
         home: EditableText(
           backgroundCursorColor: Colors.grey,
@@ -3644,7 +3644,7 @@ void main() {
   testWidgets(
     'requesting focus in the onSubmitted callback should keep the onscreen keyboard visible',
     (WidgetTester tester) async {
-      // Regression test for https://github.com/flutter/flutter/issues/95154 .
+      // Regression test for https://github.com/LionelPerrault/flutter/issues/95154 .
       final Widget widget = MaterialApp(
         home: EditableText(
           backgroundCursorColor: Colors.grey,
@@ -5077,7 +5077,7 @@ void main() {
   });
 
   testWidgets('onChanged callback only invoked on text changes', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/111651 .
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/111651 .
     final TextEditingController controller = TextEditingController();
     int onChangedCount = 0;
     bool preventInput = false;
@@ -5167,7 +5167,7 @@ void main() {
   });
 
   testWidgets('default keyboardAppearance is respected', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/22212.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/22212.
 
     final List<MethodCall> log = <MethodCall>[];
     tester.binding.defaultBinaryMessenger.setMockMethodCallHandler(SystemChannels.textInput, (MethodCall methodCall) async {
@@ -5972,7 +5972,7 @@ void main() {
 
 
   testWidgets('custom keyboardAppearance is respected', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/22212.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/22212.
 
     final List<MethodCall> log = <MethodCall>[];
     tester.binding.defaultBinaryMessenger.setMockMethodCallHandler(SystemChannels.textInput, (MethodCall methodCall) async {
@@ -9187,7 +9187,7 @@ void main() {
     variant: const TargetPlatformVariant(<TargetPlatform>{ TargetPlatform.iOS, TargetPlatform.macOS }),
   );
 
-  // Regression test for https://github.com/flutter/flutter/issues/31287
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/31287
   testWidgets('text selection handle visibility', (WidgetTester tester) async {
     // Text with two separate words to select.
     const String testText = 'XXXXX          XXXXX';
@@ -9411,7 +9411,7 @@ void main() {
   });
 
   testWidgets('bringIntoView brings the caret into view when in a viewport', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/55547.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/55547.
     final TextEditingController controller = TextEditingController(text: testText * 20);
     final ScrollController editableScrollController = ScrollController();
     final ScrollController outerController = ScrollController();
@@ -9904,7 +9904,7 @@ void main() {
     // On Android setEditingState triggers an IME restart which may prevent
     // the keyboard from showing if the show keyboard request comes before the
     // restart.
-    // See: https://github.com/flutter/flutter/issues/68571.
+    // See: https://github.com/LionelPerrault/flutter/issues/68571.
     final List<String> logOrder = <String>[
       'TextInput.setClient',
       'TextInput.setEditableSizeAndTransform',
@@ -9926,7 +9926,7 @@ void main() {
   testWidgets(
     'keyboard is requested after setEditingState after switching to a new text field',
     (WidgetTester tester) async {
-      // Regression test for https://github.com/flutter/flutter/issues/68571.
+      // Regression test for https://github.com/LionelPerrault/flutter/issues/68571.
       final EditableText editableText1 = EditableText(
         showSelectionHandles: true,
         maxLines: 2,
@@ -9988,7 +9988,7 @@ void main() {
   testWidgets(
     'Autofill does not request focus',
     (WidgetTester tester) async {
-      // Regression test for https://github.com/flutter/flutter/issues/91354 .
+      // Regression test for https://github.com/LionelPerrault/flutter/issues/91354 .
       final FocusNode focusNode1 = FocusNode();
       final EditableText editableText1 = EditableText(
         showSelectionHandles: true,
@@ -10136,7 +10136,7 @@ void main() {
   });
 
   testWidgets('Synchronous test of local and remote editing values', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/65059
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/65059
     final List<MethodCall> log = <MethodCall>[];
     tester.binding.defaultBinaryMessenger.setMockMethodCallHandler(SystemChannels.textInput, (MethodCall methodCall) async {
       log.add(methodCall);
@@ -10267,7 +10267,7 @@ void main() {
   });
 
   testWidgets('Send text input state to engine when the input formatter rejects user input', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/67828
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/67828
     final List<MethodCall> log = <MethodCall>[];
     tester.binding.defaultBinaryMessenger.setMockMethodCallHandler(SystemChannels.textInput, (MethodCall methodCall) async {
       log.add(methodCall);
@@ -10342,7 +10342,7 @@ void main() {
   });
 
   testWidgets('Repeatedly receiving [TextEditingValue] will not trigger a keyboard request', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/66036
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/66036
     final List<MethodCall> log = <MethodCall>[];
     tester.binding.defaultBinaryMessenger.setMockMethodCallHandler(SystemChannels.textInput, (MethodCall methodCall) async {
       log.add(methodCall);
@@ -10464,7 +10464,7 @@ void main() {
     });
 
     testWidgets('TextEditingController.clear() behavior test', (WidgetTester tester) async {
-      // Regression test for https://github.com/flutter/flutter/issues/66316
+      // Regression test for https://github.com/LionelPerrault/flutter/issues/66316
       final List<MethodCall> log = <MethodCall>[];
       tester.binding.defaultBinaryMessenger.setMockMethodCallHandler(SystemChannels.textInput, (MethodCall methodCall) async {
         log.add(methodCall);
@@ -10779,7 +10779,7 @@ void main() {
     expect(formatter.log, referenceLog);
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/53612
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/53612
   testWidgets('formatter logic handles initial repeat edge case', (WidgetTester tester) async {
     final MockTextFormatter formatter = MockTextFormatter();
     await tester.pumpWidget(
@@ -11181,7 +11181,7 @@ void main() {
       await tester.pumpAndSettle();
     }
 
-    // Regression test for https://github.com/flutter/flutter/issues/65374.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/65374.
     testWidgets('will not cause crash while the TextEditingValue is composing', (WidgetTester tester) async {
       await setupWidget(
         tester,
@@ -11239,7 +11239,7 @@ void main() {
       expect(state.currentTextEditingValue.composing, TextRange.empty);
     });
 
-    // Regression test for https://github.com/flutter/flutter/issues/68086.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/68086.
     testWidgets('enforced composing truncated', (WidgetTester tester) async {
       await setupWidget(
         tester,
@@ -11277,7 +11277,7 @@ void main() {
       expect(state.currentTextEditingValue.composing, TextRange.empty);
     });
 
-    // Regression test for https://github.com/flutter/flutter/issues/68086.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/68086.
     testWidgets('default truncate behaviors with different platforms', (WidgetTester tester) async {
       await setupWidget(tester, LengthLimitingTextInputFormatter(maxLength));
 
@@ -11317,7 +11317,7 @@ void main() {
       expect(state.currentTextEditingValue.composing, TextRange.empty);
     });
 
-    // Regression test for https://github.com/flutter/flutter/issues/68086.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/68086.
     testWidgets("composing range removed if it's overflowed the truncated value's length", (WidgetTester tester) async {
       await setupWidget(
         tester,
@@ -11346,7 +11346,7 @@ void main() {
       expect(state.currentTextEditingValue.composing, TextRange.empty);
     });
 
-    // Regression test for https://github.com/flutter/flutter/issues/68086.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/68086.
     testWidgets('composing range removed with different platforms', (WidgetTester tester) async {
       await setupWidget(tester, LengthLimitingTextInputFormatter(maxLength));
 
@@ -11398,7 +11398,7 @@ void main() {
       expect(state.currentTextEditingValue.composing, TextRange.empty);
     });
 
-    // Regression test for https://github.com/flutter/flutter/issues/68086.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/68086.
     testWidgets('typing in the middle with different platforms.', (WidgetTester tester) async {
       await setupWidget(tester, LengthLimitingTextInputFormatter(maxLength));
 
@@ -11590,7 +11590,7 @@ void main() {
     });
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/72400.
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/72400.
   testWidgets("delete doesn't cause crash when selection is -1,-1", (WidgetTester tester) async {
     final UnsettableController unsettableController = UnsettableController();
     await tester.pumpWidget(
@@ -12967,7 +12967,7 @@ testWidgets('Floating cursor ending with selection', (WidgetTester tester) async
   });
 
   testWidgets('Should not scroll on paste if caret already visible', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/96658.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/96658.
     final ScrollController scrollController = ScrollController();
     final TextEditingController controller = TextEditingController(
       text: 'Lorem ipsum please paste here: \n${".\n" * 50}',
@@ -13239,7 +13239,7 @@ testWidgets('Floating cursor ending with selection', (WidgetTester tester) async
     // On web, these keyboard shortcuts are handled by the browser.
     }, variant: TargetPlatformVariant.all(), skip: kIsWeb); // [intended]
 
-    // Regression test for https://github.com/flutter/flutter/issues/120794.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/120794.
     // This is only reproducible on Android platform because it is the only
     // platform where composing changes are saved in the editing history.
     testWidgets('Can undo as intented when adding a delay between undos', (WidgetTester tester) async {
@@ -13297,7 +13297,7 @@ testWidgets('Floating cursor ending with selection', (WidgetTester tester) async
     // On web, these keyboard shortcuts are handled by the browser.
     }, variant: TargetPlatformVariant.only(TargetPlatform.android), skip: kIsWeb); // [intended]
 
-    // Regression test for https://github.com/flutter/flutter/issues/120194.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/120194.
     testWidgets('Cursor does not jump after undo', (WidgetTester tester) async {
       // Initialize the controller with a non empty text.
       final TextEditingController controller = TextEditingController(text: textA);
@@ -14338,7 +14338,7 @@ testWidgets('Floating cursor ending with selection', (WidgetTester tester) async
     });
   }, skip: kIsWeb); // [intended]
 
-  // Regression test for https://github.com/flutter/flutter/issues/98322.
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/98322.
   testWidgets('EditableText consumes ActivateIntent and ButtonActivateIntent', (WidgetTester tester) async {
     bool receivedIntent = false;
     await tester.pumpWidget(
@@ -14380,7 +14380,7 @@ testWidgets('Floating cursor ending with selection', (WidgetTester tester) async
     expect(receivedIntent, isFalse);
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/100585.
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/100585.
   testWidgets('can paste and remove field', (WidgetTester tester) async {
     final TextEditingController controller = TextEditingController(text: 'text');
     late StateSetter setState;
@@ -14430,7 +14430,7 @@ testWidgets('Floating cursor ending with selection', (WidgetTester tester) async
   // On web, the text selection toolbar paste button is handled by the browser.
   }, skip: kIsWeb); // [intended]
 
-  // Regression test for https://github.com/flutter/flutter/issues/100585.
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/100585.
   testWidgets('can cut and remove field', (WidgetTester tester) async {
     final TextEditingController controller = TextEditingController(text: 'text');
     late StateSetter setState;
@@ -15784,7 +15784,7 @@ testWidgets('Floating cursor ending with selection', (WidgetTester tester) async
     });
   });
 
-  // Regression test for: https://github.com/flutter/flutter/issues/117418.
+  // Regression test for: https://github.com/LionelPerrault/flutter/issues/117418.
   testWidgets('can handle the partial selection of a multi-code-unit glyph', (WidgetTester tester) async {
     await tester.pumpWidget(
       MaterialApp(
@@ -16048,7 +16048,7 @@ testWidgets('Floating cursor ending with selection', (WidgetTester tester) async
     });
 
     testWidgets('Selection is updated when the field has focus and the new selection is invalid', (WidgetTester tester) async {
-      // Regression test for https://github.com/flutter/flutter/issues/120631.
+      // Regression test for https://github.com/LionelPerrault/flutter/issues/120631.
       final TextEditingController controller = TextEditingController();
       controller.text = 'Text';
       final FocusNode focusNode = FocusNode();

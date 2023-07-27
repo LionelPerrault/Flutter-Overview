@@ -8,7 +8,7 @@ import '../cmake_project.dart';
 
 // CMake's add_custom_command() should use VERBATIM to handle escaping of spaces
 // and special characters correctly.
-// See https://github.com/flutter/flutter/issues/67270.
+// See https://github.com/LionelPerrault/flutter/issues/67270.
 class CmakeCustomCommandMigration extends ProjectMigrator {
   CmakeCustomCommandMigration(CmakeBasedProject project, super.logger)
     : _cmakeFile = project.managedCmakeFile;

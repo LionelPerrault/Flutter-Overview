@@ -27,7 +27,7 @@ For more documentation about Data Driven Fixes, see
 https://dart.dev/go/data-driven-fixes#test-folder.
 
 To learn more about how fixes are authored in package:flutter, see
-https://github.com/flutter/flutter/wiki/Data-driven-Fixes
+https://github.com/LionelPerrault/flutter/wiki/Data-driven-Fixes
 
 ## When making structural changes to this directory
 

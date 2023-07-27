@@ -1059,7 +1059,7 @@ void main() {
   });
 
   testWidgets('GlobalKey - re-attach child to new parents, and the old parent is deactivated(unmounted)', (WidgetTester tester) async {
-    // This is a regression test for https://github.com/flutter/flutter/issues/62055
+    // This is a regression test for https://github.com/LionelPerrault/flutter/issues/62055
     const Key key1 = GlobalObjectKey('key1');
     const Key key2 = GlobalObjectKey('key2');
     late StateSetter setState;
@@ -1625,14 +1625,14 @@ void main() {
     // Accessing state/widget now throws a CastError because they have been
     // nulled out to reduce severity of memory leaks when an Element (e.g. in
     // the form of a BuildContext) is retained past its useful life. See also
-    // https://github.com/flutter/flutter/issues/79605 for examples why this may
+    // https://github.com/LionelPerrault/flutter/issues/79605 for examples why this may
     // occur.
     expect(() => element.state, throwsA(isA<TypeError>()));
     expect(() => element.widget, throwsA(isA<TypeError>()));
   });
 
   testWidgets('LayerLink can be swapped between parent and child container layers', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/96959.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/96959.
     final LayerLink link = LayerLink();
     await tester.pumpWidget(_TestLeaderLayerWidget(
         link: link,
@@ -1757,7 +1757,7 @@ The findRenderObject() method was called for the following element:
   testWidgets(
       'MultiChildRenderObjectElement.updateChildren test',
       (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/120762.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/120762.
     final GlobalKey globalKey = GlobalKey();
     await tester.pumpWidget(Column(
       children: <Widget>[

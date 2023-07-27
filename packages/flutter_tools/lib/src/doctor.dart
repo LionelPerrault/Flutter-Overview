@@ -342,7 +342,7 @@ class Doctor {
   ///
   /// This should only ever be reached if a process is stuck.
   // Reduce this to under 5 minutes to diagnose:
-  // https://github.com/flutter/flutter/issues/111686
+  // https://github.com/LionelPerrault/flutter/issues/111686
   static const Duration doctorDuration = Duration(minutes: 4, seconds: 30);
 
   /// Print information about the state of installed tooling.

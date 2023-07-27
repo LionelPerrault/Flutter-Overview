@@ -336,7 +336,7 @@ class _${blockName}DefaultsM3 extends _TimePickerDefaults {
       hintStyle: hourMinuteTextStyle.copyWith(color: _colors.onSurface.withOpacity(0.36)),
       // Prevent the error text from appearing.
       // TODO(rami-a): Remove this workaround once
-      // https://github.com/flutter/flutter/issues/54104
+      // https://github.com/LionelPerrault/flutter/issues/54104
       // is fixed.
       errorStyle: const TextStyle(fontSize: 0, height: 0),
     );

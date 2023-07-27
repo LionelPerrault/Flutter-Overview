@@ -211,7 +211,7 @@ void main() {
       } on ToolExit catch (e) {
         expect(e.message, 'Your system temp directory (/does_not_exist) does not exist. '
             'Did you set an invalid override in your environment? '
-            'See issue https://github.com/flutter/flutter/issues/74042 for more context.'
+            'See issue https://github.com/LionelPerrault/flutter/issues/74042 for more context.'
         );
       }
     });

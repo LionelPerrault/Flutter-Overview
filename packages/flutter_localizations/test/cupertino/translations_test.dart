@@ -138,7 +138,7 @@ void main() {
     expect(localizations.timerPickerMinute(10), '10');
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/53036.
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/53036.
   testWidgets('`nb` uses `no` as its synonym when `nb` arb file is not present', (WidgetTester tester) async {
     final File nbCupertinoArbFile = File(
       path.join(rootDirectoryPath, 'lib', 'src', 'l10n', 'cupertino_nb.arb'),
@@ -168,7 +168,7 @@ void main() {
     }
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/36704.
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/36704.
   testWidgets('kn arb file should be properly Unicode escaped', (WidgetTester tester) async {
     final File file = File(
       path.join(rootDirectoryPath, 'lib', 'src', 'l10n', 'cupertino_kn.arb'),
@@ -195,7 +195,7 @@ void main() {
     }
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/110451.
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/110451.
   testWidgets('Finnish translation for tab label', (WidgetTester tester) async {
     const Locale locale = Locale('fi');
     expect(GlobalCupertinoLocalizations.delegate.isSupported(locale), isTrue);

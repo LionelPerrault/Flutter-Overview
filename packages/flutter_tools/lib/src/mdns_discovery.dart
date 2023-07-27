@@ -484,7 +484,7 @@ class MDnsVmServiceDiscovery {
           'be necessary to disable the "Personal Hotspot" on the device, and '
           'to ensure that the "Disable unless needed" setting is unchecked '
           'under System Preferences > Network > iPhone USB. '
-          'See https://github.com/flutter/flutter/issues/46698 for details.'
+          'See https://github.com/LionelPerrault/flutter/issues/46698 for details.'
         );
       case TargetPlatform.android:
       case TargetPlatform.android_arm:

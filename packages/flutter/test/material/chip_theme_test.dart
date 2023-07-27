@@ -872,7 +872,7 @@ void main() {
     expect(getMaterialBox(tester), paints..rrect(color: chipTheme.selectedColor));
   });
 
-  // This is a regression test for https://github.com/flutter/flutter/issues/119163.
+  // This is a regression test for https://github.com/LionelPerrault/flutter/issues/119163.
   testWidgetsWithLeakTracking('RawChip respects checkmark properties from ChipTheme', (WidgetTester tester) async {
     Widget buildRawChip({ChipThemeData? chipTheme}) {
       return MaterialApp(

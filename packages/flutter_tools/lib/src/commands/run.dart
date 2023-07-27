@@ -381,7 +381,7 @@ class RunCommand extends RunCommandBase {
       )
       // TODO(zanderso): Off by default with investigating whether this
       // is slower for certain use cases.
-      // See: https://github.com/flutter/flutter/issues/49499
+      // See: https://github.com/LionelPerrault/flutter/issues/49499
       ..addFlag('fast-start',
         help: 'Whether to quickly bootstrap applications with a minimal app. '
               'Currently this is only supported on Android devices. This option '

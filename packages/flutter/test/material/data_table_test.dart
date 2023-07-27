@@ -356,7 +356,7 @@ void main() {
     expect(tester.renderObject<RenderBox>(find.byType(Text).first).size.width, greaterThan(800.0));
     expect(tester.renderObject<RenderBox>(find.byType(Row).first).size.width, greaterThan(800.0));
     expect(tester.takeException(), isNull); // column overflows table, but text doesn't overflow cell
-  }, skip: true); // https://github.com/flutter/flutter/issues/13512
+  }, skip: true); // https://github.com/LionelPerrault/flutter/issues/13512
 
   testWidgetsWithLeakTracking('DataTable overflow test', (WidgetTester tester) async {
     await tester.pumpWidget(
@@ -495,7 +495,7 @@ void main() {
   });
 
   testWidgetsWithLeakTracking('DataTable sort indicator orientation does not change on state update', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/43724
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/43724
     Widget buildTable({String title = 'Name1'}) {
       return DataTable(
         sortColumnIndex: 0,
@@ -547,7 +547,7 @@ void main() {
   });
 
   testWidgetsWithLeakTracking('DataTable sort indicator orientation does not change on state update - reverse', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/43724
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/43724
     Widget buildTable({String title = 'Name1'}) {
       return DataTable(
         sortColumnIndex: 0,
@@ -1415,8 +1415,8 @@ void main() {
 
   testWidgetsWithLeakTracking('DataTable correctly renders with a mouse', (WidgetTester tester) async {
     // Regression test for a bug described in
-    // https://github.com/flutter/flutter/pull/43735#issuecomment-589459947
-    // Filed at https://github.com/flutter/flutter/issues/51152
+    // https://github.com/LionelPerrault/flutter/pull/43735#issuecomment-589459947
+    // Filed at https://github.com/LionelPerrault/flutter/issues/51152
     Widget buildTable({ int? sortColumnIndex }) {
       return DataTable(
         sortColumnIndex: sortColumnIndex,
@@ -1952,7 +1952,7 @@ void main() {
     expect(tableBorder?.top.color, null);
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/100952
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/100952
   testWidgetsWithLeakTracking('Do not crashes when paint borders in a narrow space', (WidgetTester tester) async {
     const List<DataColumn> columns = <DataColumn>[
       DataColumn(label: Text('column1')),

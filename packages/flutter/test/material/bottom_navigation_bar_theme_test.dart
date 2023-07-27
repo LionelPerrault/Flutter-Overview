@@ -339,7 +339,7 @@ void main() {
   });
 
   testWidgetsWithLeakTracking('BottomNavigationBarTheme can be used to hide all labels', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/66738.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/66738.
     await tester.pumpWidget(
       MaterialApp(
         theme: ThemeData(
@@ -377,7 +377,7 @@ void main() {
   });
 
   testWidgetsWithLeakTracking('BottomNavigationBarTheme can be used to hide selected labels', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/66738.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/66738.
     await tester.pumpWidget(
       MaterialApp(
         theme: ThemeData(

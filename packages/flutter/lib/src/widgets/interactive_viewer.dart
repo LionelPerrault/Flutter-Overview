@@ -47,7 +47,7 @@ typedef InteractiveViewerWidgetBuilder = Widget Function(BuildContext context, Q
 /// The [child] must not be null.
 ///
 /// See also:
-///   * The [Flutter Gallery's transformations demo](https://github.com/flutter/gallery/blob/master/lib/demos/reference/transformations_demo.dart),
+///   * The [Flutter Gallery's transformations demo](https://github.com/LionelPerrault/gallery/blob/master/lib/demos/reference/transformations_demo.dart),
 ///     which includes the use of InteractiveViewer.
 ///   * The [flutter-go demo](https://github.com/justinmc/flutter-go), which includes robust positioning of an InteractiveViewer child
 ///     that works for all screen sizes and child sizes.
@@ -559,7 +559,7 @@ class _InteractiveViewerState extends State<InteractiveViewer> with TickerProvid
 
   // TODO(justinmc): Add rotateEnabled parameter to the widget and remove this
   // hardcoded value when the rotation feature is implemented.
-  // https://github.com/flutter/flutter/issues/57698
+  // https://github.com/LionelPerrault/flutter/issues/57698
   final bool _rotateEnabled = false;
 
   // The _boundaryRect is calculated by adding the boundaryMargin to the size of
@@ -664,7 +664,7 @@ class _InteractiveViewerState extends State<InteractiveViewer> with TickerProvid
     // idea is that the boundaries are axis aligned (boundariesAabbQuad), but
     // calculating the translation to put the viewport inside that Quad is more
     // complicated than this when rotated.
-     // https://github.com/flutter/flutter/issues/57698
+     // https://github.com/LionelPerrault/flutter/issues/57698
     final Matrix4 correctedMatrix = matrix.clone()..setTranslation(Vector3(
       correctedTotalTranslation.dx,
       correctedTotalTranslation.dy,

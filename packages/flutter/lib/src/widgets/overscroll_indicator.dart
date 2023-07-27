@@ -216,7 +216,7 @@ class _GlowingOverscrollIndicatorState extends State<GlowingOverscrollIndicator>
     // extent is [-200.0, 300.0], scroll in the opposite direction with 10.0 pixels
     // before glow disappears, so the current pixels is -190.0,
     // in this case, we should move the glow up 10.0 pixels and should not
-    // overflow the scrollable widget's edge. https://github.com/flutter/flutter/issues/64149.
+    // overflow the scrollable widget's edge. https://github.com/LionelPerrault/flutter/issues/64149.
     _leadingController!._paintOffsetScrollPixels =
       -math.min(notification.metrics.pixels - notification.metrics.minScrollExtent, _leadingController!._paintOffset);
     _trailingController!._paintOffsetScrollPixels =
@@ -725,7 +725,7 @@ class _StretchingOverscrollIndicatorState extends State<StretchingOverscrollIndi
             // We clamp the overscroll amount relative to the length of the viewport,
             // which is the furthest distance a single pointer could pull on the
             // screen. This is because more than one pointer will multiply the
-            // amount of overscroll - https://github.com/flutter/flutter/issues/11884
+            // amount of overscroll - https://github.com/LionelPerrault/flutter/issues/11884
 
             final double viewportDimension = notification.metrics.viewportDimension;
             final double distanceForPull = _totalOverscroll.abs() / viewportDimension;
@@ -883,7 +883,7 @@ class _StretchController extends ChangeNotifier {
     if (_stretchDirection != newStretchDirection && _state == _StretchState.recede) {
       // When the stretch direction changes while we are in the recede state, we need to ignore the change.
       // If we don't, the stretch will instantly jump to the new direction with the recede animation still playing, which causes
-      // a unwanted visual abnormality (https://github.com/flutter/flutter/pull/116548#issuecomment-1414872567).
+      // a unwanted visual abnormality (https://github.com/LionelPerrault/flutter/pull/116548#issuecomment-1414872567).
       // By ignoring the directional change until the recede state is finished, we can avoid this.
       return;
     }

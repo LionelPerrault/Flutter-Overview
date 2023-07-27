@@ -183,7 +183,7 @@ suffix) for the .arb files in this directory.
 
 Originally, the cupertino_kn.arb and material_kn.arb files contained unicode
 characters that can cause current versions of Emacs on Linux to crash. There is
-more information here: https://github.com/flutter/flutter/issues/36704.
+more information here: https://github.com/LionelPerrault/flutter/issues/36704.
 
 Rather than risking developers' editor sessions, the strings in these arb files
 (and the code generated for them) have been encoded using the appropriate
@@ -203,7 +203,7 @@ initial commit.
 To prevent breaking applications that rely on these original Pashto
 translations, they will be kept. However, all new strings will have
 the English translation until support for Pashto is provided.
-See https://github.com/flutter/flutter/issues/60598.
+See https://github.com/LionelPerrault/flutter/issues/60598.
 
 ### Translations Status, Reporting Errors
 
@@ -213,7 +213,7 @@ Google contributes translations for all the languages supported by
 this package. (Googlers, for more details see <go/flutter-l10n>.)
 
 If you have feedback about the translations please
-[file an issue on the Flutter github repo](https://github.com/flutter/flutter/issues/new?template=2_bug.yml).
+[file an issue on the Flutter github repo](https://github.com/LionelPerrault/flutter/issues/new?template=2_bug.yml).
 
 
 ### See Also

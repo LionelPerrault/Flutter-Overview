@@ -27,7 +27,7 @@ void main() {
   }
 
   testWidgets('Throw if enable drag without an animation controller', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/89168
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/89168
     await tester.pumpWidget(
       MaterialApp(
         home: BottomSheet(
@@ -200,7 +200,7 @@ void main() {
   });
 
   testWidgets('Tapping on a BottomSheet should not trigger a rebuild when enableDrag is true', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/126833.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/126833.
     final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
     int buildCount = 0;
 
@@ -403,7 +403,7 @@ void main() {
     expect(find.text('BottomSheet'), findsNothing);
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/121098
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/121098
   testWidgets('Verify that accessibleNavigation has no impact on the BottomSheet animation', (WidgetTester tester) async {
     await tester.pumpWidget(MaterialApp(
       builder: (BuildContext context, Widget? child) {
@@ -661,7 +661,7 @@ void main() {
   });
 
   testWidgets('Verify that dragging past the bottom dismisses a persistent BottomSheet', (WidgetTester tester) async {
-    // This is a regression test for https://github.com/flutter/flutter/issues/5528
+    // This is a regression test for https://github.com/LionelPerrault/flutter/issues/5528
     final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
 
     await tester.pumpWidget(MaterialApp(
@@ -1322,7 +1322,7 @@ void main() {
     expect(find.text('BottomSheet'), findsNothing);
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/87592
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/87592
   testWidgets('the framework do not dispose the transitionAnimationController provided by user.', (WidgetTester tester) async {
     const Key tapTarget = Key('tap-target');
     final AnimationController controller = AnimationController(
@@ -1446,7 +1446,7 @@ void main() {
     expect(find.text('BottomSheet'), findsNothing);
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/87708
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/87708
   testWidgets('Each of the internal animation controllers should be disposed by the framework.', (WidgetTester tester) async {
     final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey();
     await tester.pumpWidget(MaterialApp(
@@ -1489,7 +1489,7 @@ void main() {
     expect(tester.takeException(), isNull);
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/99627
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/99627
   testWidgets('The old route entry should be removed when a new sheet popup', (WidgetTester tester) async {
     final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey();
     PersistentBottomSheetController<void>? sheetController;
@@ -1533,7 +1533,7 @@ void main() {
     expect(route.canPop, false);
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/87708
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/87708
   testWidgets('The framework does not dispose of the transitionAnimationController provided by user.', (WidgetTester tester) async {
     const Key tapTarget = Key('tap-target');
     const Key tapTargetToClose = Key('tap-target-to-close');
@@ -1591,7 +1591,7 @@ void main() {
   });
 
   testWidgets('Calling PersistentBottomSheetController.close does not crash when it is not the current bottom sheet', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/93717
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/93717
     PersistentBottomSheetController<void>? sheetController1;
     await tester.pumpWidget(MaterialApp(
       home: Scaffold(

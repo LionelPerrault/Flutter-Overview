@@ -194,7 +194,7 @@ void main() {
     // empty opacity layer is sent.
     final OffsetLayer offsetLayer = element.renderObject!.debugLayer! as OffsetLayer;
     await offsetLayer.toImage(const Rect.fromLTRB(0.0, 0.0, 1.0, 1.0));
-  }, skip: isBrowser); // https://github.com/flutter/flutter/issues/49857
+  }, skip: isBrowser); // https://github.com/LionelPerrault/flutter/issues/49857
 
   testWidgets('Child shows up in the right spot when opacity is disabled', (WidgetTester tester) async {
     debugDisableOpacityLayers = true;

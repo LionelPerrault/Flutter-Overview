@@ -31,7 +31,7 @@ class HotReloadProject extends Project {
     WidgetsFlutterBinding.ensureInitialized();
     final ByteData message = const StringCodec().encodeMessage('AppLifecycleState.resumed')!;
     await ServicesBinding.instance!.defaultBinaryMessenger.handlePlatformMessage('flutter/lifecycle', message, (_) { });
-    // See https://github.com/flutter/flutter/issues/86202
+    // See https://github.com/LionelPerrault/flutter/issues/86202
     if (kIsWeb) {
       while (true) {
         runApp(MyApp());

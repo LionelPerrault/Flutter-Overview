@@ -51,7 +51,7 @@ void main() {
   });
 
   testWidgets('Locale without countryCode', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/pull/16782
+    // Regression test for https://github.com/LionelPerrault/flutter/pull/16782
     await tester.pumpWidget(
       MaterialApp(
         localizationsDelegates: GlobalMaterialLocalizations.delegates,

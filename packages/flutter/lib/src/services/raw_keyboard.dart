@@ -837,7 +837,7 @@ class RawKeyboard {
       }
     }
     // On Linux, CapsLock key can be mapped to a non-modifier logical key:
-    // https://github.com/flutter/flutter/issues/114591.
+    // https://github.com/LionelPerrault/flutter/issues/114591.
     // This is also affecting Flutter Web on Linux.
     final bool nonModifierCapsLock = (event.data is RawKeyEventDataLinux  || event.data is RawKeyEventDataWeb)
       && _keysPressed[PhysicalKeyboardKey.capsLock] != null
@@ -858,9 +858,9 @@ class RawKeyboard {
     if (event is RawKeyDownEvent && thisKeyModifier != null
         && !_keysPressed.containsKey(event.physicalKey)) {
       // This inconsistency is found on Linux GTK for AltRight:
-      // https://github.com/flutter/flutter/issues/93278
+      // https://github.com/LionelPerrault/flutter/issues/93278
       // And also on Android and iOS:
-      // https://github.com/flutter/flutter/issues/101090
+      // https://github.com/LionelPerrault/flutter/issues/101090
       if ((event.data is RawKeyEventDataLinux && event.physicalKey == PhysicalKeyboardKey.altRight)
         || event.data is RawKeyEventDataIos
         || event.data is RawKeyEventDataAndroid) {
@@ -871,7 +871,7 @@ class RawKeyboard {
       }
       // On Web, PhysicalKeyboardKey.altRight can be map to LogicalKeyboardKey.altGraph or
       // LogicalKeyboardKey.altRight:
-      // https://github.com/flutter/flutter/issues/113836
+      // https://github.com/LionelPerrault/flutter/issues/113836
       if (event.data is RawKeyEventDataWeb && event.physicalKey == PhysicalKeyboardKey.altRight) {
         _keysPressed[event.physicalKey] = event.logicalKey;
       }

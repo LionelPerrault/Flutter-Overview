@@ -241,7 +241,7 @@ void main() {
     expect(onChangedCalled, equals(true));
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/7289.
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/7289.
   // A reference test would be better.
   test('BoxDecoration backgroundImage clip', () async {
     final ui.Image image = await createTestImage(width: 100, height: 100);
@@ -329,7 +329,7 @@ void main() {
     expect(paint.color, const Color(0x7F000000)); // 0.5 opacity
     expect(paint.filterQuality, FilterQuality.high);
     expect(paint.isAntiAlias, true);
-    // TODO(craiglabenz): change to true when https://github.com/flutter/flutter/issues/88909 is fixed
+    // TODO(craiglabenz): change to true when https://github.com/LionelPerrault/flutter/issues/88909 is fixed
     expect(paint.invertColors, !kIsWeb);
   });
 
@@ -394,7 +394,7 @@ void main() {
       '   The ImageConfiguration was:\n'
       '     ImageConfiguration(size: Size(100.0, 100.0))\n',
     );
-  }, skip: kIsWeb); // https://github.com/flutter/flutter/issues/87364
+  }, skip: kIsWeb); // https://github.com/LionelPerrault/flutter/issues/87364
 
   test('DecorationImage - error listener', () async {
     late String exception;
@@ -812,5 +812,5 @@ void main() {
     expect(info.image.debugGetOpenHandleStackTraces()!.length, baselineRefCount);
 
     info.dispose();
-  }, skip: kIsWeb); // https://github.com/flutter/flutter/issues/87442
+  }, skip: kIsWeb); // https://github.com/LionelPerrault/flutter/issues/87442
 }

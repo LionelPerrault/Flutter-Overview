@@ -4555,7 +4555,7 @@ class NavigatorState extends State<Navigator> with TickerProviderStateMixin, Res
   bool _debugIsStaticCallback(Function callback) {
     bool result = false;
     assert(() {
-      // TODO(goderbauer): remove the kIsWeb check when https://github.com/flutter/flutter/issues/33615 is resolved.
+      // TODO(goderbauer): remove the kIsWeb check when https://github.com/LionelPerrault/flutter/issues/33615 is resolved.
       result = kIsWeb || ui.PluginUtilities.getCallbackHandle(callback) != null;
       return true;
     }());
@@ -5258,7 +5258,7 @@ class NavigatorState extends State<Navigator> with TickerProviderStateMixin, Res
   }
 
   void _cancelActivePointers() {
-    // TODO(abarth): This mechanism is far from perfect. See https://github.com/flutter/flutter/issues/4770
+    // TODO(abarth): This mechanism is far from perfect. See https://github.com/LionelPerrault/flutter/issues/4770
     if (SchedulerBinding.instance.schedulerPhase == SchedulerPhase.idle) {
       // If we're between frames (SchedulerPhase.idle) then absorb any
       // subsequent pointers from this frame. The absorbing flag will be
@@ -5447,7 +5447,7 @@ class _AnonymousRestorationInformation extends _RestorationInformation {
   }
 
   @override
-  // TODO(goderbauer): remove the kIsWeb check when https://github.com/flutter/flutter/issues/33615 is resolved.
+  // TODO(goderbauer): remove the kIsWeb check when https://github.com/LionelPerrault/flutter/issues/33615 is resolved.
   bool get isRestorable => !kIsWeb;
 
   @override

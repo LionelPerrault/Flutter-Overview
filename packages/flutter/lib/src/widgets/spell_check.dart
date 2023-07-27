@@ -209,7 +209,7 @@ TextSpan buildTextSpanWithSpellCheckSuggestions(
   // available.
   // TODO(camsim99): The two separate stratgies for building TextSpan trees
   // based on the availability of a composing region should be merged:
-  // https://github.com/flutter/flutter/issues/124142.
+  // https://github.com/LionelPerrault/flutter/issues/124142.
   final bool shouldConsiderComposingRegion = defaultTargetPlatform == TargetPlatform.android;
   if (shouldConsiderComposingRegion) {
     return TextSpan(

@@ -69,7 +69,7 @@ void main() {
     ProcessManager: () => FakeProcessManager.any(),
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/60613
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/60613
   testUsingContext('ResidentWebRunner calls appFailedToStart if initial compilation fails', () async {
     final FlutterProject project = FlutterProject.fromDirectoryTest(fileSystem.currentDirectory);
     final ResidentWebRunner residentWebRunner = ResidentWebRunner(
@@ -91,7 +91,7 @@ void main() {
     ProcessManager: () => FakeProcessManager.any(),
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/60613
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/60613
   testUsingContext('ResidentWebRunner calls appFailedToStart if error is thrown during startup', () async {
     final FlutterProject project = FlutterProject.fromDirectoryTest(fileSystem.currentDirectory);
     final ResidentWebRunner residentWebRunner = ResidentWebRunner(

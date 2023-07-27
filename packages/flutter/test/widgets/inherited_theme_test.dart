@@ -147,7 +147,7 @@ void main() {
   });
 
   testWidgets('InheritedTheme.captureAll() multiple IconTheme ancestors', (WidgetTester tester) async {
-    // This is a regression test for https://github.com/flutter/flutter/issues/39087
+    // This is a regression test for https://github.com/LionelPerrault/flutter/issues/39087
 
     const Color outerColor = Color(0xFF0000FF);
     const Color innerColor = Color(0xFF00FF00);
@@ -207,7 +207,7 @@ void main() {
   });
 
   testWidgets('InheritedTheme.captureAll() multiple DefaultTextStyle ancestors', (WidgetTester tester) async {
-    // This is a regression test for https://github.com/flutter/flutter/issues/39087
+    // This is a regression test for https://github.com/LionelPerrault/flutter/issues/39087
 
     const Color textColor = Color(0xFF00FF00);
 

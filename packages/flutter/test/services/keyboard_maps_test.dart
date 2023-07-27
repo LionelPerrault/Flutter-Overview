@@ -7,7 +7,7 @@ import 'package:flutter_test/flutter_test.dart';
 
 void main() {
   test('The Web physical key mapping do not have entries without a Chrome code.', () {
-    // Regression test for https://github.com/flutter/flutter/pull/106074.
+    // Regression test for https://github.com/LionelPerrault/flutter/pull/106074.
     // There is an entry called KBD_ILLUM_DOWN in dom_code_data.inc, but it
     // has an empty "Code" column. This entry should not be present in the
     // web mapping.

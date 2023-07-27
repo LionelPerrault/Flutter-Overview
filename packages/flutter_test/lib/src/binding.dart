@@ -512,7 +512,7 @@ abstract class TestWidgetsFlutterBinding extends BindingBase
   /// affect the size of any other views. Instead of this method, consider
   /// setting [TestFlutterView.physicalSize], which works for any view,
   /// including [WidgetTester.view].
-  // TODO(pdblasi-google): Deprecate this. https://github.com/flutter/flutter/issues/123881
+  // TODO(pdblasi-google): Deprecate this. https://github.com/LionelPerrault/flutter/issues/123881
   Future<void> setSurfaceSize(Size? size) {
     return TestAsyncUtils.guard<void>(() async {
       assert(inTest);

@@ -8,7 +8,7 @@ import '../src/common.dart';
 import 'test_utils.dart';
 
 void main() {
-  // Regression test for https://github.com/flutter/flutter/issues/84270 .
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/84270 .
   testWithoutContext('dart command will expand variables on windows', () async {
     final ProcessResult result = await processManager.run(<String>[
       fileSystem.path.join(getFlutterRoot(), 'bin', 'dart'),
@@ -16,5 +16,5 @@ void main() {
       '"^(?!Golden).+"',
     ]);
     expect(result.stdout, contains('args: ["(?!Golden).+"]'));
-  }, skip: 'Reverted in https://github.com/flutter/flutter/pull/86000'); // https://github.com/flutter/flutter/issues/87934
+  }, skip: 'Reverted in https://github.com/LionelPerrault/flutter/pull/86000'); // https://github.com/LionelPerrault/flutter/issues/87934
 }

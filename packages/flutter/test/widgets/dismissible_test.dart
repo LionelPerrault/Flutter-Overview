@@ -593,7 +593,7 @@ void main() {
   // assert "'!_disqualifiedFromEverAppearingAgain' is not true". The old URL
   // was https://github.com/domokit/sky_engine/issues/1068 but that issue is 404
   // now since we migrated to the new repo. The bug was fixed by
-  // https://github.com/flutter/engine/pull/1134 at the time, and later made
+  // https://github.com/LionelPerrault/engine/pull/1134 at the time, and later made
   // irrelevant by fn3, but just in case...
   testWidgets('Verify that drag-move events do not assert', (WidgetTester tester) async {
     await tester.pumpWidget(
@@ -618,7 +618,7 @@ void main() {
 
   // This one is for a case where dismissing a widget above a previously
   // dismissed widget threw an exception, which was documented at the
-  // now-obsolete URL https://github.com/flutter/engine/issues/1215 (the URL
+  // now-obsolete URL https://github.com/LionelPerrault/engine/issues/1215 (the URL
   // died in the migration to the new repo). Don't copy this test; it doesn't
   // actually remove the dismissed widget, which is a violation of the
   // Dismissible contract. This is not an example of good practice.
@@ -778,7 +778,7 @@ void main() {
   });
 
   testWidgets('Pending confirmDismiss does not cause errors', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/54990
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/54990
 
     late Completer<bool?> completer;
     Widget buildFrame() {
@@ -864,7 +864,7 @@ void main() {
   });
 
   testWidgets('Drag to end and release - items does not get stuck if confirmDismiss returns false', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/87556
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/87556
 
     final Completer<bool?> completer = Completer<bool?>();
     await tester.pumpWidget(
@@ -1132,7 +1132,7 @@ void main() {
   });
 
   testWidgets('Change direction does not lose child state', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/108961
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/108961
     Widget buildFrame(DismissDirection direction) {
       return Directionality(
         textDirection: TextDirection.ltr,

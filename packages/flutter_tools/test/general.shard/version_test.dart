@@ -60,7 +60,7 @@ void main() {
       });
 
       testUsingContext('prints nothing when Flutter installation looks fresh', () async {
-        const String flutterUpstreamUrl = 'https://github.com/flutter/flutter.git';
+        const String flutterUpstreamUrl = 'https://github.com/LionelPerrault/flutter.git';
         processManager.addCommands(<FakeCommand>[
           const FakeCommand(
             command: <String>['git', '-c', 'log.showSignature=false', 'log', '-n', '1', '--pretty=format:%H'],
@@ -322,7 +322,7 @@ void main() {
   }
 
     group('VersionUpstreamValidator', () {
-      const String flutterStandardUrlDotGit = 'https://github.com/flutter/flutter.git';
+      const String flutterStandardUrlDotGit = 'https://github.com/LionelPerrault/flutter.git';
       const String flutterNonStandardUrlDotGit = 'https://githubmirror.com/flutter/flutter.git';
       const String flutterStandardSshUrlDotGit = 'git@github.com:flutter/flutter.git';
 
@@ -395,8 +395,8 @@ void main() {
       });
 
       testWithoutContext('stripDotGit removes ".git" suffix if any', () {
-        expect(VersionUpstreamValidator.stripDotGit('https://github.com/flutter/flutter.git'), 'https://github.com/flutter/flutter');
-        expect(VersionUpstreamValidator.stripDotGit('https://github.com/flutter/flutter'), 'https://github.com/flutter/flutter');
+        expect(VersionUpstreamValidator.stripDotGit('https://github.com/LionelPerrault/flutter.git'), 'https://github.com/LionelPerrault/flutter');
+        expect(VersionUpstreamValidator.stripDotGit('https://github.com/LionelPerrault/flutter'), 'https://github.com/LionelPerrault/flutter');
         expect(VersionUpstreamValidator.stripDotGit('git@github.com:flutter/flutter.git'), 'git@github.com:flutter/flutter');
         expect(VersionUpstreamValidator.stripDotGit('git@github.com:flutter/flutter'), 'git@github.com:flutter/flutter');
         expect(VersionUpstreamValidator.stripDotGit('https://githubmirror.com/flutter/flutter.git.git'), 'https://githubmirror.com/flutter/flutter.git');
@@ -520,7 +520,7 @@ void main() {
     const Map<String, Object> versionJson = <String, Object>{
       'channel': 'stable',
       'frameworkVersion': '1.2.3',
-      'repositoryUrl': 'https://github.com/flutter/flutter.git',
+      'repositoryUrl': 'https://github.com/LionelPerrault/flutter.git',
       'frameworkRevision': '1234abcd',
       'frameworkCommitDate': '2023-04-28 12:34:56 -0400',
       'engineRevision': 'deadbeef',
@@ -803,7 +803,7 @@ void main() {
         stdout: 'master',
       ),
       const FakeCommand(
-        command: <String>['git', 'fetch', 'https://github.com/flutter/flutter.git', '--tags', '-f'],
+        command: <String>['git', 'fetch', 'https://github.com/LionelPerrault/flutter.git', '--tags', '-f'],
       ),
       const FakeCommand(
         command: <String>['git', 'tag', '--points-at', 'HEAD'],

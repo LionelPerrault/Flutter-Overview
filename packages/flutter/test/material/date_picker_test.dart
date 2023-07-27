@@ -694,7 +694,7 @@ void main() {
       final Offset subHeaderTextTopLeft = tester.getTopLeft(subHeaderText);
       final Offset dividerTopRight = tester.getTopRight(divider);
       expect(subHeaderTextTopLeft.dx, dividerTopRight.dx + 24.0);
-      // TODO(tahatesser): https://github.com/flutter/flutter/issues/99933
+      // TODO(tahatesser): https://github.com/LionelPerrault/flutter/issues/99933
       // A bug in the HTML renderer and/or Chrome 96+ causes a
       // discrepancy in the paragraph height.
       const bool hasIssue99933 = kIsWeb && !bool.fromEnvironment('FLUTTER_WEB_USE_SKIA');
@@ -772,7 +772,7 @@ void main() {
       final Offset headerTextTextTopLeft = tester.getTopLeft(headerText);
       final Offset helpTextBottomLeft = tester.getBottomLeft(helpText);
       expect(headerTextTextTopLeft.dx, dialogTopLeft.dx + 24.0);
-      // TODO(tahatesser): https://github.com/flutter/flutter/issues/99933
+      // TODO(tahatesser): https://github.com/LionelPerrault/flutter/issues/99933
       // A bug in the HTML renderer and/or Chrome 96+ causes a
       // discrepancy in the paragraph height.
       const bool hasIssue99933 = kIsWeb && !bool.fromEnvironment('FLUTTER_WEB_USE_SKIA');
@@ -1228,7 +1228,7 @@ void main() {
     });
 
     testWidgets('Invalid entered text shows error on autovalidate', (WidgetTester tester) async {
-      // This is a regression test for https://github.com/flutter/flutter/issues/126397.
+      // This is a regression test for https://github.com/LionelPerrault/flutter/issues/126397.
       await prepareDatePicker(tester, (Future<DateTime?> date) async {
         final TextField field = textField(tester);
         field.controller!.clear();
@@ -1533,9 +1533,9 @@ void main() {
     // Test various combinations of screen sizes, orientations and text scales
     // to ensure the layout doesn't overflow and cause an exception to be thrown.
 
-    // Regression tests for https://github.com/flutter/flutter/issues/21383
-    // Regression tests for https://github.com/flutter/flutter/issues/19744
-    // Regression tests for https://github.com/flutter/flutter/issues/17745
+    // Regression tests for https://github.com/LionelPerrault/flutter/issues/21383
+    // Regression tests for https://github.com/LionelPerrault/flutter/issues/19744
+    // Regression tests for https://github.com/LionelPerrault/flutter/issues/17745
 
     // Common screen size roughly based on a Pixel 1
     const Size kCommonScreenSizePortrait = Size(1070, 1770);
@@ -1765,7 +1765,7 @@ void main() {
     // newly selected date.
     expect(find.byType(DatePickerDialog), findsNothing);
     expect(find.text('30/7/2021'), findsOneWidget);
-  }, skip: isBrowser); // https://github.com/flutter/flutter/issues/33615
+  }, skip: isBrowser); // https://github.com/LionelPerrault/flutter/issues/33615
 
   testWidgets('DatePickerDialog state restoration - DatePickerEntryMode', (WidgetTester tester) async {
     await tester.pumpWidget(
@@ -1814,7 +1814,7 @@ void main() {
     // Only in calendar mode and cannot switch out.
     expect(find.byType(TextField), findsNothing);
     expect(find.byIcon(Icons.edit), findsNothing);
-  }, skip: isBrowser); // https://github.com/flutter/flutter/issues/33615
+  }, skip: isBrowser); // https://github.com/LionelPerrault/flutter/issues/33615
 
   testWidgets('Test Callback on Toggle of DatePicker Mode', (WidgetTester tester) async {
     prepareDatePicker(tester, (Future<DateTime?> date) async {
@@ -1830,7 +1830,7 @@ void main() {
   });
 
   group('Landscape input-only date picker headers use headlineSmall', () {
-    // Regression test for https://github.com/flutter/flutter/issues/122056
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/122056
 
     // Common screen size roughly based on a Pixel 1
     const Size kCommonScreenSizePortrait = Size(1070, 1770);

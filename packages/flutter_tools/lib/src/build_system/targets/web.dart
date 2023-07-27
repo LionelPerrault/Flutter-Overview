@@ -391,7 +391,7 @@ class WebReleaseBundle extends Target {
 
     if (isWasm) {
       // TODO(jacksongardner): Enable icon tree shaking once dart2wasm can do a two-phase compile.
-      // https://github.com/flutter/flutter/issues/117248
+      // https://github.com/LionelPerrault/flutter/issues/117248
       environment.defines[kIconTreeShakerFlag] = 'false';
     }
 

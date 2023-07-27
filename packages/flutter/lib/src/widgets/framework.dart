@@ -2589,7 +2589,7 @@ class BuildOwner {
           ErrorHint(
             'If you did not attempt to call scheduleBuildFor() yourself, then this probably '
             'indicates a bug in the widgets framework. Please report it:\n'
-            '  https://github.com/flutter/flutter/issues/new?template=2_bug.yml',
+            '  https://github.com/LionelPerrault/flutter/issues/new?template=2_bug.yml',
           ),
         ]);
       }

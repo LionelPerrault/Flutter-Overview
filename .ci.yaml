@@ -4,7 +4,7 @@
 # for every commit.
 #
 # More information at:
-#  * https://github.com/flutter/cocoon/blob/main/CI_YAML.md
+#  * https://github.com/LionelPerrault/cocoon/blob/main/CI_YAML.md
 enabled_branches:
   - master
   - flutter-\d+\.\d+-candidate\.\d+
@@ -349,7 +349,7 @@ targets:
   - name: Linux docs_publish
     recipe: flutter/flutter
     presubmit: false
-    timeout: 90 # https://github.com/flutter/flutter/issues/120901
+    timeout: 90 # https://github.com/LionelPerrault/flutter/issues/120901
     dimensions:
       os: "Linux"
     properties:
@@ -371,7 +371,7 @@ targets:
 
   - name: Linux docs_test
     recipe: flutter/flutter
-    timeout: 90 # https://github.com/flutter/flutter/issues/120901
+    timeout: 90 # https://github.com/LionelPerrault/flutter/issues/120901
     properties:
       cores: "32"
       dependencies: >-
@@ -1584,7 +1584,7 @@ targets:
 
   - name: Linux_android android_semantics_integration_test
     recipe: devicelab/devicelab_drone
-    bringup: true # Flaky: https://github.com/flutter/flutter/issues/124636
+    bringup: true # Flaky: https://github.com/LionelPerrault/flutter/issues/124636
     presubmit: false
     timeout: 60
     properties:
@@ -2301,7 +2301,7 @@ targets:
       task_name: new_gallery_impeller__transition_perf
 
   - name: Linux_samsung_s10 new_gallery_impeller__transition_perf
-    bringup: true # Flaky https://github.com/flutter/flutter/issues/124693
+    bringup: true # Flaky https://github.com/LionelPerrault/flutter/issues/124693
     recipe: devicelab/devicelab_drone
     presubmit: false
     timeout: 60
@@ -2866,7 +2866,7 @@ targets:
     recipe: flutter/flutter_drone
     timeout: 60
     properties:
-      cpu: x86 # https://github.com/flutter/flutter/issues/119880
+      cpu: x86 # https://github.com/LionelPerrault/flutter/issues/119880
       dependencies: >-
         [
           {"dependency": "goldctl", "version": "git_revision:f808dcff91b221ae313e540c09d79696cd08b8de"}
@@ -2921,7 +2921,7 @@ targets:
     recipe: flutter/flutter_drone
     timeout: 60
     properties:
-      cpu: x86 # https://github.com/flutter/flutter/issues/119880
+      cpu: x86 # https://github.com/LionelPerrault/flutter/issues/119880
       dependencies: >-
         [
           {"dependency": "goldctl", "version": "git_revision:f808dcff91b221ae313e540c09d79696cd08b8de"}
@@ -3038,7 +3038,7 @@ targets:
     recipe: devicelab/devicelab_drone
     timeout: 60
     properties:
-      cpu: x86 # Codesigning fails on ARM https://github.com/flutter/flutter/issues/112033
+      cpu: x86 # Codesigning fails on ARM https://github.com/LionelPerrault/flutter/issues/112033
       dependencies: >-
         [
           {"dependency": "gems", "version": "v3.3.14"}
@@ -4083,7 +4083,7 @@ targets:
 
   - name: Mac_arm64_ios run_debug_test_macos
     recipe: devicelab/devicelab_drone
-    presubmit: false # https://github.com/flutter/flutter/issues/118827
+    presubmit: false # https://github.com/LionelPerrault/flutter/issues/118827
     timeout: 60
     properties:
       tags: >
@@ -4809,7 +4809,7 @@ targets:
 
   - name: Windows_android channels_integration_test_win
     recipe: devicelab/devicelab_drone
-    bringup: true # https://github.com/flutter/flutter/issues/130732
+    bringup: true # https://github.com/LionelPerrault/flutter/issues/130732
     presubmit: false
     timeout: 60
     properties:
@@ -4907,7 +4907,7 @@ targets:
     recipe: packaging/packaging
     timeout: 60
     scheduler: release
-    bringup: true # https://github.com/flutter/flutter/issues/126286
+    bringup: true # https://github.com/LionelPerrault/flutter/issues/126286
     enabled_branches:
       - beta
       - stable

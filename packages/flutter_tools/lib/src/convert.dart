@@ -62,7 +62,7 @@ class Utf8Decoder extends Converter<List<int>, String> {
         'Bad UTF-8 encoding (U+FFFD; REPLACEMENT CHARACTER) found while decoding string: $result. '
         'The Flutter team would greatly appreciate if you could file a bug explaining '
         'exactly what you were doing when this happened:\n'
-        'https://github.com/flutter/flutter/issues/new/choose\n'
+        'https://github.com/LionelPerrault/flutter/issues/new/choose\n'
         'The source bytes were:\n$input\n\n');
     }
     return result;

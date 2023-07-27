@@ -232,7 +232,7 @@ void main() {
     expect(elevation10.childrenCount, 1);
 
     // TODO(goderbauer): remove awkward workaround when accessing force-merged
-    //   SemanticsData becomes easier, https://github.com/flutter/flutter/issues/25669
+    //   SemanticsData becomes easier, https://github.com/LionelPerrault/flutter/issues/25669
     SemanticsData? mergedChildData;
     elevation10.visitChildren((SemanticsNode child) {
       expect(mergedChildData, isNull);
@@ -287,7 +287,7 @@ void main() {
     expect(elevation10.childrenCount, 1);
 
     // TODO(goderbauer): remove awkward workaround when accessing force-merged
-    //   SemanticsData becomes easier, https://github.com/flutter/flutter/issues/25669
+    //   SemanticsData becomes easier, https://github.com/LionelPerrault/flutter/issues/25669
     SemanticsData? mergedChildData;
     elevation10.visitChildren((SemanticsNode child) {
       expect(mergedChildData, isNull);

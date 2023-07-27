@@ -588,5 +588,5 @@ void main() {
       '                               painter: _PlaceholderPainter#00000()\n'
       '                               preferredSize: Size(Infinity, Infinity)\n',
     ));
-  }, skip: kIsWeb); // https://github.com/flutter/flutter/issues/87876
+  }, skip: kIsWeb); // https://github.com/LionelPerrault/flutter/issues/87876
 }

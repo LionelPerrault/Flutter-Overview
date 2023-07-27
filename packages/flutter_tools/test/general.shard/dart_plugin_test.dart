@@ -191,7 +191,7 @@ void main() {
         );
       });
 
-      // See https://github.com/flutter/flutter/issues/87862 for details.
+      // See https://github.com/LionelPerrault/flutter/issues/87862 for details.
       testWithoutContext('does not select inline implementation on desktop for '
       'missing min Flutter SDK constraint', () async {
         final Set<String> directDependencies = <String>{};
@@ -222,7 +222,7 @@ void main() {
         expect(resolutions.length, equals(0));
       });
 
-      // See https://github.com/flutter/flutter/issues/87862 for details.
+      // See https://github.com/LionelPerrault/flutter/issues/87862 for details.
       testWithoutContext('does not select inline implementation on desktop for '
       'min Flutter SDK constraint < 2.11', () async {
         final Set<String> directDependencies = <String>{};

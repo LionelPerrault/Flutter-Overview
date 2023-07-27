@@ -76,7 +76,7 @@ class _StatefulListViewState extends State<_StatefulListView> {
 }
 
 void main() {
-  // Regression test for https://github.com/flutter/flutter/issues/100451
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/100451
   testWidgets('ListView.builder respects findChildIndexCallback', (WidgetTester tester) async {
     bool finderCalled = false;
     int itemCount = 7;
@@ -112,7 +112,7 @@ void main() {
     expect(finderCalled, true);
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/100451
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/100451
   testWidgets('ListView.separator respects findChildIndexCallback', (WidgetTester tester) async {
     bool finderCalled = false;
     int itemCount = 7;
@@ -515,7 +515,7 @@ void main() {
   });
 
   testWidgets('ListView clips if overflow is smaller than cacheExtent', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/17426.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/17426.
 
     await tester.pumpWidget(
       Directionality(
@@ -569,7 +569,7 @@ void main() {
   });
 
   testWidgets('ListView (fixed extent) clips if overflow is smaller than cacheExtent', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/17426.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/17426.
 
     await tester.pumpWidget(
       Directionality(
@@ -658,7 +658,7 @@ void main() {
   });
 
   testWidgets('Updates viewport dimensions when scroll direction changes', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/43380.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/43380.
     final ScrollController controller = ScrollController();
 
     Widget buildListView({ required Axis scrollDirection }) {

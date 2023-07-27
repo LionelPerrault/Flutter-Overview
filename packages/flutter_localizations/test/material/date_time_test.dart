@@ -179,7 +179,7 @@ void main() {
     });
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/67644.
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/67644.
   testWidgets('en_US is initialized correctly by Flutter when DateFormat is used', (WidgetTester tester) async {
     late DateFormat dateFormat;
 

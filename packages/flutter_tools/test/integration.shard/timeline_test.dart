@@ -35,14 +35,14 @@ void main() {
     tryToDelete(tempDir);
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/79498
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/79498
   testWithoutContext('Can connect to the timeline without getting ANR from the application', () async {
     final Timer timer = Timer(const Duration(minutes: 5), () {
       // This message is intended to show up in CI logs.
       // ignore: avoid_print
       print(
         'Warning: test isolate is still active after 5 minutes. This is likely an '
-        'app-not-responding error and not a flake. See https://github.com/flutter/flutter/issues/79498 '
+        'app-not-responding error and not a flake. See https://github.com/LionelPerrault/flutter/issues/79498 '
         'for the bug this test is attempting to exercise.'
       );
     });

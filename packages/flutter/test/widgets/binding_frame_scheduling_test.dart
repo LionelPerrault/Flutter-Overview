@@ -11,7 +11,7 @@ import 'package:flutter_test/flutter_test.dart';
 
 void main() {
   test('Instantiating WidgetsFlutterBinding does neither schedule a frame nor register frame callbacks', () async {
-    // Regression test for https://github.com/flutter/flutter/issues/39494.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/39494.
 
     // Preconditions.
     expect(PlatformDispatcher.instance.onBeginFrame, isNull);

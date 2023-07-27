@@ -222,7 +222,7 @@ class LocalFileSystem extends local_fs.LocalFileSystem {
     if (_systemTemp == null) {
       if (!superSystemTempDirectory.existsSync()) {
         throwToolExit('Your system temp directory (${superSystemTempDirectory.path}) does not exist. '
-          'Did you set an invalid override in your environment? See issue https://github.com/flutter/flutter/issues/74042 for more context.'
+          'Did you set an invalid override in your environment? See issue https://github.com/LionelPerrault/flutter/issues/74042 for more context.'
         );
       }
       _systemTemp = superSystemTempDirectory.createTempSync('flutter_tools.')

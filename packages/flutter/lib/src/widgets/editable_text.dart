@@ -1240,7 +1240,7 @@ class EditableText extends StatefulWidget {
   ///
   /// Defaults to false. Cannot be null.
   /// {@endtemplate}
-  // See https://github.com/flutter/flutter/issues/7035 for the rationale for this
+  // See https://github.com/LionelPerrault/flutter/issues/7035 for the rationale for this
   // keyboard behavior.
   final bool autofocus;
 
@@ -2330,7 +2330,7 @@ class EditableTextState extends State<EditableText> with AutomaticKeepAliveClien
       return;
     }
     // Snapshot the input before using `await`.
-    // See https://github.com/flutter/flutter/issues/11427
+    // See https://github.com/LionelPerrault/flutter/issues/11427
     final ClipboardData? data = await Clipboard.getData(Clipboard.kTextPlain);
     if (data == null) {
       return;
@@ -2737,7 +2737,7 @@ class EditableTextState extends State<EditableText> with AutomaticKeepAliveClien
       _closeInputConnectionIfNeeded();
     } else if (oldWidget.readOnly && _hasFocus) {
       // _openInputConnection must be called after layout information is available.
-      // See https://github.com/flutter/flutter/issues/126312
+      // See https://github.com/LionelPerrault/flutter/issues/126312
       SchedulerBinding.instance.addPostFrameCallback((Duration _) {
         _openInputConnection();
       });
@@ -2852,7 +2852,7 @@ class EditableTextState extends State<EditableText> with AutomaticKeepAliveClien
     if (value == _value) {
       // This is possible, for example, when the numeric keyboard is input,
       // the engine will notify twice for the same value.
-      // Track at https://github.com/flutter/flutter/issues/65811
+      // Track at https://github.com/LionelPerrault/flutter/issues/65811
       return;
     }
 
@@ -2872,7 +2872,7 @@ class EditableTextState extends State<EditableText> with AutomaticKeepAliveClien
       if (value.text != _value.text) {
         // Hide the toolbar if the text was changed, but only hide the toolbar
         // overlay; the selection handle's visibility will be handled
-        // by `_handleSelectionChanged`. https://github.com/flutter/flutter/issues/108673
+        // by `_handleSelectionChanged`. https://github.com/LionelPerrault/flutter/issues/108673
         hideToolbar(false);
       }
       _currentPromptRectRange = null;
@@ -3107,7 +3107,7 @@ class EditableTextState extends State<EditableText> with AutomaticKeepAliveClien
     // after the microtask queue is drained. But in case the developer cancelled
     // the focus change in the `onSubmitted` callback by focusing this input
     // field again, reset the soft keyboard.
-    // See https://github.com/flutter/flutter/issues/84240.
+    // See https://github.com/LionelPerrault/flutter/issues/84240.
     //
     // `_restartConnectionIfNeeded` creates a new TextInputConnection to replace
     // the current one. This on iOS switches to a new input view and on Android
@@ -3223,7 +3223,7 @@ class EditableTextState extends State<EditableText> with AutomaticKeepAliveClien
   bool get _needsAutofill => _effectiveAutofillClient.textInputConfiguration.autofillConfiguration.enabled;
 
   // Must be called after layout.
-  // See https://github.com/flutter/flutter/issues/126312
+  // See https://github.com/LionelPerrault/flutter/issues/126312
   void _openInputConnection() {
     if (!_shouldCreateInputConnection) {
       return;
@@ -3470,7 +3470,7 @@ class EditableTextState extends State<EditableText> with AutomaticKeepAliveClien
     }
     // TODO(chunhtai): we should make sure selection actually changed before
     // we call the onSelectionChanged.
-    // https://github.com/flutter/flutter/issues/76349.
+    // https://github.com/LionelPerrault/flutter/issues/76349.
     try {
       widget.onSelectionChanged?.call(selection, cause);
     } catch (exception, stack) {
@@ -3878,7 +3878,7 @@ class EditableTextState extends State<EditableText> with AutomaticKeepAliveClien
   }
 
   // Must be called after layout.
-  // See https://github.com/flutter/flutter/issues/126312
+  // See https://github.com/LionelPerrault/flutter/issues/126312
   void _updateSizeAndTransform() {
     final Size size = renderEditable.size;
     final Matrix4 transform = renderEditable.getTransformTo(null);
@@ -4094,7 +4094,7 @@ class EditableTextState extends State<EditableText> with AutomaticKeepAliveClien
     // Spell check suggestions toolbars are intended to be shown on non-web
     // platforms. Additionally, the Cupertino style toolbar can't be drawn on
     // the web with the HTML renderer due to
-    // https://github.com/flutter/flutter/issues/123560.
+    // https://github.com/LionelPerrault/flutter/issues/123560.
     final bool platformNotSupported = kIsWeb && BrowserContextMenu.enabled;
     if (!spellCheckEnabled
         || platformNotSupported

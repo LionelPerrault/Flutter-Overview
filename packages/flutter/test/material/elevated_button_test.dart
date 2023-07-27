@@ -198,7 +198,7 @@ void main() {
     await tester.pumpAndSettle();
     await expectLater(tester, meetsGuideline(textContrastGuideline));
   },
-    skip: isBrowser, // https://github.com/flutter/flutter/issues/44115
+    skip: isBrowser, // https://github.com/LionelPerrault/flutter/issues/44115
   );
 
   testWidgetsWithLeakTracking('ElevatedButton default overlayColor and elevation resolve pressed state', (WidgetTester tester) async {
@@ -1261,7 +1261,7 @@ void main() {
   });
 
   testWidgetsWithLeakTracking('Elevated buttons animate elevation before color on disable', (WidgetTester tester) async {
-    // This is a regression test for https://github.com/flutter/flutter/issues/387
+    // This is a regression test for https://github.com/LionelPerrault/flutter/issues/387
 
     const ColorScheme colorScheme = ColorScheme.light();
     final Color backgroundColor = colorScheme.primary;
@@ -1308,7 +1308,7 @@ void main() {
   });
 
   testWidgetsWithLeakTracking('By default, ElevatedButton shape outline is defined by shape.side', (WidgetTester tester) async {
-    // This is a regression test for https://github.com/flutter/flutter/issues/69544
+    // This is a regression test for https://github.com/LionelPerrault/flutter/issues/69544
 
     const Color borderColor = Color(0xff4caf50);
     await tester.pumpWidget(
@@ -1461,7 +1461,7 @@ void main() {
   }, variant: TargetPlatformVariant.all());
 
   testWidgetsWithLeakTracking('ElevatedButton.icon does not overflow', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/77815
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/77815
     await tester.pumpWidget(
       MaterialApp(
         home: Scaffold(
@@ -1669,7 +1669,7 @@ void main() {
   });
 
   testWidgetsWithLeakTracking('ElevatedButton in SelectionArea changes mouse cursor when hovered', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/104595.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/104595.
     await tester.pumpWidget(MaterialApp(
       home: SelectionArea(
         child: ElevatedButton(
@@ -1692,7 +1692,7 @@ void main() {
   });
 
   testWidgetsWithLeakTracking('Ink Response shape matches Material shape', (WidgetTester tester) async {
-    // This is a regression test for https://github.com/flutter/flutter/issues/91844
+    // This is a regression test for https://github.com/LionelPerrault/flutter/issues/91844
 
     Widget buildFrame({BorderSide? side}) {
       return MaterialApp(

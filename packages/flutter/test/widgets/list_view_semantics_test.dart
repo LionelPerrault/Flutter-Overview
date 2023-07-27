@@ -9,7 +9,7 @@ import 'semantics_tester.dart';
 
 void main() {
   group('Available semantic scroll actions', () {
-    // Regression tests for https://github.com/flutter/flutter/issues/52032.
+    // Regression tests for https://github.com/LionelPerrault/flutter/issues/52032.
 
     const int itemCount = 10;
     const double itemHeight = 150.0;

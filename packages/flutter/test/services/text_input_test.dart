@@ -242,7 +242,7 @@ void main() {
     });
 
     test('FloatingCursor coordinates type-casting', () async {
-      // Regression test for https://github.com/flutter/flutter/issues/109632.
+      // Regression test for https://github.com/LionelPerrault/flutter/issues/109632.
       final List<FlutterErrorDetails> errors = <FlutterErrorDetails>[];
       FlutterError.onError = errors.add;
 

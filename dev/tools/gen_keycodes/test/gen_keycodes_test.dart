@@ -149,7 +149,7 @@ void main() {
   test('LogicalKeyData', () async {
     final List<LogicalKeyEntry> entries = logicalData.entries.toList();
 
-    // Regression tests for https://github.com/flutter/flutter/pull/87098
+    // Regression tests for https://github.com/LionelPerrault/flutter/pull/87098
 
     expect(
       entries.indexWhere((LogicalKeyEntry entry) => entry.name == 'ShiftLeft'),

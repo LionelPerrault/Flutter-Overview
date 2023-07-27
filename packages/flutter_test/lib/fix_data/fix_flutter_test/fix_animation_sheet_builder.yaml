@@ -20,7 +20,7 @@
 
 version: 1
 transforms:
-  # Changes made in https://github.com/flutter/flutter/pull/83337
+  # Changes made in https://github.com/LionelPerrault/flutter/pull/83337
   # The related deprecation for `sheetSize` doesn't have a fix because there
   # isn't an alternative API, it's being removed completely.
   - title: 'Migrate to collate'

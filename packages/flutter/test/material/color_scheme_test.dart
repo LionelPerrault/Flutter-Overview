@@ -473,6 +473,6 @@ void main() {
     );
     await expectLater(tester, meetsGuideline(textContrastGuideline));
   },
-    skip: isBrowser, // https://github.com/flutter/flutter/issues/44115
+    skip: isBrowser, // https://github.com/LionelPerrault/flutter/issues/44115
   );
 }

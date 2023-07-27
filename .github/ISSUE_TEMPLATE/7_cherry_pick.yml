@@ -36,7 +36,7 @@ body:
       label: PR Link
       description: >-
         Link to an open PR that cherrypick's this into the target release branch.
-        The current branches can be found under release-caniddate-branch.version for [beta](https://github.com/flutter/flutter/blob/beta/bin/internal/release-candidate-branch.version) and [stable](https://github.com/flutter/flutter/blob/stable/bin/internal/release-candidate-branch.version)
+        The current branches can be found under release-caniddate-branch.version for [beta](https://github.com/LionelPerrault/flutter/blob/beta/bin/internal/release-candidate-branch.version) and [stable](https://github.com/LionelPerrault/flutter/blob/stable/bin/internal/release-candidate-branch.version)
     validations:
       required: true
   - type: textarea
@@ -45,7 +45,7 @@ body:
       label: Changelog Description
       description: >-
         Explain this CP in one line that is accessible to most Flutter developers
-        See https://github.com/flutter/flutter/wiki/Hotfix-Documentation-Best-Practices for examples
+        See https://github.com/LionelPerrault/flutter/wiki/Hotfix-Documentation-Best-Practices for examples
     validations:
       required: true
   - type: input

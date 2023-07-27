@@ -391,7 +391,7 @@ void main() {
 
     testWidgets('Disabled button is excluded from text contrast guideline',
         (WidgetTester tester) async {
-      // Regression test https://github.com/flutter/flutter/issues/94428
+      // Regression test https://github.com/LionelPerrault/flutter/issues/94428
       final SemanticsHandle handle = tester.ensureSemantics();
       await tester.pumpWidget(
         _boilerplate(

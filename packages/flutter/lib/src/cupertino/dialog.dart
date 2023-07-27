@@ -114,7 +114,7 @@ const Color _kActionSheetCancelPressedColor = CupertinoDynamicColor.withBrightne
 
 // Translucent, very light gray that is painted on top of the blurred backdrop
 // as the action sheet's background color.
-// TODO(LongCatIsLooong): https://github.com/flutter/flutter/issues/39272. Use
+// TODO(LongCatIsLooong): https://github.com/LionelPerrault/flutter/issues/39272. Use
 // System Materials once we have them.
 // Extracted from https://developer.apple.com/design/resources/.
 const Color _kActionSheetBackgroundColor = CupertinoDynamicColor.withBrightness(
@@ -1508,7 +1508,7 @@ class _PressableActionButtonState extends State<_PressableActionButton> {
       isPressed: _isPressed,
       child: MergeSemantics(
         // TODO(mattcarroll): Button press dynamics need overhaul for iOS:
-        // https://github.com/flutter/flutter/issues/19786
+        // https://github.com/LionelPerrault/flutter/issues/19786
         child: GestureDetector(
           excludeFromSemantics: true,
           behavior: HitTestBehavior.opaque,
@@ -1519,7 +1519,7 @@ class _PressableActionButtonState extends State<_PressableActionButton> {
             _isPressed = false;
           }),
           // TODO(mattcarroll): Cancel is currently triggered when user moves
-          //  past slop instead of off button: https://github.com/flutter/flutter/issues/19783
+          //  past slop instead of off button: https://github.com/LionelPerrault/flutter/issues/19783
           onTapCancel: () => setState(() => _isPressed = false),
           child: widget.child,
         ),

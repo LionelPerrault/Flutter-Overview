@@ -52,9 +52,9 @@ void main() {
     // to be part of the word sometimes and not others, which is fine, but we'd mildly prefer if
     // we were consistently considering them part of words always.
     final TextRange hebrew1 = painter.getWordBoundary(const TextPosition(offset: 4));
-    expect(hebrew1, const TextRange(start: 0, end: 8), skip: skipExpectsWithKnownBugs); // https://github.com/flutter/flutter/issues/87536
+    expect(hebrew1, const TextRange(start: 0, end: 8), skip: skipExpectsWithKnownBugs); // https://github.com/LionelPerrault/flutter/issues/87536
     final TextRange english2 = painter.getWordBoundary(const TextPosition(offset: 14));
-    expect(english2, const TextRange(start: 9, end: 19), skip: skipExpectsWithKnownBugs); // https://github.com/flutter/flutter/issues/87536
+    expect(english2, const TextRange(start: 9, end: 19), skip: skipExpectsWithKnownBugs); // https://github.com/LionelPerrault/flutter/issues/87536
     final TextRange hebrew3 = painter.getWordBoundary(const TextPosition(offset: 24));
     expect(hebrew3, const TextRange(start: 20, end: 28));
 
@@ -164,9 +164,9 @@ void main() {
       <TextBox>[], // U+202C, non-printing Unicode bidi formatting character
       // The list currently has one extra bogus entry (the last entry, for the
       // trailing U+202C PDF, should be empty but is one-pixel-wide instead).
-    ], skip: skipExpectsWithKnownBugs); // https://github.com/flutter/flutter/issues/87536
+    ], skip: skipExpectsWithKnownBugs); // https://github.com/LionelPerrault/flutter/issues/87536
     painter.dispose();
-  }, skip: skipTestsWithKnownBugs); // https://github.com/flutter/flutter/issues/87536
+  }, skip: skipTestsWithKnownBugs); // https://github.com/LionelPerrault/flutter/issues/87536
 
   test('TextPainter - bidi overrides in RTL', () {
     final TextPainter painter = TextPainter()
@@ -182,9 +182,9 @@ void main() {
     painter.layout();
 
     final TextRange hebrew1 = painter.getWordBoundary(const TextPosition(offset: 4));
-    expect(hebrew1, const TextRange(start: 0, end: 8), skip: skipExpectsWithKnownBugs); // https://github.com/flutter/flutter/issues/87536
+    expect(hebrew1, const TextRange(start: 0, end: 8), skip: skipExpectsWithKnownBugs); // https://github.com/LionelPerrault/flutter/issues/87536
     final TextRange english2 = painter.getWordBoundary(const TextPosition(offset: 14));
-    expect(english2, const TextRange(start: 9, end: 19), skip: skipExpectsWithKnownBugs); // https://github.com/flutter/flutter/issues/87536
+    expect(english2, const TextRange(start: 9, end: 19), skip: skipExpectsWithKnownBugs); // https://github.com/LionelPerrault/flutter/issues/87536
     final TextRange hebrew3 = painter.getWordBoundary(const TextPosition(offset: 24));
     expect(hebrew3, const TextRange(start: 20, end: 28));
 
@@ -255,10 +255,10 @@ void main() {
       ],
       // Horizontal offsets are currently one pixel off in places; vertical offsets are good.
       // The list is currently in the wrong order (so selection boxes will paint in the wrong order).
-      skip: skipExpectsWithKnownBugs, // https://github.com/flutter/flutter/issues/87536
+      skip: skipExpectsWithKnownBugs, // https://github.com/LionelPerrault/flutter/issues/87536
     );
     painter.dispose();
-  }, skip: skipTestsWithKnownBugs); // https://github.com/flutter/flutter/issues/87536
+  }, skip: skipTestsWithKnownBugs); // https://github.com/LionelPerrault/flutter/issues/87536
 
   test('TextPainter - forced line-wrapping with bidi', () {
     final TextPainter painter = TextPainter()
@@ -326,7 +326,7 @@ void main() {
       ],
     );
     painter.dispose();
-  }, skip: isBrowser); // https://github.com/flutter/flutter/issues/32238
+  }, skip: isBrowser); // https://github.com/LionelPerrault/flutter/issues/32238
 
   test('TextPainter - line wrap mid-word', () {
     final TextPainter painter = TextPainter()
@@ -358,10 +358,10 @@ void main() {
         TextBox.fromLTRBD(60.0, 28.0, 110.0, 38.0, TextDirection.ltr),
       ],
       // horizontal offsets are one pixel off in places; vertical offsets are good
-      skip: skipExpectsWithKnownBugs, // https://github.com/flutter/flutter/issues/87536
+      skip: skipExpectsWithKnownBugs, // https://github.com/LionelPerrault/flutter/issues/87536
     );
     painter.dispose();
-  }, skip: skipTestsWithKnownBugs); // https://github.com/flutter/flutter/issues/87536
+  }, skip: skipTestsWithKnownBugs); // https://github.com/LionelPerrault/flutter/issues/87536
 
   test('TextPainter - line wrap mid-word, bidi - LTR base', () {
     final TextPainter painter = TextPainter()
@@ -393,7 +393,7 @@ void main() {
         TextBox.fromLTRBD(40.0, 28.0, 90.0, 38.0, TextDirection.ltr),
       ],
       // horizontal offsets are one pixel off in places; vertical offsets are good
-      skip: skipExpectsWithKnownBugs, // https://github.com/flutter/flutter/issues/87536
+      skip: skipExpectsWithKnownBugs, // https://github.com/LionelPerrault/flutter/issues/87536
     );
 
     final List<List<TextBox>> list = <List<TextBox>>[
@@ -418,7 +418,7 @@ void main() {
       <TextBox>[TextBox.fromLTRBD(80.0, 28.0, 90.0, 38.0, TextDirection.ltr)],
     ]);
     painter.dispose();
-  }, skip: skipTestsWithKnownBugs); // https://github.com/flutter/flutter/issues/87536
+  }, skip: skipTestsWithKnownBugs); // https://github.com/LionelPerrault/flutter/issues/87536
 
   test('TextPainter - line wrap mid-word, bidi - RTL base', () {
     final TextPainter painter = TextPainter()
@@ -451,10 +451,10 @@ void main() {
       ],
       // Horizontal offsets are currently one pixel off in places; vertical offsets are good.
       // The list is currently in the wrong order (so selection boxes will paint in the wrong order).
-      skip: skipExpectsWithKnownBugs, // https://github.com/flutter/flutter/issues/87536
+      skip: skipExpectsWithKnownBugs, // https://github.com/LionelPerrault/flutter/issues/87536
     );
     painter.dispose();
-  }, skip: skipTestsWithKnownBugs); // https://github.com/flutter/flutter/issues/87536
+  }, skip: skipTestsWithKnownBugs); // https://github.com/LionelPerrault/flutter/issues/87536
 
   test('TextPainter - multiple levels', () {
     final TextPainter painter = TextPainter()
@@ -483,10 +483,10 @@ void main() {
       // Horizontal offsets are currently one pixel off in places; vertical offsets are good.
       // The list is currently in the wrong order (so selection boxes will paint in the wrong order).
       // Also currently there's an extraneous box at the start of the list.
-      skip: skipExpectsWithKnownBugs, // https://github.com/flutter/flutter/issues/87536
+      skip: skipExpectsWithKnownBugs, // https://github.com/LionelPerrault/flutter/issues/87536
     );
     painter.dispose();
-  }, skip: skipTestsWithKnownBugs); // https://github.com/flutter/flutter/issues/87536
+  }, skip: skipTestsWithKnownBugs); // https://github.com/LionelPerrault/flutter/issues/87536
 
   test('TextPainter - getPositionForOffset - RTL in LTR', () {
     final TextPainter painter = TextPainter()
@@ -498,7 +498,7 @@ void main() {
     );
     painter.layout();
 
-    // TODO(ianh): Remove the toString()s once https://github.com/flutter/engine/pull/4283 lands
+    // TODO(ianh): Remove the toString()s once https://github.com/LionelPerrault/engine/pull/4283 lands
     expect(
       //  Aaa  Bbb  Ccc  Gimel  Bet  Alef  Ddd  Eee  Fff
       // ^
@@ -529,7 +529,7 @@ void main() {
       painter.getPositionForOffset(const Offset(12.0, 5.0)).toString(),
       const TextPosition(offset: 1).toString(),
       // currently we say upstream instead of downstream
-      skip: skipExpectsWithKnownBugs, // https://github.com/flutter/flutter/issues/87536
+      skip: skipExpectsWithKnownBugs, // https://github.com/LionelPerrault/flutter/issues/87536
     );
     expect(
       //  Aaa  Bbb  Ccc  Gimel  Bet  Alef  Ddd  Eee  Fff
@@ -542,14 +542,14 @@ void main() {
       //                 ^
       painter.getPositionForOffset(const Offset(32.0, 5.0)).toString(),
       const TextPosition(offset: 6, affinity: TextAffinity.upstream).toString(),
-      skip: skipExpectsWithKnownBugs, // this is part of https://github.com/flutter/flutter/issues/11375
+      skip: skipExpectsWithKnownBugs, // this is part of https://github.com/LionelPerrault/flutter/issues/11375
     );
     expect(
       //  Aaa  Bbb  Ccc  Gimel  Bet  Alef  Ddd  Eee  Fff
       //                                ^
       painter.getPositionForOffset(const Offset(58.0, 5.0)).toString(),
       const TextPosition(offset: 3).toString(),
-      skip: skipExpectsWithKnownBugs, // this is part of https://github.com/flutter/flutter/issues/11375
+      skip: skipExpectsWithKnownBugs, // this is part of https://github.com/LionelPerrault/flutter/issues/11375
     );
     expect(
       //  Aaa  Bbb  Ccc  Gimel  Bet  Alef  Ddd  Eee  Fff
@@ -570,7 +570,7 @@ void main() {
       const TextPosition(offset: 9, affinity: TextAffinity.upstream).toString(),
     );
     painter.dispose();
-  }, skip: skipTestsWithKnownBugs); // https://github.com/flutter/flutter/issues/87536
+  }, skip: skipTestsWithKnownBugs); // https://github.com/LionelPerrault/flutter/issues/87536
 
   test('TextPainter - getPositionForOffset - LTR in RTL', () {
     final TextPainter painter = TextPainter()
@@ -582,7 +582,7 @@ void main() {
     );
     painter.layout();
 
-    // TODO(ianh): Remove the toString()s once https://github.com/flutter/engine/pull/4283 lands
+    // TODO(ianh): Remove the toString()s once https://github.com/LionelPerrault/engine/pull/4283 lands
     expect(
       //   Vav He Dalet Aaa Bbb Ccc Gimel Bet Alef
       // ^
@@ -600,14 +600,14 @@ void main() {
       //              ^
       painter.getPositionForOffset(const Offset(32.0, 5.0)).toString(),
       const TextPosition(offset: 3).toString(),
-      skip: skipExpectsWithKnownBugs, // this is part of https://github.com/flutter/flutter/issues/11375
+      skip: skipExpectsWithKnownBugs, // this is part of https://github.com/LionelPerrault/flutter/issues/11375
     );
     expect(
       // Vav He Dalet Aaa Bbb Ccc Gimel Bet Alef
       //                        ^
       painter.getPositionForOffset(const Offset(58.0, 5.0)).toString(),
       const TextPosition(offset: 6, affinity: TextAffinity.upstream).toString(),
-      skip: skipExpectsWithKnownBugs, // this is part of https://github.com/flutter/flutter/issues/11375
+      skip: skipExpectsWithKnownBugs, // this is part of https://github.com/LionelPerrault/flutter/issues/11375
     );
     expect(
       // Vav He Dalet Aaa Bbb Ccc Gimel Bet Alef
@@ -616,7 +616,7 @@ void main() {
       const TextPosition(offset: 3, affinity: TextAffinity.upstream).toString(),
     );
     painter.dispose();
-  }, skip: skipTestsWithKnownBugs); // https://github.com/flutter/flutter/issues/87536
+  }, skip: skipTestsWithKnownBugs); // https://github.com/LionelPerrault/flutter/issues/87536
 
   test('TextPainter - Spaces', () {
     final TextPainter painter = TextPainter()
@@ -675,10 +675,10 @@ void main() {
         TextBox.fromLTRBD(110.0,   0.0, 310.0, 200.0, TextDirection.ltr),
       ],
       // Horizontal offsets are currently one pixel off in places; vertical offsets are good.
-      skip: skipExpectsWithKnownBugs, // https://github.com/flutter/flutter/issues/87536
+      skip: skipExpectsWithKnownBugs, // https://github.com/LionelPerrault/flutter/issues/87536
     );
     painter.dispose();
-  }, skip: skipTestsWithKnownBugs); // https://github.com/flutter/flutter/issues/87536
+  }, skip: skipTestsWithKnownBugs); // https://github.com/LionelPerrault/flutter/issues/87536
 
   test('TextPainter - empty text baseline', () {
     final TextPainter painter = TextPainter()

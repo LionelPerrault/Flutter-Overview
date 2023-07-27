@@ -31,7 +31,7 @@ dependencies:
 
   gallery:
     git:
-      url: https://github.com/flutter/gallery.git
+      url: https://github.com/LionelPerrault/gallery.git
       ref: d00362e6bdd0f9b30bba337c358b9e4a6e4ca950
 
 dev_dependencies:
@@ -130,7 +130,7 @@ void main() {
       gitDependency.lockLine,
       '''
     git:
-      url: https://github.com/flutter/gallery.git
+      url: https://github.com/LionelPerrault/gallery.git
       ref: d00362e6bdd0f9b30bba337c358b9e4a6e4ca950
 ''',
     );

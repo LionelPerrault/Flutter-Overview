@@ -7,7 +7,7 @@
 // with versions where the contents of the localized strings have been
 // replaced by JSON escapes. This is done because some of those strings
 // contain characters that can crash Emacs on Linux. There is more information
-// here: https://github.com/flutter/flutter/issues/36704 and in the README
+// here: https://github.com/LionelPerrault/flutter/issues/36704 and in the README
 // in flutter_localizations/packages/lib/src/l10n.
 //
 // This utility is run by `gen_localizations.dart` if --overwrite is passed

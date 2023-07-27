@@ -328,7 +328,7 @@ void main() {
       ProcessManager: () => fakeProcessManager,
     });
 
-    // This verifies that bug https://github.com/flutter/flutter/issues/21134
+    // This verifies that bug https://github.com/LionelPerrault/flutter/issues/21134
     // doesn't return.
     testUsingContext('removes version stamp file when switching channels', () async {
       fakeProcessManager.addCommands(const <FakeCommand>[

@@ -187,7 +187,7 @@ Future<void> main() async {
       expect(parts.target.opacity, 1);
     });
 
-    // Regression test for https://github.com/flutter/flutter/issues/111011
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/111011
     testWidgets("FadeInImage's image obeys gapless playback when first image is cached but second isn't",
             (WidgetTester tester) async {
       final TestImageProvider placeholderProvider = TestImageProvider(placeholderImage);

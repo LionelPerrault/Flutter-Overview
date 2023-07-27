@@ -424,7 +424,7 @@ void main() {
   });
 
   testWidgets('Disposing drawer does not crash if drawer is open and framework is locked', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/34978
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/34978
     addTearDown(tester.view.reset);
     tester.view.physicalSize = const Size(1800.0, 2400.0);
 
@@ -465,7 +465,7 @@ void main() {
   });
 
   testWidgets('Disposing endDrawer does not crash if endDrawer is open and framework is locked', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/34978
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/34978
     addTearDown(tester.view.reset);
     tester.view.physicalSize = const Size(1800.0, 2400.0);
 

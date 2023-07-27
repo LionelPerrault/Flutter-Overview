@@ -321,7 +321,7 @@ class _CupertinoTabScaffoldState extends State<CupertinoTabScaffold> with Restor
     // Don't double pad.
     if (!widget.resizeToAvoidBottomInset || widget.tabBar.preferredSize.height > existingMediaQuery.viewInsets.bottom) {
       // TODO(xster): Use real size after partial layout instead of preferred size.
-      // https://github.com/flutter/flutter/issues/12912
+      // https://github.com/LionelPerrault/flutter/issues/12912
       final double bottomPadding =
           widget.tabBar.preferredSize.height + existingMediaQuery.padding.bottom;
 

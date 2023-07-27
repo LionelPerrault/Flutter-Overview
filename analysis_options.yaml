@@ -8,8 +8,8 @@
 # which should be kept in sync with this file:
 #
 #   - analysis_options.yaml (this file)
-#   - https://github.com/flutter/engine/blob/main/analysis_options.yaml
-#   - https://github.com/flutter/packages/blob/main/analysis_options.yaml
+#   - https://github.com/LionelPerrault/engine/blob/main/analysis_options.yaml
+#   - https://github.com/LionelPerrault/packages/blob/main/analysis_options.yaml
 #
 # This file contains the analysis options used for code in the flutter/flutter
 # repository.
@@ -33,7 +33,7 @@ linter:
     # https://github.com/dart-lang/linter/blob/main/example/all.yaml
     - always_declare_return_types
     - always_put_control_body_on_new_line
-    # - always_put_required_named_parameters_first # we prefer having parameters in the same order as fields https://github.com/flutter/flutter/issues/10219
+    # - always_put_required_named_parameters_first # we prefer having parameters in the same order as fields https://github.com/LionelPerrault/flutter/issues/10219
     - always_specify_types
     # - always_use_package_imports # we do this commonly
     - annotate_overrides
@@ -57,7 +57,7 @@ linter:
     - avoid_null_checks_in_equality_operators
     # - avoid_positional_boolean_parameters # would have been nice to enable this but by now there's too many places that break it
     - avoid_print
-    # - avoid_private_typedef_functions # we prefer having typedef (discussion in https://github.com/flutter/flutter/pull/16356)
+    # - avoid_private_typedef_functions # we prefer having typedef (discussion in https://github.com/LionelPerrault/flutter/pull/16356)
     - avoid_redundant_argument_values
     - avoid_relative_lib_imports
     - avoid_renaming_method_parameters
@@ -153,7 +153,7 @@ linter:
     # - prefer_constructors_over_static_methods # far too many false positives
     - prefer_contains
     # - prefer_double_quotes # opposite of prefer_single_quotes
-    # - prefer_expression_function_bodies # conflicts with https://github.com/flutter/flutter/wiki/Style-guide-for-Flutter-repo#consider-using--for-short-functions-and-methods
+    # - prefer_expression_function_bodies # conflicts with https://github.com/LionelPerrault/flutter/wiki/Style-guide-for-Flutter-repo#consider-using--for-short-functions-and-methods
     - prefer_final_fields
     - prefer_final_in_for_each
     - prefer_final_locals
@@ -166,7 +166,7 @@ linter:
     - prefer_if_null_operators
     - prefer_initializing_formals
     - prefer_inlined_adds
-    # - prefer_int_literals # conflicts with https://github.com/flutter/flutter/wiki/Style-guide-for-Flutter-repo#use-double-literals-for-double-constants
+    # - prefer_int_literals # conflicts with https://github.com/LionelPerrault/flutter/wiki/Style-guide-for-Flutter-repo#use-double-literals-for-double-constants
     - prefer_interpolation_to_compose_strings
     - prefer_is_empty
     - prefer_is_not_empty

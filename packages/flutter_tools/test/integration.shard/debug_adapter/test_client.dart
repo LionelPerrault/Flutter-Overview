@@ -363,8 +363,8 @@ extension DapTestClientExtension on DapTestClient {
     // Integration tests may trigger "flutter pub get" at the start based of
     // `pubspec/yaml` and `.dart_tool/package_config.json`.
     // See
-    //  https://github.com/flutter/flutter/pull/91300
-    //  https://github.com/flutter/flutter/issues/120015
+    //  https://github.com/LionelPerrault/flutter/pull/91300
+    //  https://github.com/LionelPerrault/flutter/issues/120015
     return skipInitialPubGetOutput
         ? output
             .skipWhile((OutputEventBody output) =>

@@ -7,8 +7,8 @@ import '../../base/project_migrator.dart';
 import '../../xcode_project.dart';
 
 // Xcode legacy build system no longer supported by Xcode.
-// Set in https://github.com/flutter/flutter/pull/21901/.
-// Removed in https://github.com/flutter/flutter/pull/33684.
+// Set in https://github.com/LionelPerrault/flutter/pull/21901/.
+// Removed in https://github.com/LionelPerrault/flutter/pull/33684.
 class XcodeBuildSystemMigration extends ProjectMigrator {
   XcodeBuildSystemMigration(
     IosProject project,

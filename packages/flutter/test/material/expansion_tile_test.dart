@@ -556,7 +556,7 @@ void main() {
   });
 
   testWidgetsWithLeakTracking('ExpansionTile iconColor, textColor', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/pull/78281
+    // Regression test for https://github.com/LionelPerrault/flutter/pull/78281
 
     const Color iconColor = Color(0xff00ff00);
     const Color collapsedIconColor = Color(0xff0000ff);
@@ -795,7 +795,7 @@ void main() {
   });
 
   testWidgetsWithLeakTracking('Semantics with the onTapHint is an ancestor of ListTile', (WidgetTester tester) async {
-    // This is a regression test for https://github.com/flutter/flutter/pull/121624
+    // This is a regression test for https://github.com/LionelPerrault/flutter/pull/121624
     final SemanticsHandle handle = tester.ensureSemantics();
     const DefaultMaterialLocalizations localizations = DefaultMaterialLocalizations();
 

@@ -102,7 +102,7 @@ void main() {
 
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/69431
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/69431
   test('multi-finger touch test', () {
     final FakeAndroidPlatformViewsController viewsController = FakeAndroidPlatformViewsController();
     viewsController.registerViewType('webview');

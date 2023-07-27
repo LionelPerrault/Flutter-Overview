@@ -26,7 +26,7 @@ void main() {
     testWithoutContext('similar issues URL', () {
       expect(
         GitHubTemplateCreator.toolCrashSimilarIssuesURL('this is a 100% error'),
-        'https://github.com/flutter/flutter/issues?q=is%3Aissue+this+is+a+100%25+error',
+        'https://github.com/LionelPerrault/flutter/issues?q=is%3Aissue+this+is+a+100%25+error',
       );
     });
 
@@ -164,7 +164,7 @@ void main() {
         );
         expect(
             await creator.toolCrashIssueTemplateGitHubURL(command, error, stackTrace, doctorText),
-          'https://github.com/flutter/flutter/issues/new?title=%5Btool_crash%5D+ArgumentError%3A+'
+          'https://github.com/LionelPerrault/flutter/issues/new?title=%5Btool_crash%5D+ArgumentError%3A+'
             'Invalid+argument%28s%29%3A+argument+error+message&body=%23%23+Command%0A%60%60%60%0A'
             'flutter+test%0A%60%60%60%0A%0A%23%23+Steps+to+Reproduce%0A1.+...%0A2.+...%0A3.+...%0'
             'A%0A%23%23+Logs%0AArgumentError%3A+Invalid+argument%28s%29%3A+argument+error+message'

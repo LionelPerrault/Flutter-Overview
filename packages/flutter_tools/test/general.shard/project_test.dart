@@ -201,7 +201,7 @@ void main() {
         // android:name="flutterEmbedding" android:value="2" />.
 
         project.checkForDeprecation(deprecationBehavior: DeprecationBehavior.ignore);
-        expect(testLogger.statusText, contains('https://github.com/flutter/flutter/wiki/Upgrading-pre-1.12-Android-projects'));
+        expect(testLogger.statusText, contains('https://github.com/LionelPerrault/flutter/wiki/Upgrading-pre-1.12-Android-projects'));
       });
       _testInMemory('Android project not on v2 embedding exits', () async {
         final FlutterProject project = await someProject(includePubspec: true);
@@ -213,7 +213,7 @@ void main() {
           Future<dynamic>.sync(() => project.checkForDeprecation(deprecationBehavior: DeprecationBehavior.exit)),
           contains('Build failed due to use of deprecated Android v1 embedding.')
         );
-        expect(testLogger.statusText, contains('https://github.com/flutter/flutter/wiki/Upgrading-pre-1.12-Android-projects'));
+        expect(testLogger.statusText, contains('https://github.com/LionelPerrault/flutter/wiki/Upgrading-pre-1.12-Android-projects'));
         expect(testLogger.statusText, contains('No `<meta-data android:name="flutterEmbedding" android:value="2"/>` in '));
       });
       _testInMemory('Project not on v2 embedding does not warn if deprecation status is irrelevant', () async {
@@ -233,7 +233,7 @@ void main() {
         // android:name="flutterEmbedding" android:value="2" />.
 
         project.checkForDeprecation(deprecationBehavior: DeprecationBehavior.ignore);
-        expect(testLogger.statusText, contains('https://github.com/flutter/flutter/wiki/Upgrading-pre-1.12-Android-projects'));
+        expect(testLogger.statusText, contains('https://github.com/LionelPerrault/flutter/wiki/Upgrading-pre-1.12-Android-projects'));
       });
       _testInMemory('Android project no pubspec continues', () async {
         final FlutterProject project = await someProject();
@@ -242,13 +242,13 @@ void main() {
         // android:name="flutterEmbedding" android:value="2" />.
 
         project.checkForDeprecation(deprecationBehavior: DeprecationBehavior.ignore);
-        expect(testLogger.statusText, isNot(contains('https://github.com/flutter/flutter/wiki/Upgrading-pre-1.12-Android-projects')));
+        expect(testLogger.statusText, isNot(contains('https://github.com/LionelPerrault/flutter/wiki/Upgrading-pre-1.12-Android-projects')));
       });
       _testInMemory('Android plugin project does not throw v1 embedding deprecation warning', () async {
         final FlutterProject project = await aPluginProject();
 
         project.checkForDeprecation(deprecationBehavior: DeprecationBehavior.exit);
-        expect(testLogger.statusText, isNot(contains('https://github.com/flutter/flutter/wiki/Upgrading-pre-1.12-Android-projects')));
+        expect(testLogger.statusText, isNot(contains('https://github.com/LionelPerrault/flutter/wiki/Upgrading-pre-1.12-Android-projects')));
         expect(testLogger.statusText, isNot(contains('No `<meta-data android:name="flutterEmbedding" android:value="2"/>` in ')));
       });
       _testInMemory('Android plugin without example app does not show a warning', () async {
@@ -256,7 +256,7 @@ void main() {
         project.example.directory.deleteSync();
 
         await project.regeneratePlatformSpecificTooling();
-        expect(testLogger.statusText, isNot(contains('https://github.com/flutter/flutter/wiki/Upgrading-pre-1.12-Android-projects')));
+        expect(testLogger.statusText, isNot(contains('https://github.com/LionelPerrault/flutter/wiki/Upgrading-pre-1.12-Android-projects')));
       });
       _testInMemory('updates local properties for Android', () async {
         final FlutterProject project = await someProject();

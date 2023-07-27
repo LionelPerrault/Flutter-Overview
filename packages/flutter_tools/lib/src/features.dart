@@ -140,7 +140,7 @@ const Feature flutterCustomDevicesFeature = Feature(
   ),
 );
 
-/// The fast hot reload feature for https://github.com/flutter/flutter/issues/61407.
+/// The fast hot reload feature for https://github.com/LionelPerrault/flutter/issues/61407.
 const Feature singleWidgetReload = Feature(
   name: 'Hot reload optimization for changes to class body of a single widget',
   configSetting: 'single-widget-reload-optimization',

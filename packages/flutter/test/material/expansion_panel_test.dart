@@ -877,7 +877,7 @@ void main() {
   );
 
   testWidgets('No duplicate global keys at layout/build time', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/13780
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/13780
     await tester.pumpWidget(
       StatefulBuilder(
         builder: (BuildContext context, StateSetter setState) {
@@ -1401,7 +1401,7 @@ void main() {
     expect(box.size.width, equals(744.0));
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/5848.
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/5848.
   testWidgetsWithLeakTracking('The AnimatedContainer and IconButton have the same height of 48px', (WidgetTester tester) async {
     const Key firstPanelKey = Key('firstPanelKey');
 

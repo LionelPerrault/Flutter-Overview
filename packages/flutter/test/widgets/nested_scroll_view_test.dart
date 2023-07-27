@@ -110,7 +110,7 @@ Widget buildTest({
 
 void main() {
   testWidgets('ScrollDirection test', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/107101
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/107101
     final List<ScrollDirection> receivedResult = <ScrollDirection>[];
     const List<ScrollDirection> expectedReverseResult = <ScrollDirection>[ScrollDirection.reverse, ScrollDirection.idle];
     const List<ScrollDirection> expectedForwardResult = <ScrollDirection>[ScrollDirection.forward, ScrollDirection.idle];
@@ -521,7 +521,7 @@ void main() {
   });
 
   testWidgets('NestedScrollViews respect NeverScrollableScrollPhysics', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/113753
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/113753
     await tester.pumpWidget(Directionality(
       textDirection: TextDirection.ltr,
       child: Localizations(
@@ -1391,7 +1391,7 @@ void main() {
     });
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/39963.
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/39963.
   testWidgets('NestedScrollView with SliverOverlapAbsorber in or out of the first screen', (WidgetTester tester) async {
     await tester.pumpWidget(const _TestLayoutExtentIsNegative(1));
     await tester.pumpWidget(const _TestLayoutExtentIsNegative(10));
@@ -2260,7 +2260,7 @@ void main() {
   });
 
   group('Correctly handles 0 velocity inner ballistic scroll activity:', () {
-    // Regression tests for https://github.com/flutter/flutter/issues/17096
+    // Regression tests for https://github.com/LionelPerrault/flutter/issues/17096
     Widget buildBallisticTest(ScrollController controller) {
       return MaterialApp(
         theme: ThemeData(useMaterial3: false),
@@ -2349,7 +2349,7 @@ void main() {
     }, variant: const TargetPlatformVariant(<TargetPlatform>{ TargetPlatform.iOS }));
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/63978
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/63978
   testWidgets('Inner _NestedScrollPosition.applyClampedDragUpdate correctly calculates range when in overscroll', (WidgetTester tester) async {
     final GlobalKey<NestedScrollViewState> nestedScrollView = GlobalKey();
     await tester.pumpWidget(MaterialApp(
@@ -2437,7 +2437,7 @@ void main() {
       200.0,
     );
 
-    // Regression test for https://github.com/flutter/flutter/issues/55362
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/55362
     final TestPointer testPointer = TestPointer(1, ui.PointerDeviceKind.mouse);
     // The offset is the responsibility of innerPosition.
     testPointer.hover(const Offset(0, 201));
@@ -2465,7 +2465,7 @@ void main() {
     );
   });
 
-  // Related to https://github.com/flutter/flutter/issues/64266
+  // Related to https://github.com/LionelPerrault/flutter/issues/64266
   testWidgets(
     'Holding scroll and Scroll pointer signal will update ScrollDirection.forward / ScrollDirection.reverse',
     (WidgetTester tester) async {
@@ -2502,7 +2502,7 @@ void main() {
     },
   );
 
-  // Regression test for https://github.com/flutter/flutter/issues/72257
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/72257
   testWidgets('NestedScrollView works well when rebuilding during scheduleWarmUpFrame', (WidgetTester tester) async {
     bool? isScrolled;
     final Widget myApp = MaterialApp(
@@ -2545,7 +2545,7 @@ void main() {
     expect(tester.takeException(), isNull);
   });
 
-  // Regression test of https://github.com/flutter/flutter/issues/74372
+  // Regression test of https://github.com/LionelPerrault/flutter/issues/74372
   testWidgets('ScrollPosition can be accessed during `_updatePosition()`', (WidgetTester tester) async {
     final ScrollController controller = ScrollController();
     late ScrollPosition position;
@@ -2593,7 +2593,7 @@ void main() {
   });
 
   testWidgets("NestedScrollView doesn't crash due to precision error", (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/63825
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/63825
 
     await tester.pumpWidget(MaterialApp(
       home: Scaffold(
@@ -2867,7 +2867,7 @@ void main() {
   });
 
   testWidgets('NestedScrollView does not crash when inner scrollable changes while scrolling', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/126454.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/126454.
     Widget buildApp({required bool nested}) {
       final Widget innerScrollable = ListView(
         children: const <Widget>[SizedBox(height: 1000)],
@@ -2998,8 +2998,8 @@ void main() {
       );
     }
     testWidgets('when headerSliverBuilder is empty', (WidgetTester tester) async {
-      // Regression test for https://github.com/flutter/flutter/issues/117316
-      // Regression test for https://github.com/flutter/flutter/issues/46089
+      // Regression test for https://github.com/LionelPerrault/flutter/issues/117316
+      // Regression test for https://github.com/LionelPerrault/flutter/issues/46089
       // Short body / long body
       for (final _BodyLength bodyLength in _BodyLength.values) {
         await tester.pumpWidget(
@@ -3016,7 +3016,7 @@ void main() {
     }, variant: TargetPlatformVariant.all());
 
     testWidgets('when headerSliverBuilder extent is 0', (WidgetTester tester) async {
-      // Regression test for https://github.com/flutter/flutter/issues/79077
+      // Regression test for https://github.com/LionelPerrault/flutter/issues/79077
       // Short body / long body
       for (final _BodyLength bodyLength in _BodyLength.values) {
         // SliverPersistentHeader
@@ -3170,10 +3170,10 @@ void main() {
     }, variant: TargetPlatformVariant.all());
 
     testWidgets('With a pinned SliverAppBar', (WidgetTester tester) async {
-      // Regression test for https://github.com/flutter/flutter/issues/110956
-      // Regression test for https://github.com/flutter/flutter/issues/127282
-      // Regression test for https://github.com/flutter/flutter/issues/32563
-      // Regression test for https://github.com/flutter/flutter/issues/79077
+      // Regression test for https://github.com/LionelPerrault/flutter/issues/110956
+      // Regression test for https://github.com/LionelPerrault/flutter/issues/127282
+      // Regression test for https://github.com/LionelPerrault/flutter/issues/32563
+      // Regression test for https://github.com/LionelPerrault/flutter/issues/79077
       // Short / long body
       for (final _BodyLength bodyLength in _BodyLength.values) {
         await tester.pumpWidget(

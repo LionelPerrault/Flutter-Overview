@@ -1667,7 +1667,7 @@ void main() {
     );
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/78229.
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/78229.
   testWidgetsWithLeakTracking('AlertDialog has correct semantics for content in iOS', (WidgetTester tester) async {
     final SemanticsTester semantics = SemanticsTester(tester);
 
@@ -1831,7 +1831,7 @@ void main() {
     semantics.dispose();
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/78229.
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/78229.
   testWidgetsWithLeakTracking('SimpleDialog has correct semantics for title in iOS', (WidgetTester tester) async {
     final SemanticsTester semantics = SemanticsTester(tester);
 
@@ -2035,7 +2035,7 @@ void main() {
     expect(find.text('1'), findsNothing);
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/28505.
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/28505.
   testWidgets('showDialog only gets Theme from context on the first call', (WidgetTester tester) async {
     Widget buildFrame(Key builderKey) {
       return MaterialApp(
@@ -2186,7 +2186,7 @@ void main() {
   });
 
   testWidgetsWithLeakTracking('showDialog throws a friendly user message when context is not active', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/12467
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/12467
     await tester.pumpWidget(
       const MaterialApp(
         home: Center(child: Text('Test')),
@@ -2539,7 +2539,7 @@ void main() {
 
     await tester.restoreFrom(restorationData);
     expect(find.byType(AlertDialog), findsOneWidget);
-  }, skip: isBrowser); // https://github.com/flutter/flutter/issues/33615
+  }, skip: isBrowser); // https://github.com/LionelPerrault/flutter/issues/33615
 
   testWidgetsWithLeakTracking('AlertDialog.actionsAlignment', (WidgetTester tester) async {
     final Key actionKey = UniqueKey();

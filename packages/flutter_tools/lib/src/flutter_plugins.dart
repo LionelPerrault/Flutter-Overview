@@ -205,7 +205,7 @@ bool _writeFlutterPluginsList(FlutterProject project, List<Plugin> plugins) {
   result[_kFlutterPluginsPluginListKey] = pluginsMap;
   /// The dependencyGraph object is kept for backwards compatibility, but
   /// should be removed once migration is complete.
-  /// https://github.com/flutter/flutter/issues/48918
+  /// https://github.com/LionelPerrault/flutter/issues/48918
   result['dependencyGraph'] = _createPluginLegacyDependencyGraph(plugins);
   result['date_created'] = globals.systemClock.now().toString();
   result['version'] = globals.flutterVersion.frameworkVersion;
@@ -239,7 +239,7 @@ List<Object?> _createPluginLegacyDependencyGraph(List<Plugin> plugins) {
 
 // The .flutter-plugins file will be DEPRECATED in favor of .flutter-plugins-dependencies.
 // TODO(franciscojma): Remove this method once deprecated.
-// https://github.com/flutter/flutter/issues/48918
+// https://github.com/LionelPerrault/flutter/issues/48918
 //
 /// Writes the .flutter-plugins files based on the list of plugins.
 /// If there aren't any plugins, then the files aren't written to disk.
@@ -429,7 +429,7 @@ Future<void> _writeAndroidPluginRegistrant(FlutterProject project, List<Plugin> 
         'This app is using a deprecated version of the Android embedding.\n'
         'To avoid unexpected runtime failures, or future build failures, try to migrate this '
         'app to the V2 embedding.\n'
-        'Take a look at the docs for migrating an app: https://github.com/flutter/flutter/wiki/Upgrading-pre-1.12-Android-projects'
+        'Take a look at the docs for migrating an app: https://github.com/LionelPerrault/flutter/wiki/Upgrading-pre-1.12-Android-projects'
       );
       for (final Map<String, Object?> plugin in androidPlugins) {
         final bool supportsEmbeddingV1 = (plugin['supportsEmbeddingV1'] as bool?) ?? false;
@@ -707,7 +707,7 @@ const String _dartPluginRegisterWith = r'''
 ''';
 
 // TODO(egarciad): Evaluate merging the web and non-web plugin registry templates.
-// https://github.com/flutter/flutter/issues/80406
+// https://github.com/LionelPerrault/flutter/issues/80406
 const String _dartPluginRegistryForNonWebTemplate = '''
 //
 // Generated file. Do not edit.
@@ -1274,7 +1274,7 @@ List<PluginInterfaceResolution> resolvePlatformImplementation(
           // - the platform is not desktop, or
           // - the plugin requires at least Flutter 2.11 (when this opt-in logic
           //   was added), so that existing plugins continue to work.
-          // See https://github.com/flutter/flutter/issues/87862 for details.
+          // See https://github.com/LionelPerrault/flutter/issues/87862 for details.
           final bool isDesktop = platform == 'linux' || platform == 'macos' || platform == 'windows';
           final semver.VersionConstraint? flutterConstraint = plugin.flutterConstraint;
           final semver.Version? minFlutterVersion = flutterConstraint != null &&

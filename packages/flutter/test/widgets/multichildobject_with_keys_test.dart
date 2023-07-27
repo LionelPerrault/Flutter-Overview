@@ -8,7 +8,7 @@ import 'package:flutter_test/flutter_test.dart';
 
 void main() {
   testWidgets('Render and element tree stay in sync when keyed children move around', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/48855.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/48855.
 
     await tester.pumpWidget(
       const Directionality(
@@ -80,7 +80,7 @@ void main() {
   });
 
   testWidgets('Updating a MultiChildRenderObjectElement to have children with duplicated keys throws', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/81541
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/81541
 
     const ValueKey<int> key1 = ValueKey<int>(1);
     const ValueKey<int> key2 = ValueKey<int>(2);

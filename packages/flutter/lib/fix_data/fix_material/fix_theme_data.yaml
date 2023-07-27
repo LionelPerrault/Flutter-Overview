@@ -25,7 +25,7 @@
 #     * TextTheme: fix_text_theme.yaml
 version: 1
 transforms:
-  # Changes made in https://github.com/flutter/flutter/pull/87281
+  # Changes made in https://github.com/LionelPerrault/flutter/pull/87281
   - title: "Remove 'fixTextFieldOutlineLabel'"
     date: 2021-04-30
     element:
@@ -36,7 +36,7 @@ transforms:
       - kind: 'removeParameter'
         name: 'fixTextFieldOutlineLabel'
 
-  # Changes made in https://github.com/flutter/flutter/pull/87281
+  # Changes made in https://github.com/LionelPerrault/flutter/pull/87281
   - title: "Remove 'fixTextFieldOutlineLabel'"
     date: 2021-04-30
     element:
@@ -47,7 +47,7 @@ transforms:
       - kind: 'removeParameter'
         name: 'fixTextFieldOutlineLabel'
 
-  # Changes made in https://github.com/flutter/flutter/pull/87281
+  # Changes made in https://github.com/LionelPerrault/flutter/pull/87281
   - title: "Remove 'fixTextFieldOutlineLabel'"
     date: 2021-04-30
     element:
@@ -58,7 +58,7 @@ transforms:
       - kind: 'removeParameter'
         name: 'fixTextFieldOutlineLabel'
 
-  # Changes made in https://github.com/flutter/flutter/pull/81336
+  # Changes made in https://github.com/LionelPerrault/flutter/pull/81336
   - title: "Remove 'buttonColor'"
     date: 2021-04-30
     element:
@@ -69,7 +69,7 @@ transforms:
       - kind: 'removeParameter'
         name: 'buttonColor'
 
-  # Changes made in https://github.com/flutter/flutter/pull/81336
+  # Changes made in https://github.com/LionelPerrault/flutter/pull/81336
   - title: "Remove 'buttonColor'"
     date: 2021-04-30
     element:
@@ -80,7 +80,7 @@ transforms:
       - kind: 'removeParameter'
         name: 'buttonColor'
 
-  # Changes made in https://github.com/flutter/flutter/pull/81336
+  # Changes made in https://github.com/LionelPerrault/flutter/pull/81336
   - title: "Remove 'buttonColor'"
     date: 2021-04-30
     element:
@@ -91,7 +91,7 @@ transforms:
       - kind: 'removeParameter'
         name: 'buttonColor'
 
-  # Changes made in https://github.com/flutter/flutter/pull/81336
+  # Changes made in https://github.com/LionelPerrault/flutter/pull/81336
   - title: "Remove 'accentIconTheme'"
     date: 2021-04-30
     element:
@@ -102,7 +102,7 @@ transforms:
       - kind: 'removeParameter'
         name: 'accentIconTheme'
 
-  # Changes made in https://github.com/flutter/flutter/pull/81336
+  # Changes made in https://github.com/LionelPerrault/flutter/pull/81336
   - title: "Remove 'accentIconTheme'"
     date: 2021-04-30
     element:
@@ -113,7 +113,7 @@ transforms:
       - kind: 'removeParameter'
         name: 'accentIconTheme'
 
-  # Changes made in https://github.com/flutter/flutter/pull/81336
+  # Changes made in https://github.com/LionelPerrault/flutter/pull/81336
   - title: "Remove 'accentIconTheme'"
     date: 2021-04-30
     element:
@@ -124,7 +124,7 @@ transforms:
       - kind: 'removeParameter'
         name: 'accentIconTheme'
 
-  # Changes made in https://github.com/flutter/flutter/pull/81336
+  # Changes made in https://github.com/LionelPerrault/flutter/pull/81336
   - title: "Remove 'accentTextTheme'"
     date: 2021-04-30
     element:
@@ -135,7 +135,7 @@ transforms:
       - kind: 'removeParameter'
         name: 'accentTextTheme'
 
-  # Changes made in https://github.com/flutter/flutter/pull/81336
+  # Changes made in https://github.com/LionelPerrault/flutter/pull/81336
   - title: "Remove 'accentTextTheme'"
     date: 2021-04-30
     element:
@@ -146,7 +146,7 @@ transforms:
       - kind: 'removeParameter'
         name: 'accentTextTheme'
 
-  # Changes made in https://github.com/flutter/flutter/pull/81336
+  # Changes made in https://github.com/LionelPerrault/flutter/pull/81336
   - title: "Remove 'accentTextTheme'"
     date: 2021-04-30
     element:
@@ -157,7 +157,7 @@ transforms:
       - kind: 'removeParameter'
         name: 'accentTextTheme'
 
-  # Changes made in https://github.com/flutter/flutter/pull/81336
+  # Changes made in https://github.com/LionelPerrault/flutter/pull/81336
   - title: "Remove 'accentColorBrightness'"
     date: 2021-04-30
     element:
@@ -168,7 +168,7 @@ transforms:
       - kind: 'removeParameter'
         name: 'accentColorBrightness'
 
-  # Changes made in https://github.com/flutter/flutter/pull/81336
+  # Changes made in https://github.com/LionelPerrault/flutter/pull/81336
   - title: "Remove 'accentColorBrightness'"
     date: 2021-04-30
     element:
@@ -179,7 +179,7 @@ transforms:
       - kind: 'removeParameter'
         name: 'accentColorBrightness'
 
-  # Changes made in https://github.com/flutter/flutter/pull/81336
+  # Changes made in https://github.com/LionelPerrault/flutter/pull/81336
   - title: "Remove 'accentColorBrightness'"
     date: 2021-04-30
     element:
@@ -190,7 +190,7 @@ transforms:
       - kind: 'removeParameter'
         name: 'accentColorBrightness'
 
-  # Changes made in https://github.com/flutter/flutter/pull/81336
+  # Changes made in https://github.com/LionelPerrault/flutter/pull/81336
   - title: "Migrate to 'ColorScheme.secondary'"
     date: 2021-04-30
     element:
@@ -201,7 +201,7 @@ transforms:
       - kind: 'rename'
         newName: 'colorScheme.secondary'
 
-  # Changes made in https://github.com/flutter/flutter/pull/81336
+  # Changes made in https://github.com/LionelPerrault/flutter/pull/81336
   - title: "Migrate to 'ColorScheme.secondary'"
     date: 2021-04-30
     element:
@@ -272,7 +272,7 @@ transforms:
         kind: 'fragment'
         value: 'arguments[colorScheme]'
 
-  # Changes made in https://github.com/flutter/flutter/pull/81336
+  # Changes made in https://github.com/LionelPerrault/flutter/pull/81336
   - title: "Migrate to 'ColorScheme.secondary'"
     date: 2021-04-30
     element:
@@ -343,7 +343,7 @@ transforms:
         kind: 'fragment'
         value: 'arguments[colorScheme]'
 
-  # Changes made in https://github.com/flutter/flutter/pull/81336
+  # Changes made in https://github.com/LionelPerrault/flutter/pull/81336
   - title: "Migrate to 'ColorScheme.secondary'"
     date: 2021-04-30
     element:
@@ -414,7 +414,7 @@ transforms:
         kind: 'fragment'
         value: 'arguments[colorScheme]'
 
-  # Changes made in https://github.com/flutter/flutter/pull/93396
+  # Changes made in https://github.com/LionelPerrault/flutter/pull/93396
   - title: "Remove 'primaryColorBrightness'"
     date: 2021-11-11
     element:
@@ -425,7 +425,7 @@ transforms:
       - kind: 'removeParameter'
         name: 'primaryColorBrightness'
 
-  # Changes made in https://github.com/flutter/flutter/pull/93396
+  # Changes made in https://github.com/LionelPerrault/flutter/pull/93396
   - title: "Remove 'primaryColorBrightness'"
     date: 2021-11-11
     element:
@@ -436,7 +436,7 @@ transforms:
       - kind: 'removeParameter'
         name: 'primaryColorBrightness'
 
-  # Changes made in https://github.com/flutter/flutter/pull/93396
+  # Changes made in https://github.com/LionelPerrault/flutter/pull/93396
   - title: "Remove 'primaryColorBrightness'"
     date: 2021-11-11
     element:
@@ -447,7 +447,7 @@ transforms:
       - kind: 'removeParameter'
         name: 'primaryColorBrightness'
 
-  # Changes made in https://github.com/flutter/flutter/pull/66482
+  # Changes made in https://github.com/LionelPerrault/flutter/pull/66482
   - title: "Migrate to 'TextSelectionThemeData'"
     date: 2020-09-24
     element:
@@ -574,7 +574,7 @@ transforms:
         kind: 'fragment'
         value: 'arguments[useTextSelectionTheme]'
 
-  # Changes made in https://github.com/flutter/flutter/pull/66482
+  # Changes made in https://github.com/LionelPerrault/flutter/pull/66482
   - title: "Migrate to 'TextSelectionThemeData'"
     date: 2020-09-24
     element:
@@ -701,7 +701,7 @@ transforms:
         kind: 'fragment'
         value: 'arguments[useTextSelectionTheme]'
 
-  # Changes made in https://github.com/flutter/flutter/pull/109070
+  # Changes made in https://github.com/LionelPerrault/flutter/pull/109070
   - title: "Remove 'selectedRowColor'"
     date: 2022-08-05
     element:
@@ -712,7 +712,7 @@ transforms:
       - kind: 'removeParameter'
         name: 'selectedRowColor'
 
-  # Changes made in https://github.com/flutter/flutter/pull/109070
+  # Changes made in https://github.com/LionelPerrault/flutter/pull/109070
   - title: "Remove 'selectedRowColor'"
     date: 2022-08-05
     element:
@@ -723,7 +723,7 @@ transforms:
       - kind: 'removeParameter'
         name: 'selectedRowColor'
 
-  # Changes made in https://github.com/flutter/flutter/pull/109070
+  # Changes made in https://github.com/LionelPerrault/flutter/pull/109070
   - title: "Remove 'selectedRowColor'"
     date: 2022-08-05
     element:
@@ -734,7 +734,7 @@ transforms:
       - kind: 'removeParameter'
         name: 'selectedRowColor'
 
- # Changes made in https://github.com/flutter/flutter/pull/97972/
+ # Changes made in https://github.com/LionelPerrault/flutter/pull/97972/
   - title: "Migrate 'ThemeData.toggleableActiveColor' to individual themes"
     date: 2022-05-18
     element:
@@ -878,7 +878,7 @@ transforms:
         kind: 'fragment'
         value: 'arguments[toggleableActiveColor]'
 
-  # Changes made in https://github.com/flutter/flutter/pull/97972/
+  # Changes made in https://github.com/LionelPerrault/flutter/pull/97972/
   - title: "Migrate 'ThemeData.raw.toggleableActiveColor' to individual themes"
     date: 2022-05-18
     element:
@@ -1022,7 +1022,7 @@ transforms:
         kind: 'fragment'
         value: 'arguments[toggleableActiveColor]'
 
-  # Changes made in https://github.com/flutter/flutter/pull/97972/
+  # Changes made in https://github.com/LionelPerrault/flutter/pull/97972/
   - title: "Migrate 'ThemeData.copyWith.toggleableActiveColor' to individual themes"
     date: 2022-05-18
     element:
@@ -1166,7 +1166,7 @@ transforms:
         kind: 'fragment'
         value: 'arguments[toggleableActiveColor]'
 
-  # Changes made in https://github.com/flutter/flutter/pull/111080
+  # Changes made in https://github.com/LionelPerrault/flutter/pull/111080
   - title: "Migrate to 'BottomAppBarTheme.color'"
     date: 2022-09-07
     element:
@@ -1190,7 +1190,7 @@ transforms:
         kind: 'fragment'
         value: 'arguments[bottomAppBarColor]'
 
-  # Changes made in https://github.com/flutter/flutter/pull/111080
+  # Changes made in https://github.com/LionelPerrault/flutter/pull/111080
   - title: "Migrate to 'BottomAppBarTheme.color'"
     date: 2022-09-07
     element:
@@ -1214,7 +1214,7 @@ transforms:
         kind: 'fragment'
         value: 'arguments[bottomAppBarColor]'
 
-  # Changes made in https://github.com/flutter/flutter/pull/111080
+  # Changes made in https://github.com/LionelPerrault/flutter/pull/111080
   - title: "Migrate to 'BottomAppBarTheme.color'"
     date: 2022-09-06
     element:
@@ -1238,7 +1238,7 @@ transforms:
         kind: 'fragment'
         value: 'arguments[bottomAppBarColor]'
 
-  # Changes made in https://github.com/flutter/flutter/pull/110162
+  # Changes made in https://github.com/LionelPerrault/flutter/pull/110162
   - title: "Migrate to 'ColorScheme.background'"
     date: 2022-08-24
     element:
@@ -1249,7 +1249,7 @@ transforms:
       - kind: 'rename'
         newName: 'colorScheme.background'
 
-  # Changes made in https://github.com/flutter/flutter/pull/110162
+  # Changes made in https://github.com/LionelPerrault/flutter/pull/110162
   - title: "Migrate to 'ColorScheme.background'"
     date: 2022-08-24
     element:
@@ -1320,7 +1320,7 @@ transforms:
         kind: 'fragment'
         value: 'arguments[colorScheme]'
 
-  # Changes made in https://github.com/flutter/flutter/pull/110162
+  # Changes made in https://github.com/LionelPerrault/flutter/pull/110162
   - title: "Migrate to 'ColorScheme.background'"
     date: 2022-08-24
     element:
@@ -1391,7 +1391,7 @@ transforms:
         kind: 'fragment'
         value: 'arguments[colorScheme]'
 
-  # Changes made in https://github.com/flutter/flutter/pull/110162
+  # Changes made in https://github.com/LionelPerrault/flutter/pull/110162
   - title: "Migrate to 'ColorScheme.background'"
     date: 2022-08-24
     element:
@@ -1462,7 +1462,7 @@ transforms:
         kind: 'fragment'
         value: 'arguments[colorScheme]'
 
-  # Changes made in https://github.com/flutter/flutter/pull/110162
+  # Changes made in https://github.com/LionelPerrault/flutter/pull/110162
   - title: "Migrate to 'ColorScheme.error'"
     date: 2022-08-24
     element:
@@ -1473,7 +1473,7 @@ transforms:
       - kind: 'rename'
         newName: 'colorScheme.error'
 
-  # Changes made in https://github.com/flutter/flutter/pull/110162
+  # Changes made in https://github.com/LionelPerrault/flutter/pull/110162
   - title: "Migrate to 'ColorScheme.error'"
     date: 2022-08-24
     element:
@@ -1544,7 +1544,7 @@ transforms:
         kind: 'fragment'
         value: 'arguments[colorScheme]'
 
-  # Changes made in https://github.com/flutter/flutter/pull/110162
+  # Changes made in https://github.com/LionelPerrault/flutter/pull/110162
   - title: "Migrate to 'ColorScheme.error'"
     date: 2022-08-24
     element:
@@ -1615,7 +1615,7 @@ transforms:
         kind: 'fragment'
         value: 'arguments[colorScheme]'
 
-  # Changes made in https://github.com/flutter/flutter/pull/110162
+  # Changes made in https://github.com/LionelPerrault/flutter/pull/110162
   - title: "Migrate to 'ColorScheme.error'"
     date: 2022-08-24
     element:

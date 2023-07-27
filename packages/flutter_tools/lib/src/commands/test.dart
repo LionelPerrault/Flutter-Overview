@@ -452,7 +452,7 @@ class TestCommand extends FlutterCommand with DeviceBasedDevelopmentArtifacts {
         );
       }
       if (integrationTestDevice.platformType == PlatformType.web) {
-        // TODO(jiahaog): Support web. https://github.com/flutter/flutter/issues/66264
+        // TODO(jiahaog): Support web. https://github.com/LionelPerrault/flutter/issues/66264
         throwToolExit('Web devices are not supported for integration tests yet.');
       }
 
@@ -580,7 +580,7 @@ class TestCommand extends FlutterCommand with DeviceBasedDevelopmentArtifacts {
     // TODO(andrewkolos): This logic might fail in the future if we change the
     // schema of the contents of the asset manifest file and the user does not
     // perform a `flutter clean` after upgrading.
-    // See https://github.com/flutter/flutter/issues/128563.
+    // See https://github.com/LionelPerrault/flutter/issues/128563.
     final File manifest = globals.fs.file(globals.fs.path.join('build', 'unit_test_assets', 'AssetManifest.bin'));
     if (!manifest.existsSync()) {
       return true;

@@ -44,7 +44,7 @@ class SemanticsController {
     SemanticsAction.scrollLeft.index |
     SemanticsAction.scrollRight.index;
 
-  /// Based on Android's FOCUSABLE_FLAGS. See [flutter/engine/AccessibilityBridge.java](https://github.com/flutter/engine/blob/main/shell/platform/android/io/flutter/view/AccessibilityBridge.java).
+  /// Based on Android's FOCUSABLE_FLAGS. See [flutter/engine/AccessibilityBridge.java](https://github.com/LionelPerrault/engine/blob/main/shell/platform/android/io/flutter/view/AccessibilityBridge.java).
   static final int _importantFlagsForAccessibility =
     SemanticsFlag.hasCheckedState.index |
     SemanticsFlag.hasToggledState.index |
@@ -236,8 +236,8 @@ class SemanticsController {
   ///
   /// Based on:
   ///
-  /// * [flutter/engine/AccessibilityBridge.java#SemanticsNode.isFocusable()](https://github.com/flutter/engine/blob/main/shell/platform/android/io/flutter/view/AccessibilityBridge.java#L2641)
-  /// * [flutter/engine/SemanticsObject.mm#SemanticsObject.isAccessibilityElement](https://github.com/flutter/engine/blob/main/shell/platform/darwin/ios/framework/Source/SemanticsObject.mm#L449)
+  /// * [flutter/engine/AccessibilityBridge.java#SemanticsNode.isFocusable()](https://github.com/LionelPerrault/engine/blob/main/shell/platform/android/io/flutter/view/AccessibilityBridge.java#L2641)
+  /// * [flutter/engine/SemanticsObject.mm#SemanticsObject.isAccessibilityElement](https://github.com/LionelPerrault/engine/blob/main/shell/platform/darwin/ios/framework/Source/SemanticsObject.mm#L449)
   bool _isImportantForAccessibility(SemanticsNode node) {
     // If the node scopes a route, it doesn't matter what other flags/actions it
     // has, it is _not_ important for accessibility, so we short circuit.
@@ -1592,7 +1592,7 @@ abstract class WidgetController {
   ///
   /// Will throw a [StateError] if the finder returns more than one element or
   /// if no semantics are found or are not enabled.
-  // TODO(pdblasi-google): Deprecate this and point references to semantics.find. See https://github.com/flutter/flutter/issues/112670.
+  // TODO(pdblasi-google): Deprecate this and point references to semantics.find. See https://github.com/LionelPerrault/flutter/issues/112670.
   SemanticsNode getSemantics(Finder finder) => semantics.find(finder);
 
   /// Enable semantics in a test by creating a [SemanticsHandle].

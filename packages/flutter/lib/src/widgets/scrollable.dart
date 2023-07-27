@@ -449,7 +449,7 @@ class Scrollable extends StatefulWidget {
     // the `targetRenderObject` as visible as possible to improve the user experience.
     // Otherwise, let the outer renderObject as visible as possible maybe cause
     // the `targetRenderObject` invisible.
-    // Also see https://github.com/flutter/flutter/issues/65100
+    // Also see https://github.com/LionelPerrault/flutter/issues/65100
     RenderObject? targetRenderObject;
     ScrollableState? scrollable = Scrollable.maybeOf(context);
     while (scrollable != null) {
@@ -1632,7 +1632,7 @@ class _RestorableScrollOffset extends RestorableValue<double?> {
 
 /// Specifies how to configure the [DragGestureRecognizer]s of a
 /// [TwoDimensionalScrollable].
-// TODO(Piinks): Add sample code, https://github.com/flutter/flutter/issues/126298
+// TODO(Piinks): Add sample code, https://github.com/LionelPerrault/flutter/issues/126298
 enum DiagonalDragBehavior {
   /// This behavior will not allow for any diagonal scrolling.
   ///
@@ -1965,7 +1965,7 @@ class TwoDimensionalScrollableState extends State<TwoDimensionalScrollable> {
     );
 
     // TODO(Piinks): Build scrollbars for 2 dimensions instead of 1,
-    //  https://github.com/flutter/flutter/issues/122348
+    //  https://github.com/LionelPerrault/flutter/issues/122348
 
     return _TwoDimensionalScrollableScope(
       twoDimensionalScrollable: this,

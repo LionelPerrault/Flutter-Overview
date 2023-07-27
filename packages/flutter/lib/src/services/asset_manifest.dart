@@ -11,7 +11,7 @@ import 'message_codecs.dart';
 // data in some arbitrary binary format. Using a well-known extension here
 // is important for web, because some web servers will not serve files with
 // unrecognized file extensions by default.
-// See https://github.com/flutter/flutter/issues/128456.
+// See https://github.com/LionelPerrault/flutter/issues/128456.
 const String _kAssetManifestFilename = 'AssetManifest.bin';
 
 /// Contains details about available assets and their variants.

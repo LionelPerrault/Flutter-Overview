@@ -198,7 +198,7 @@ void main() {
         );
       });
 
-      // see https://github.com/flutter/flutter/issues/54095.
+      // see https://github.com/LionelPerrault/flutter/issues/54095.
       test('ignore multiple "end" events', () {
         expect(
           summarize(<Map<String, dynamic>>[

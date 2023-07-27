@@ -452,7 +452,7 @@ class ManifestAssetBundle implements AssetBundle {
     if (wildcardDirectories.isNotEmpty) {
       // Force the depfile to contain missing files so that Gradle does not skip
       // the task. Wildcard directories are not compatible with full incremental
-      // builds. For more context see https://github.com/flutter/flutter/issues/56466 .
+      // builds. For more context see https://github.com/LionelPerrault/flutter/issues/56466 .
       _logger.printTrace(
         'Manifest contained wildcard assets. Inserting missing file into '
         'build graph to force rerun. for more information see #56466.'

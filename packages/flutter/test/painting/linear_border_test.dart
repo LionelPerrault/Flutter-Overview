@@ -105,7 +105,7 @@ void main() {
         'bottom: LinearBorderEdge(size: 0.75, alignment: 0.75))',
     );
   },
-    skip: isBrowser, // [intended] see https://github.com/flutter/flutter/issues/118207
+    skip: isBrowser, // [intended] see https://github.com/LionelPerrault/flutter/issues/118207
   );
 
   test('LinearBorder.start()', () {

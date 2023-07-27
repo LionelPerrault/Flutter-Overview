@@ -149,7 +149,7 @@ void verifyPaintedShadow(Finder customPaint, int elevation) {
 }
 
 void main() {
-  // Regression test for https://github.com/flutter/flutter/issues/87102
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/87102
   testWidgets('label position test - show hint', (WidgetTester tester) async {
     int? value;
 
@@ -391,7 +391,7 @@ void main() {
     expect(hintEmptyLabel, const Offset(0.0, 12.0));
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/82910
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/82910
   testWidgetsWithLeakTracking('null value test', (WidgetTester tester) async {
     int? value = 1;
 
@@ -608,7 +608,7 @@ void main() {
   });
 
   testWidgetsWithLeakTracking('DropdownButtonFormField.isDense is true by default', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/46844
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/46844
     final Key buttonKey = UniqueKey();
     const String value = 'two';
 

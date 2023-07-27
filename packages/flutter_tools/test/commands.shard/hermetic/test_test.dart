@@ -798,7 +798,7 @@ dev_dependencies:
     DeviceManager: () => _FakeDeviceManager(<Device>[]),
   });
 
-  // TODO(jiahaog): Remove this when web is supported. https://github.com/flutter/flutter/issues/66264
+  // TODO(jiahaog): Remove this when web is supported. https://github.com/LionelPerrault/flutter/issues/66264
   testUsingContext('Integration tests when only web devices are connected', () async {
     final FakeFlutterTestRunner testRunner = FakeFlutterTestRunner(0);
 

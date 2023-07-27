@@ -797,7 +797,7 @@ dependencies:
         XcodeProjectInterpreter: () => xcodeProjectInterpreter,
       });
 
-      // Issue: https://github.com/flutter/flutter/issues/47803
+      // Issue: https://github.com/LionelPerrault/flutter/issues/47803
       testUsingContext('exits the tool if a plugin sets an invalid android package in pubspec.yaml', () async {
         androidProject.embeddingVersion = AndroidEmbeddingVersion.v1;
 
@@ -981,7 +981,7 @@ dependencies:
         expect(testLogger.warningText, equals(
           'This app is using a deprecated version of the Android embedding.\n'
           'To avoid unexpected runtime failures, or future build failures, try to migrate this app to the V2 embedding.\n'
-          'Take a look at the docs for migrating an app: https://github.com/flutter/flutter/wiki/Upgrading-pre-1.12-Android-projects\n'
+          'Take a look at the docs for migrating an app: https://github.com/LionelPerrault/flutter/wiki/Upgrading-pre-1.12-Android-projects\n'
         ));
       }, overrides: <Type, Generator>{
         FileSystem: () => fs,

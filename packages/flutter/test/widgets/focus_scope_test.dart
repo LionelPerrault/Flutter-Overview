@@ -1969,7 +1969,7 @@ void main() {
       expect(unfocusableNode.hasFocus, isFalse);
     });
 
-    // Regression test for https://github.com/flutter/flutter/issues/61700
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/61700
     testWidgets("ExcludeFocus doesn't transfer focus to another descendant.", (WidgetTester tester) async {
       final FocusNode parentFocusNode = FocusNode(debugLabel: 'group');
       final FocusNode focusNode1 = FocusNode(debugLabel: 'node 1');
@@ -2047,7 +2047,7 @@ void main() {
       semantics.dispose();
     });
 
-    // Regression test for https://github.com/flutter/flutter/issues/92693
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/92693
     testWidgets('Setting parent FocusScope.canRequestFocus to false, does not set descendant Focus._internalNode._canRequestFocus to false', (WidgetTester tester) async {
       final FocusNode childFocusNode = FocusNode(debugLabel: 'node 1');
 

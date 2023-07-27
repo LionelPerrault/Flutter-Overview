@@ -626,7 +626,7 @@ void main() {
 
 
   test('FilteringTextInputFormatter should filter independent of selection', () {
-    // Regression test for https://github.com/flutter/flutter/issues/80842.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/80842.
 
     final TextInputFormatter formatter = FilteringTextInputFormatter.deny('abc', replacementString: '*');
 

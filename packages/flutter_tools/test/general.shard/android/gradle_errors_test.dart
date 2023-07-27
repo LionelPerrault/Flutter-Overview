@@ -897,7 +897,7 @@ assembleProfile
         contains(
           '\n'
           '┌─ Flutter Fix ─────────────────────────────────────────────────────────────────┐\n'
-          '│ This issue appears to be https://github.com/flutter/flutter/issues/58247.     │\n'
+          '│ This issue appears to be https://github.com/LionelPerrault/flutter/issues/58247.     │\n'
           '│ Fix this issue by adding the following to the file /android/app/build.gradle: │\n'
           '│ android {                                                                     │\n'
           '│   lintOptions {                                                               │\n'

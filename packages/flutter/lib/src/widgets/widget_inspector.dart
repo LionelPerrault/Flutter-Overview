@@ -721,7 +721,7 @@ class _WidgetInspectorService = Object with WidgetInspectorService;
 /// Service used by GUI tools to interact with the [WidgetInspector].
 ///
 /// Calls to this object are typically made from GUI tools such as the [Flutter
-/// IntelliJ Plugin](https://github.com/flutter/flutter-intellij/blob/master/README.md)
+/// IntelliJ Plugin](https://github.com/LionelPerrault/flutter-intellij/blob/master/README.md)
 /// using the [Dart VM Service](https://github.com/dart-lang/sdk/blob/main/runtime/vm/service/service.md).
 /// This class uses its own object id and manages object lifecycles itself
 /// instead of depending on the [object ids](https://github.com/dart-lang/sdk/blob/main/runtime/vm/service/service.md#getobject)
@@ -734,7 +734,7 @@ class _WidgetInspectorService = Object with WidgetInspectorService;
 /// using the VM service protocol to evaluate Dart expressions of the
 /// form `WidgetInspectorService.instance.methodName(arg1, arg2, ...)`. If you
 /// make changes to any instance method of this class you need to verify that
-/// the [Flutter IntelliJ Plugin](https://github.com/flutter/flutter-intellij/blob/master/README.md)
+/// the [Flutter IntelliJ Plugin](https://github.com/LionelPerrault/flutter-intellij/blob/master/README.md)
 /// widget inspector support still works with the changes.
 ///
 /// All methods returning String values return JSON.
@@ -1368,7 +1368,7 @@ mixin WidgetInspectorService {
     InspectorReferenceData referenceData;
     if (id == null) {
       // TODO(polina-c): comment here why we increase memory footprint by the prefix 'inspector-'.
-      // https://github.com/flutter/devtools/issues/5995
+      // https://github.com/LionelPerrault/devtools/issues/5995
       id = 'inspector-$_nextId';
       _nextId += 1;
       _objectToId[object] = id;
@@ -1627,7 +1627,7 @@ mixin WidgetInspectorService {
     // [Uri.replace(path: '/#/inspector')] because the '#' character will be
     // encoded when we try to print the url as a string. DevTools will not
     // load properly if this character is encoded in the url.
-    // Related: https://github.com/flutter/devtools/issues/2475.
+    // Related: https://github.com/LionelPerrault/devtools/issues/2475.
     final String devToolsInspectorUri = uri.toString();
     final int startQueryParamIndex = devToolsInspectorUri.indexOf('?');
     // The query parameter character '?' should be present because we manually
@@ -1728,7 +1728,7 @@ mixin WidgetInspectorService {
     // By default check whether the creation location was within package:flutter.
     if (_pubRootDirectories == null) {
       // TODO(chunhtai): Make it more robust once
-      // https://github.com/flutter/flutter/issues/32660 is fixed.
+      // https://github.com/LionelPerrault/flutter/issues/32660 is fixed.
       return !file.contains('packages/flutter/');
     }
     for (final String directory in _pubRootDirectories!) {
@@ -3486,7 +3486,7 @@ Iterable<DiagnosticsNode> _describeRelevantUserCode(
 
       // TODO(kenz): once the inspector is better at dealing with broken trees,
       // we can enable deep links for more errors than just RenderFlex overflow
-      // errors. See https://github.com/flutter/flutter/issues/74918.
+      // errors. See https://github.com/LionelPerrault/flutter/issues/74918.
       if (isOverflowError()) {
         final String? devToolsInspectorUri =
           WidgetInspectorService.instance._devToolsInspectorUriForElement(target);
@@ -3655,7 +3655,7 @@ class InspectorSerializationDelegate implements DiagnosticsSerializationDelegate
   ///
   /// This callback can be used to customize the serialization of DiagnosticsNode
   /// objects for experimental features in widget inspector clients such as
-  /// [Dart DevTools](https://github.com/flutter/devtools).
+  /// [Dart DevTools](https://github.com/LionelPerrault/devtools).
   final Map<String, Object>? Function(DiagnosticsNode, InspectorSerializationDelegate)? addAdditionalPropertiesCallback;
 
   final List<DiagnosticsNode> _nodesCreatedByLocalProject = <DiagnosticsNode>[];

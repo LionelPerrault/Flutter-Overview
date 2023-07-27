@@ -413,7 +413,7 @@ void main() {
   });
 
   testWidgets('AppBar iconTheme with color=null defers to outer IconTheme', (WidgetTester tester) async {
-    // Verify claim made in https://github.com/flutter/flutter/pull/71184#issuecomment-737419215
+    // Verify claim made in https://github.com/LionelPerrault/flutter/pull/71184#issuecomment-737419215
 
     Widget buildFrame({ Color? appIconColor, Color? appBarIconColor }) {
       return MaterialApp(
@@ -1109,9 +1109,9 @@ void main() {
     // to "4", which results in the web evaluating to the value "4" regardless of which
     // one is used. This results in a difference for doubles in debugFillProperties between
     // the web and the rest of Flutter's target platforms.
-  }, skip: kIsWeb); // https://github.com/flutter/flutter/issues/87364
+  }, skip: kIsWeb); // https://github.com/LionelPerrault/flutter/issues/87364
 
-  // This is a regression test for https://github.com/flutter/flutter/issues/130485.
+  // This is a regression test for https://github.com/LionelPerrault/flutter/issues/130485.
   testWidgets('Material3 - AppBarTheme.iconTheme correctly applies custom white color in dark mode', (WidgetTester tester) async {
     final ThemeData themeData = ThemeData(
       useMaterial3: true,

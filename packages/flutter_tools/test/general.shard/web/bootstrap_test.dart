@@ -32,7 +32,7 @@ void main() {
     expect(result, contains('"indeterminate"'));
   });
 
-  // https://github.com/flutter/flutter/issues/107742
+  // https://github.com/LionelPerrault/flutter/issues/107742
   test('generateBootstrapScript loading indicator does not trigger scrollbars', () {
     final String result = generateBootstrapScript(
       requireUrl: 'require.js',
@@ -45,7 +45,7 @@ void main() {
     expect(result, matches(regex), reason: '.flutter-loader must have overflow: hidden');
   });
 
-  // https://github.com/flutter/flutter/issues/82524
+  // https://github.com/LionelPerrault/flutter/issues/82524
   test('generateMainModule removes timeout from requireJS', () {
     final String result = generateMainModule(
       entrypoint: 'foo/bar/main.js',

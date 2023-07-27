@@ -72,7 +72,7 @@ class CupertinoSearchTextField extends StatefulWidget {
   /// [BoxDecoration] to the [decoration] parameter. This defaults to the
   /// default translucent tertiarySystemFill iOS color and 9 px corner radius.
   // TODO(DanielEdrisian): Must make border radius continuous, see
-  // https://github.com/flutter/flutter/issues/13914.
+  // https://github.com/LionelPerrault/flutter/issues/13914.
   ///
   /// The [itemColor] and [itemSize] properties allow changing the icon color
   /// and icon size of the search icon (prefix) and X-Mark (suffix).
@@ -82,7 +82,7 @@ class CupertinoSearchTextField extends StatefulWidget {
   /// insets for text, the search icon (prefix), and the X-Mark icon (suffix).
   /// They default to values that replicate the `UISearchTextField` look. These
   /// default fields were determined using the comparison tool in
-  /// https://github.com/flutter/platform_tests/.
+  /// https://github.com/LionelPerrault/platform_tests/.
   ///
   /// To customize the prefix icon, pass a [Widget] to [prefixIcon]. This
   /// defaults to the search icon.
@@ -187,7 +187,7 @@ class CupertinoSearchTextField extends StatefulWidget {
   /// Can't be set along with the [decoration]. Defaults to 9 px circular
   /// corner radius.
   // TODO(DanielEdrisian): Must make border radius continuous, see
-  // https://github.com/flutter/flutter/issues/13914.
+  // https://github.com/LionelPerrault/flutter/issues/13914.
   final BorderRadius? borderRadius;
 
   /// The keyboard type for this search field.
@@ -199,7 +199,7 @@ class CupertinoSearchTextField extends StatefulWidget {
   ///
   /// Cannot be null. Defaults to padding that replicates the
   /// `UISearchTextField` look. The inset values were determined using the
-  /// comparison tool in https://github.com/flutter/platform_tests/.
+  /// comparison tool in https://github.com/LionelPerrault/platform_tests/.
   final EdgeInsetsGeometry padding;
 
   /// Sets the color for the suffix and prefix icons.
@@ -217,7 +217,7 @@ class CupertinoSearchTextField extends StatefulWidget {
   ///
   /// Cannot be null. Defaults to padding that replicates the
   /// `UISearchTextField` suffix look. The inset values were determined using
-  /// the comparison tool in https://github.com/flutter/platform_tests/.
+  /// the comparison tool in https://github.com/LionelPerrault/platform_tests/.
   final EdgeInsetsGeometry prefixInsets;
 
   /// Sets a prefix widget.
@@ -229,7 +229,7 @@ class CupertinoSearchTextField extends StatefulWidget {
   ///
   /// Cannot be null. Defaults to padding that replicates the
   /// `UISearchTextField` prefix look. The inset values were determined using
-  /// the comparison tool in https://github.com/flutter/platform_tests/.
+  /// the comparison tool in https://github.com/LionelPerrault/platform_tests/.
   final EdgeInsetsGeometry suffixInsets;
 
   /// Sets the suffix widget's icon.
@@ -328,7 +328,7 @@ class CupertinoSearchTextField extends StatefulWidget {
 class _CupertinoSearchTextFieldState extends State<CupertinoSearchTextField>
     with RestorationMixin {
   /// Default value for the border radius. Radius value was determined using the
-  /// comparison tool in https://github.com/flutter/platform_tests/.
+  /// comparison tool in https://github.com/LionelPerrault/platform_tests/.
   final BorderRadius _kDefaultBorderRadius =
       const BorderRadius.all(Radius.circular(9.0));
 

@@ -144,7 +144,7 @@ void main() {
       // Test help text position.
       final Offset helpTextBottomLeft = tester.getBottomLeft(helpText);
       expect(helpTextBottomLeft.dx, 72.0);
-      // TODO(tahatesser): https://github.com/flutter/flutter/issues/99933
+      // TODO(tahatesser): https://github.com/LionelPerrault/flutter/issues/99933
       // A bug in the HTML renderer and/or Chrome 96+ causes a
       // discrepancy in the paragraph height.
       const bool hasIssue99933 = kIsWeb && !bool.fromEnvironment('FLUTTER_WEB_USE_SKIA');
@@ -230,7 +230,7 @@ void main() {
   });
 
   group('Landscape input-only date picker headers use headlineSmall', () {
-    // Regression test for https://github.com/flutter/flutter/issues/122056
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/122056
 
     // Common screen size roughly based on a Pixel 1
     const Size kCommonScreenSizePortrait = Size(1070, 1770);
@@ -258,7 +258,7 @@ void main() {
       await tester.pumpAndSettle();
     },
     // TODO(polina-c): remove after resolving
-    // https://github.com/flutter/flutter/issues/130354
+    // https://github.com/LionelPerrault/flutter/issues/130354
     leakTrackingTestConfig: const LeakTrackingTestConfig(
       allowAllNotGCed: true,
     ));
@@ -1121,7 +1121,7 @@ void main() {
     // newly selected date.
     expect(find.byType(DateRangePickerDialog), findsNothing);
     expect(find.text('12/1/2021 to 14/1/2021'), findsOneWidget);
-  }, skip: isBrowser); // https://github.com/flutter/flutter/issues/33615
+  }, skip: isBrowser); // https://github.com/LionelPerrault/flutter/issues/33615
 
   testWidgets('DateRangePickerDialog state restoration - DatePickerEntryMode', (WidgetTester tester) async {
     await tester.pumpWidget(
@@ -1170,7 +1170,7 @@ void main() {
     // Only in calendar mode and cannot switch out.
     expect(find.byType(TextField), findsNothing);
     expect(find.byIcon(Icons.edit), findsNothing);
-  }, skip: isBrowser); // https://github.com/flutter/flutter/issues/33615
+  }, skip: isBrowser); // https://github.com/LionelPerrault/flutter/issues/33615
 
   group('showDateRangePicker avoids overlapping display features', () {
     testWidgets('positioning with anchorPoint', (WidgetTester tester) async {

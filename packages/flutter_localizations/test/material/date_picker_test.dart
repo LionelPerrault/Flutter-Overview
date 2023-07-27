@@ -326,7 +326,7 @@ void main() {
       await tester.pumpAndSettle();
     }
 
-    // Regression test for https://github.com/flutter/flutter/issues/20171
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/20171
     testWidgets('common screen size - portrait - Chinese', (WidgetTester tester) async {
       await showPicker(tester, const Locale('zh', 'CN'), kCommonScreenSizePortrait);
       expect(tester.takeException(), isNull);

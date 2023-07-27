@@ -148,7 +148,7 @@ void main() {
       await tester.pump(const Duration(milliseconds: 1020));
       expect(tester.getBottomRight(findKey(3)).dy, equals(500.0));
 
-      // Regression test for https://github.com/flutter/flutter/issues/128749
+      // Regression test for https://github.com/LionelPerrault/flutter/issues/128749
       // Reset to zero position.
       tester.state<ScrollableState>(find.byType(Scrollable)).position.jumpTo(0.0);
       await tester.pump();
@@ -216,7 +216,7 @@ void main() {
       await tester.pump(const Duration(milliseconds: 1020));
       expect(tester.getBottomRight(findKey(3)).dx, equals(700.0));
 
-      // Regression test for https://github.com/flutter/flutter/issues/128749
+      // Regression test for https://github.com/LionelPerrault/flutter/issues/128749
       // Reset to zero position.
       tester.state<ScrollableState>(find.byType(Scrollable)).position.jumpTo(0.0);
       await tester.pump();
@@ -311,7 +311,7 @@ void main() {
     });
 
     testWidgets('Nested SingleChildScrollView ensureVisible behavior test', (WidgetTester tester) async {
-      // Regressing test for https://github.com/flutter/flutter/issues/65100
+      // Regressing test for https://github.com/LionelPerrault/flutter/issues/65100
       Finder findKey(String coordinate) => find.byKey(ValueKey<String>(coordinate));
       BuildContext findContext(String coordinate) => tester.element(findKey(coordinate));
       final List<Row> rows = List<Row>.generate(
@@ -495,7 +495,7 @@ void main() {
       await tester.pump(const Duration(milliseconds: 1020));
       expect(tester.getBottomRight(findKey(3)).dy, equals(500.0));
 
-      // Regression test for https://github.com/flutter/flutter/issues/128749
+      // Regression test for https://github.com/LionelPerrault/flutter/issues/128749
       // Reset to zero position.
       await prepare(0.0);
       // 2 is not currently visible as the ListView is contained
@@ -571,7 +571,7 @@ void main() {
       await tester.pump(const Duration(milliseconds: 1020));
       expect(tester.getBottomRight(findKey(3)).dx, equals(700.0));
 
-      // Regression test for https://github.com/flutter/flutter/issues/128749
+      // Regression test for https://github.com/LionelPerrault/flutter/issues/128749
       // Reset to zero position.
       await prepare(0.0);
       // 3 is not currently visible as the ListView is contained
@@ -835,7 +835,7 @@ void main() {
       await tester.pump(const Duration(milliseconds: 1020));
       expect(tester.getBottomRight(findKey(3)).dy, equals(500.0));
 
-      // Regression test for https://github.com/flutter/flutter/issues/128749
+      // Regression test for https://github.com/LionelPerrault/flutter/issues/128749
       // Reset to zero position.
       await prepare(0.0);
       // 2 is not currently visible as the ListView is contained
@@ -911,7 +911,7 @@ void main() {
       await tester.pump(const Duration(milliseconds: 1020));
       expect(tester.getBottomRight(findKey(3)).dx, equals(700.0));
 
-      // Regression test for https://github.com/flutter/flutter/issues/128749
+      // Regression test for https://github.com/LionelPerrault/flutter/issues/128749
       // Reset to zero position.
       await prepare(0.0);
       // 3 is not currently visible as the ListView is contained

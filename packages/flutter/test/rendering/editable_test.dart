@@ -473,7 +473,7 @@ void main() {
 
     // TODO(yjbanov): ahem.ttf doesn't have Chinese glyphs, making this test
     //                sensitive to browser/OS when running in web mode:
-  }, skip: kIsWeb); // https://github.com/flutter/flutter/issues/83129
+  }, skip: kIsWeb); // https://github.com/LionelPerrault/flutter/issues/83129
 
   test('text is painted above selection', () {
     final TextSelectionDelegate delegate = _FakeEditableTextState();
@@ -644,7 +644,7 @@ void main() {
   });
 
   test('selects readonly renderEditable matches native behavior for android', () {
-    // Regression test for https://github.com/flutter/flutter/issues/79166.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/79166.
     final TargetPlatform? previousPlatform = debugDefaultTargetPlatformOverride;
     debugDefaultTargetPlatformOverride = TargetPlatform.android;
     const String text = '  test';
@@ -682,7 +682,7 @@ void main() {
   });
 
   test('selects renderEditable matches native behavior for iOS case 1', () {
-    // Regression test for https://github.com/flutter/flutter/issues/79166.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/79166.
     final TargetPlatform? previousPlatform = debugDefaultTargetPlatformOverride;
     debugDefaultTargetPlatformOverride = TargetPlatform.iOS;
     const String text = '  test';
@@ -719,7 +719,7 @@ void main() {
   });
 
   test('selects renderEditable matches native behavior for iOS case 2', () {
-    // Regression test for https://github.com/flutter/flutter/issues/79166.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/79166.
     final TargetPlatform? previousPlatform = debugDefaultTargetPlatformOverride;
     debugDefaultTargetPlatformOverride = TargetPlatform.iOS;
     const String text = '   ';
@@ -824,7 +824,7 @@ void main() {
   });
 
   test('editable hasFocus correctly initialized', () {
-    // Regression test for https://github.com/flutter/flutter/issues/21640
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/21640
     final TextSelectionDelegate delegate = _FakeEditableTextState();
     final RenderEditable editable = RenderEditable(
       text: const TextSpan(
@@ -888,7 +888,7 @@ void main() {
     expect(editable.maxScrollExtent, equals(10));
     // TODO(yjbanov): This test is failing in the Dart HHH-web bot and
     //                needs additional investigation before it can be reenabled.
-  }, skip: const bool.fromEnvironment('DART_HHH_BOT')); // https://github.com/flutter/flutter/issues/93691
+  }, skip: const bool.fromEnvironment('DART_HHH_BOT')); // https://github.com/LionelPerrault/flutter/issues/93691
 
   test('getEndpointsForSelection handles empty characters', () {
     final TextSelectionDelegate delegate = _FakeEditableTextState();
@@ -1352,7 +1352,7 @@ void main() {
 
       final Rect composingRect = editable.getRectForComposingRange(const TextRange(start: 4, end: 5))!;
       expect(composingRect, const Rect.fromLTRB(40.0, 0.0, 54.0, 14.0));
-    }, skip: isBrowser); // https://github.com/flutter/flutter/issues/61021
+    }, skip: isBrowser); // https://github.com/LionelPerrault/flutter/issues/61021
 
     test('able to render multiple WidgetSpans', () async {
       final TextSelectionDelegate delegate = _FakeEditableTextState()
@@ -1395,7 +1395,7 @@ void main() {
 
       final Rect composingRect = editable.getRectForComposingRange(const TextRange(start: 4, end: 7))!;
       expect(composingRect, const Rect.fromLTRB(40.0, 0.0, 82.0, 14.0));
-    }, skip: isBrowser); // https://github.com/flutter/flutter/issues/61021
+    }, skip: isBrowser); // https://github.com/LionelPerrault/flutter/issues/61021
 
     test('able to render WidgetSpans with line wrap', () async {
       final TextSelectionDelegate delegate = _FakeEditableTextState()
@@ -1443,7 +1443,7 @@ void main() {
       expect(composingRect, const Rect.fromLTRB(40.0, 0.0, 68.0, 14.0));
       composingRect = editable.getRectForComposingRange(const TextRange(start: 6, end: 7))!;
       expect(composingRect, const Rect.fromLTRB(0.0, 14.0, 14.0, 28.0));
-    }, skip: isBrowser); // https://github.com/flutter/flutter/issues/61021
+    }, skip: isBrowser); // https://github.com/LionelPerrault/flutter/issues/61021
 
     test('able to render WidgetSpans with line wrap alternating spans', () async {
       final TextSelectionDelegate delegate = _FakeEditableTextState()
@@ -1500,7 +1500,7 @@ void main() {
       expect(composingRect, const Rect.fromLTRB(24.0, 18.0, 34.0, 28.0));
       composingRect = editable.getRectForComposingRange(const TextRange(start: 9, end: 10))!;
       expect(composingRect, const Rect.fromLTRB(34.0, 14.0, 48.0, 28.0));
-    }, skip: isBrowser); // https://github.com/flutter/flutter/issues/61021
+    }, skip: isBrowser); // https://github.com/LionelPerrault/flutter/issues/61021
 
     test('able to render WidgetSpans nested spans', () async {
       final TextSelectionDelegate delegate = _FakeEditableTextState()
@@ -1555,7 +1555,7 @@ void main() {
       expect(composingRect, const Rect.fromLTRB(0.0, 14.0, 14.0, 28.0));
       composingRect = editable.getRectForComposingRange(const TextRange(start: 7, end: 8));
       expect(composingRect, null);
-    }, skip: isBrowser); // https://github.com/flutter/flutter/issues/61021
+    }, skip: isBrowser); // https://github.com/LionelPerrault/flutter/issues/61021
 
     test('WidgetSpan render box is painted at correct offset when scrolled', () async {
       final TextSelectionDelegate delegate = _FakeEditableTextState()
@@ -1594,10 +1594,10 @@ void main() {
 
       final Rect composingRect = editable.getRectForComposingRange(const TextRange(start: 4, end: 5))!;
       expect(composingRect, const Rect.fromLTRB(40.0, -100.0, 54.0, -86.0));
-    }, skip: isBrowser); // https://github.com/flutter/flutter/issues/61021
+    }, skip: isBrowser); // https://github.com/LionelPerrault/flutter/issues/61021
 
     test('can compute IntrinsicWidth for WidgetSpans', () {
-      // Regression test for https://github.com/flutter/flutter/issues/59316
+      // Regression test for https://github.com/LionelPerrault/flutter/issues/59316
       const double screenWidth = 1000.0;
       const double fixedHeight = 1000.0;
       const String sentence = 'one two';
@@ -1720,11 +1720,11 @@ void main() {
       result = BoxHitTestResult();
       editable.hitTest(result, position: const Offset(5.0, 15.0));
       expect(result.path, hasLength(0));
-    }, skip: isBrowser); // https://github.com/flutter/flutter/issues/61020
+    }, skip: isBrowser); // https://github.com/LionelPerrault/flutter/issues/61020
   });
 
   test('does not skip TextPainter.layout because of invalid cache', () {
-    // Regression test for https://github.com/flutter/flutter/issues/84896.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/84896.
     final TextSelectionDelegate delegate = _FakeEditableTextState();
     const BoxConstraints constraints = BoxConstraints(minWidth: 100, maxWidth: 500);
     final RenderEditable editable = RenderEditable(

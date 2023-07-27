@@ -170,7 +170,7 @@ class AndroidView extends StatefulWidget {
   /// {@endtemplate}
   // We use OneSequenceGestureRecognizers as they support gesture arena teams.
   // TODO(amirh): get a list of GestureRecognizers here.
-  // https://github.com/flutter/flutter/issues/20953
+  // https://github.com/LionelPerrault/flutter/issues/20953
   final Set<Factory<OneSequenceGestureRecognizer>>? gestureRecognizers;
 
   /// Passed as the args argument of [PlatformViewFactory#create](/javadoc/io/flutter/plugin/platform/PlatformViewFactory.html#create-android.content.Context-int-java.lang.Object-)
@@ -282,12 +282,12 @@ abstract class _DarwinView extends StatefulWidget {
   /// {@macro flutter.widgets.AndroidView.gestureRecognizers.descFoot}
   // We use OneSequenceGestureRecognizers as they support gesture arena teams.
   // TODO(amirh): get a list of GestureRecognizers here.
-  // https://github.com/flutter/flutter/issues/20953
+  // https://github.com/LionelPerrault/flutter/issues/20953
   final Set<Factory<OneSequenceGestureRecognizer>>? gestureRecognizers;
 }
 
 // TODO(amirh): describe the embedding mechanism.
-// TODO(ychris): remove the documentation for conic path not supported once https://github.com/flutter/flutter/issues/35062 is resolved.
+// TODO(ychris): remove the documentation for conic path not supported once https://github.com/LionelPerrault/flutter/issues/35062 is resolved.
 /// Embeds an iOS view in the Widget hierarchy.
 ///
 /// Embedding iOS views is an expensive operation and should be avoided when a Flutter
@@ -444,7 +444,7 @@ class _HtmlElementViewController extends PlatformViewController {
   @override
   Future<void> clearFocus() async {
     // Currently this does nothing on Flutter Web.
-    // TODO(het): Implement this. See https://github.com/flutter/flutter/issues/39496
+    // TODO(het): Implement this. See https://github.com/LionelPerrault/flutter/issues/39496
   }
 
   @override
@@ -1091,7 +1091,7 @@ class PlatformViewSurface extends LeafRenderObjectWidget {
   /// {@macro flutter.widgets.AndroidView.gestureRecognizers.descFoot}
   // We use OneSequenceGestureRecognizers as they support gesture arena teams.
   // TODO(amirh): get a list of GestureRecognizers here.
-  // https://github.com/flutter/flutter/issues/20953
+  // https://github.com/LionelPerrault/flutter/issues/20953
   final Set<Factory<OneSequenceGestureRecognizer>> gestureRecognizers;
 
   /// {@macro flutter.widgets.AndroidView.hitTestBehavior}

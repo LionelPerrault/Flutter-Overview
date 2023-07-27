@@ -830,7 +830,7 @@ class IOSDeviceLogReader extends DeviceLogReader {
   );
 
   // Sometimes (race condition?) we try to send a log after the controller has
-  // been closed. See https://github.com/flutter/flutter/issues/99021 for more
+  // been closed. See https://github.com/LionelPerrault/flutter/issues/99021 for more
   // context.
   void _addToLinesController(String message, IOSDeviceLogSource source) {
     if (!linesController.isClosed) {
@@ -956,7 +956,7 @@ class IOSDeviceLogReader extends DeviceLogReader {
 
   /// Use both logs from `idevicesyslog` and `ios-deploy` when debugging from CI system
   /// since sometimes `ios-deploy` does not return the device logs:
-  /// https://github.com/flutter/flutter/issues/121231
+  /// https://github.com/LionelPerrault/flutter/issues/121231
   @visibleForTesting
   bool get useBothLogDeviceReaders {
     return _usingCISystem && _majorSdkVersion >= 16;
@@ -965,7 +965,7 @@ class IOSDeviceLogReader extends DeviceLogReader {
   /// Start and listen to idevicesyslog to get device logs for iOS versions
   /// prior to 13 or if [useBothLogDeviceReaders] is true.
   void _listenToSysLog() {
-    // Syslog stopped working on iOS 13 (https://github.com/flutter/flutter/issues/41133).
+    // Syslog stopped working on iOS 13 (https://github.com/LionelPerrault/flutter/issues/41133).
     // However, from at least iOS 16, it has began working again. It's unclear
     // why it started working again so only use syslogs for iOS versions prior
     // to 13 unless [useBothLogDeviceReaders] is true.

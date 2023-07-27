@@ -520,7 +520,7 @@ void main() {
     expect(find.text(materialBannerText), findsOneWidget);
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/39574
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/39574
   testWidgetsWithLeakTracking('Single action laid out beside content but aligned to the trailing edge', (WidgetTester tester) async {
     await tester.pumpWidget(
       MaterialApp(
@@ -541,7 +541,7 @@ void main() {
     expect(actionsTopRight.dx + 8, bannerTopRight.dx); // actions OverflowBar is padded by 8
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/39574
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/39574
   testWidgetsWithLeakTracking('Single action laid out beside content but aligned to the trailing edge when presented by ScaffoldMessenger', (WidgetTester tester) async {
     const Key tapTarget = Key('tap-target');
     await tester.pumpWidget(MaterialApp(
@@ -579,7 +579,7 @@ void main() {
     expect(actionsTopRight.dx + 8, bannerTopRight.dx); // actions OverflowBar is padded by 8
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/39574
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/39574
   testWidgetsWithLeakTracking('Single action laid out beside content but aligned to the trailing edge - RTL', (WidgetTester tester) async {
     await tester.pumpWidget(
       MaterialApp(
@@ -1057,7 +1057,7 @@ void main() {
   });
 
   testWidgetsWithLeakTracking('ScaffoldMessenger will alert for MaterialBanners that cannot be presented', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/103004
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/103004
     await tester.pumpWidget(const MaterialApp(
       home: Center(),
     ));

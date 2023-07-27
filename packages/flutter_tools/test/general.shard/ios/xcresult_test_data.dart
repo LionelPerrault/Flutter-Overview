@@ -12,7 +12,7 @@ const String kSampleResultJsonInvalidIssuesMap = r'''
 }
 ''';
 
-/// An example xcresult bundle json that contains warnings and errors that needs to be discarded per https://github.com/flutter/flutter/issues/95354.
+/// An example xcresult bundle json that contains warnings and errors that needs to be discarded per https://github.com/LionelPerrault/flutter/issues/95354.
 const String kSampleResultJsonWithIssuesToBeDiscarded = r'''
 {
   "issues" : {

@@ -406,7 +406,7 @@ void main() {
     log.clear();
 
     // Horizontal moves are either drags or scales, depending on which wins first.
-    // TODO(ianh): https://github.com/flutter/flutter/issues/11384
+    // TODO(ianh): https://github.com/LionelPerrault/flutter/issues/11384
     // In this case, we move fast, so that the scale wins. If we moved slowly,
     // the horizontal drag would win, since it was added first.
     final TestPointer pointer3 = TestPointer(3);
@@ -628,7 +628,7 @@ void main() {
     tap.dispose();
   });
 
-  // Regressing test for https://github.com/flutter/flutter/issues/78941
+  // Regressing test for https://github.com/LionelPerrault/flutter/issues/78941
   testGesture('First rotation test', (GestureTester tester) {
     final ScaleGestureRecognizer scale = ScaleGestureRecognizer();
 
@@ -1034,7 +1034,7 @@ void main() {
     log.clear();
 
     // Horizontal moves are either drags or scales, depending on which wins first.
-    // TODO(ianh): https://github.com/flutter/flutter/issues/11384
+    // TODO(ianh): https://github.com/LionelPerrault/flutter/issues/11384
     // In this case, we move fast, so that the scale wins. If we moved slowly,
     // the horizontal drag would win, since it was added first.
     final TestPointer pointer3 = TestPointer(4, PointerDeviceKind.trackpad);

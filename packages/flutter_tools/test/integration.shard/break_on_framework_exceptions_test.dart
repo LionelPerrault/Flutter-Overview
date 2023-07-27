@@ -4,7 +4,7 @@
 
 // TODO(gspencergoog): Remove this tag once this test's state leaks/test
 // dependencies have been fixed.
-// https://github.com/flutter/flutter/issues/85160
+// https://github.com/LionelPerrault/flutter/issues/85160
 // Fails with "flutter test --test-randomize-ordering-seed=1000"
 @Tags(<String>['no-shuffle'])
 library;
@@ -612,7 +612,7 @@ void main() {
 /// to this function with a [duration] less than that configured in
 /// package:test can be set and a helpful message used to help debugging.
 ///
-/// See https://github.com/flutter/flutter/issues/125241 for more context.
+/// See https://github.com/LionelPerrault/flutter/issues/125241 for more context.
 Future<void> _timeoutAfter({
   required String message,
   Duration duration = const Duration(minutes: 10),

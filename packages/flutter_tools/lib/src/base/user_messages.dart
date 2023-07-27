@@ -10,14 +10,14 @@ import 'platform.dart';
 // This allows partial reimplementations of the flutter tool to override
 // certain messages.
 // TODO(andrewkolos): It is unclear if this is worth keeping. See
-// https://github.com/flutter/flutter/issues/125155.
+// https://github.com/LionelPerrault/flutter/issues/125155.
 UserMessages get userMessages => context.get<UserMessages>()!;
 
 /// Class containing message strings that can be produced by Flutter tools.
 class UserMessages {
   // Messages used in multiple components.
   String get flutterToolBugInstructions =>
-      'Please report a bug at https://github.com/flutter/flutter/issues.';
+      'Please report a bug at https://github.com/LionelPerrault/flutter/issues.';
 
   // Messages used in FlutterValidator
   String flutterStatusInfo(String? channel, String? version, String os, String locale) =>
@@ -48,7 +48,7 @@ class UserMessages {
   String flutterMirrorURL(String url) => 'Flutter download mirror $url';
   String get flutterBinariesDoNotRun =>
       'Downloaded executables cannot execute on host.\n'
-      'See https://github.com/flutter/flutter/issues/6207 for more information.';
+      'See https://github.com/LionelPerrault/flutter/issues/6207 for more information.';
   String get flutterBinariesLinuxRepairCommands =>
       'On Debian/Ubuntu/Mint: sudo apt-get install lib32stdc++6\n'
       'On Fedora: dnf install libstdc++.i686\n'

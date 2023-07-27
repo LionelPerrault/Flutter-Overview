@@ -286,7 +286,7 @@ void main() {
   },
   leakTrackingTestConfig: const LeakTrackingTestConfig(
     // TODO(polina-c): remove after fixing
-    // https://github.com/flutter/flutter/issues/130354
+    // https://github.com/LionelPerrault/flutter/issues/130354
     notGCedAllowList: <String, int?>{
       'ValueNotifier<_OverlayEntryWidgetState?>': 2,
       'ValueNotifier<String?>': 1,
@@ -370,7 +370,7 @@ void main() {
   },
   leakTrackingTestConfig: const LeakTrackingTestConfig(
     // TODO(polina-c): remove after fixing
-    // https://github.com/flutter/flutter/issues/130354
+    // https://github.com/LionelPerrault/flutter/issues/130354
     notGCedAllowList: <String, int?>{
       'ValueNotifier<_OverlayEntryWidgetState?>':2,
       'ValueNotifier<String?>': 1,
@@ -1101,7 +1101,7 @@ void main() {
   });
 
   testWidgetsWithLeakTracking('Conflicting scrollbars are not applied by ScrollBehavior to _PackageLicensePage', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/83819
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/83819
     LicenseRegistry.addLicense(() {
       return Stream<LicenseEntry>.fromIterable(<LicenseEntry>[
         const LicenseEntryWithLineBreaks(<String>['AAA'], 'BBB'),
@@ -1143,7 +1143,7 @@ void main() {
   }, variant: TargetPlatformVariant.all());
 
   testWidgetsWithLeakTracking('ListView of license entries is primary', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/120710
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/120710
     LicenseRegistry.addLicense(() {
       return Stream<LicenseEntry>.fromIterable(<LicenseEntry>[
          LicenseEntryWithLineBreaks(
@@ -1245,7 +1245,7 @@ void main() {
   });
 
   testWidgetsWithLeakTracking('LicensePage has no extra padding between app icon and app powered text', (WidgetTester tester) async {
-    // This is a regression test for https://github.com/flutter/flutter/issues/99559
+    // This is a regression test for https://github.com/LionelPerrault/flutter/issues/99559
 
     const FlutterLogo logo = FlutterLogo();
 
@@ -1584,7 +1584,7 @@ void main() {
   });
 
   testWidgetsWithLeakTracking('License page title in lateral UI does not use AppBarTheme.foregroundColor', (WidgetTester tester) async {
-    // This is a regression test for https://github.com/flutter/flutter/issues/108991
+    // This is a regression test for https://github.com/LionelPerrault/flutter/issues/108991
     final ThemeData theme = ThemeData(
       appBarTheme: const AppBarTheme(foregroundColor: Color(0xFFFFFFFF)),
       useMaterial3: true,
@@ -1625,7 +1625,7 @@ void main() {
   });
 
   testWidgetsWithLeakTracking('License page default title text color in the nested UI', (WidgetTester tester) async {
-    // This is a regression test for https://github.com/flutter/flutter/issues/108991
+    // This is a regression test for https://github.com/LionelPerrault/flutter/issues/108991
     final ThemeData theme = ThemeData(useMaterial3: true);
     const String title = 'License ABC';
     LicenseRegistry.addLicense(() {
@@ -1666,7 +1666,7 @@ void main() {
     // can be deleted.
 
     testWidgetsWithLeakTracking('License page default title text color in the nested UI', (WidgetTester tester) async {
-      // This is a regression test for https://github.com/flutter/flutter/issues/108991
+      // This is a regression test for https://github.com/LionelPerrault/flutter/issues/108991
       final ThemeData theme = ThemeData(useMaterial3: false);
       const String title = 'License ABC';
       LicenseRegistry.addLicense(() {

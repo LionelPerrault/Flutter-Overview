@@ -9,7 +9,7 @@ import '../src/common.dart';
 import 'test_utils.dart';
 
 // Test the android/app/build directory not be created unexpectedly after
-// `flutter build` commands, see https://github.com/flutter/flutter/issues/91018.
+// `flutter build` commands, see https://github.com/LionelPerrault/flutter/issues/91018.
 //
 // The easiest way to reproduce this issue is to create a plugin project, then run
 // `flutter build` command inside the `example` directory, so we create a plugin

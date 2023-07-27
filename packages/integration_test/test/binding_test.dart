@@ -124,7 +124,7 @@ Future<void> main() async {
       });
     });
 
-    // TODO(jiahaog): Remove when https://github.com/flutter/flutter/issues/66006 is fixed.
+    // TODO(jiahaog): Remove when https://github.com/LionelPerrault/flutter/issues/66006 is fixed.
     testWidgets('root widgets are wrapped with a RepaintBoundary', (WidgetTester tester) async {
       await tester.pumpWidget(const Placeholder());
 

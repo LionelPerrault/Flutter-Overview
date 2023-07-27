@@ -337,7 +337,7 @@ class KernelCompiler {
         'package:flutter/src/dart_plugin_registrant.dart',
         '-Dflutter.dart_plugin_registrant=$dartPluginRegistrantUri',
       ],
-      // See: https://github.com/flutter/flutter/issues/103994
+      // See: https://github.com/LionelPerrault/flutter/issues/103994
       '--verbosity=error',
       ...?extraFrontEndOptions,
       mainUri,
@@ -491,7 +491,7 @@ abstract class ResidentCompiler {
 
   // TODO(zanderso): find a better way to configure additional file system
   // roots from the runner.
-  // See: https://github.com/flutter/flutter/issues/50494
+  // See: https://github.com/LionelPerrault/flutter/issues/50494
   void addFileSystemRoot(String root);
 
   /// If invoked for the first time, it compiles Dart script identified by
@@ -767,7 +767,7 @@ class DefaultResidentCompiler implements ResidentCompiler {
       '--target=$targetModel',
       // TODO(annagrin): remove once this becomes the default behavior
       // in the frontend_server.
-      // https://github.com/flutter/flutter/issues/59902
+      // https://github.com/LionelPerrault/flutter/issues/59902
       '--experimental-emit-debug-metadata',
       for (final Object dartDefine in dartDefines)
         '-D$dartDefine',
@@ -812,7 +812,7 @@ class DefaultResidentCompiler implements ResidentCompiler {
         platformDill!,
       ],
       if (unsafePackageSerialization) '--unsafe-package-serialization',
-      // See: https://github.com/flutter/flutter/issues/103994
+      // See: https://github.com/LionelPerrault/flutter/issues/103994
       '--verbosity=error',
       ...?extraFrontEndOptions,
     ];

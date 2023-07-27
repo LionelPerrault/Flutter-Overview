@@ -17,7 +17,7 @@ body:
       label: Is there an existing issue for this?
       description: Please search to see if an issue already exists for this feature request or proposal.
       options:
-        - label: I have searched the [existing issues](https://github.com/flutter/flutter/issues)
+        - label: I have searched the [existing issues](https://github.com/LionelPerrault/flutter/issues)
           required: true
         - label: I have read the [guide to filing a bug](https://flutter.dev/docs/resources/bug-reports)
           required: true

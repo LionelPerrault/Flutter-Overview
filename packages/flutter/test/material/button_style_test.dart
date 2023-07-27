@@ -191,7 +191,7 @@ void main() {
   });
 
   test('ButtonStyle.lerp BorderSide', () {
-    // This is regression test for https://github.com/flutter/flutter/pull/78051
+    // This is regression test for https://github.com/LionelPerrault/flutter/pull/78051
     expect(ButtonStyle.lerp(null, null, 0), null);
     expect(ButtonStyle.lerp(null, null, 0.5), null);
     expect(ButtonStyle.lerp(null, null, 1), null);

@@ -38,12 +38,12 @@ const String brokenCocoaPodsConsequence = '''
 
 const String outOfDateFrameworksPodfileConsequence = '''
   This can cause a mismatched version of Flutter to be embedded in your app, which may result in App Store submission rejection or crashes.
-  If you have local Podfile edits you would like to keep, see https://github.com/flutter/flutter/issues/24641 for instructions.''';
+  If you have local Podfile edits you would like to keep, see https://github.com/LionelPerrault/flutter/issues/24641 for instructions.''';
 
 const String outOfDatePluginsPodfileConsequence = '''
   This can cause issues if your application depends on plugins that do not support iOS or macOS.
   See https://flutter.dev/docs/development/packages-and-plugins/developing-packages#plugin-platforms for details.
-  If you have local Podfile edits you would like to keep, see https://github.com/flutter/flutter/issues/45197 for instructions.''';
+  If you have local Podfile edits you would like to keep, see https://github.com/LionelPerrault/flutter/issues/45197 for instructions.''';
 
 const String cocoaPodsInstallInstructions = 'see https://guides.cocoapods.org/using/getting-started.html#installation for instructions.';
 
@@ -321,7 +321,7 @@ class CocoaPods {
       <String>['pod', 'install', '--verbose'],
       workingDirectory: _fileSystem.path.dirname(xcodeProject.podfile.path),
       environment: <String, String>{
-        // See https://github.com/flutter/flutter/issues/10873.
+        // See https://github.com/LionelPerrault/flutter/issues/10873.
         // CocoaPods analytics adds a lot of latency.
         'COCOAPODS_DISABLE_STATS': 'true',
         'LANG': 'en_US.UTF-8',
@@ -370,7 +370,7 @@ class CocoaPods {
       );
     } else if ((_isFfiX86Error(stdout) || _isFfiX86Error(stderr)) &&
         _operatingSystemUtils.hostPlatform == HostPlatform.darwin_arm64) {
-      // https://github.com/flutter/flutter/issues/70796
+      // https://github.com/LionelPerrault/flutter/issues/70796
       UsageEvent(
         'pod-install-failure',
         'arm-ffi',

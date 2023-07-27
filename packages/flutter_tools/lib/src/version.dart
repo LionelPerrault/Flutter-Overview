@@ -234,7 +234,7 @@ abstract class FlutterVersion {
     final String engineText = 'Engine • revision $engineRevisionShort';
     final String toolsText = 'Tools • Dart $dartSdkVersion • DevTools $devToolsVersion';
 
-    // Flutter 1.10.2-pre.69 • channel master • https://github.com/flutter/flutter.git
+    // Flutter 1.10.2-pre.69 • channel master • https://github.com/LionelPerrault/flutter.git
     // Framework • revision 340c158f32 (85 minutes ago) • 2018-10-26 11:27:22 -0400
     // Engine • revision 9c46333e14
     // Tools • Dart 2.1.0 (build 2.1.0-dev.8.0 bf26f760b1)
@@ -687,12 +687,12 @@ class VersionUpstreamValidator {
 
   // The predefined list of remotes that are considered to be standard.
   static final List<String> _standardRemotes = <String>[
-    'https://github.com/flutter/flutter.git',
+    'https://github.com/LionelPerrault/flutter.git',
     'git@github.com:flutter/flutter.git',
   ];
 
   // Strips ".git" suffix from a given string, preferably an url.
-  // For example, changes 'https://github.com/flutter/flutter.git' to 'https://github.com/flutter/flutter'.
+  // For example, changes 'https://github.com/LionelPerrault/flutter.git' to 'https://github.com/LionelPerrault/flutter'.
   // URLs without ".git" suffix will remain unaffected.
   static final RegExp _patternUrlDotGit = RegExp(r'(.*)(\.git)$');
   static String stripDotGit(String url) {
@@ -946,7 +946,7 @@ class GitTagVersion {
       if (!kDevelopmentChannels.contains(channel) && kOfficialChannels.contains(channel)) {
         globals.printTrace('Skipping request to fetchTags - on well known channel $channel.');
       } else {
-        final String flutterGit = platform.environment['FLUTTER_GIT_URL'] ?? 'https://github.com/flutter/flutter.git';
+        final String flutterGit = platform.environment['FLUTTER_GIT_URL'] ?? 'https://github.com/LionelPerrault/flutter.git';
         _runGit('git fetch $flutterGit --tags -f', processUtils, workingDirectory);
       }
     }

@@ -45,7 +45,7 @@ void main() {
     final Future<ByteData?>? future = delegate.send('', null);
     expect(future, isNotNull);
     // TODO(srawlins): Fix this static issue,
-    // https://github.com/flutter/flutter/issues/105750.
+    // https://github.com/LionelPerrault/flutter/issues/105750.
     // ignore: body_might_complete_normally_catch_error
     await future!.catchError((Object error) { });
     try {

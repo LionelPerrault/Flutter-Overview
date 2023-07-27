@@ -8,7 +8,7 @@ import 'package:flutter_test/flutter_test.dart';
 
 void main() {
   testWidgets('ListView.builder() fixed itemExtent, scroll to end, append, scroll', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/9506
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/9506
 
     Widget buildFrame(int itemCount) {
       return Directionality(
@@ -36,7 +36,7 @@ void main() {
   });
 
   testWidgets('ListView.builder() fixed itemExtent, scroll to end, append, scroll', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/9506
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/9506
 
     Widget buildFrame(int itemCount) {
       return Directionality(

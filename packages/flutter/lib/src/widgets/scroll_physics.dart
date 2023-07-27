@@ -394,9 +394,9 @@ class ScrollPhysics {
   /// independent of the time.
   // TODO(gnprice): Some scroll physics in the framework violate that invariant; fix them.
   //   An audit found three cases violating the invariant:
-  //     https://github.com/flutter/flutter/issues/120338
-  //     https://github.com/flutter/flutter/issues/120340
-  //     https://github.com/flutter/flutter/issues/109675
+  //     https://github.com/LionelPerrault/flutter/issues/120338
+  //     https://github.com/LionelPerrault/flutter/issues/120340
+  //     https://github.com/LionelPerrault/flutter/issues/109675
   Simulation? createBallisticSimulation(ScrollMetrics position, double velocity) {
     if (parent == null) {
       return null;
@@ -774,7 +774,7 @@ class BouncingScrollPhysics extends ScrollPhysics {
   double get minFlingVelocity => kMinFlingVelocity * 2.0;
 
   // Methodology:
-  // 1- Use https://github.com/flutter/platform_tests/tree/master/scroll_overlay to test with
+  // 1- Use https://github.com/LionelPerrault/platform_tests/tree/master/scroll_overlay to test with
   //    Flutter and platform scroll views superimposed.
   // 3- If the scrollables stopped overlapping at any moment, adjust the desired
   //    output value of this function at that input speed.

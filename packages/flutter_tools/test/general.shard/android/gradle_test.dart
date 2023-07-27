@@ -715,5 +715,5 @@ flutter:
       contains(templateSettingsDotGradle.readAsStringSync().trim()),
     );
     // TODO(zanderso): This is an integration test and should be moved to the integration shard.
-  }, skip: true); // https://github.com/flutter/flutter/issues/87922
+  }, skip: true); // https://github.com/LionelPerrault/flutter/issues/87922
 }

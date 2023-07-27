@@ -625,7 +625,7 @@ void main() {
   });
 
   testWidgets('Route didAdd and dispose in same frame work', (WidgetTester tester) async {
-    // Regression Test for https://github.com/flutter/flutter/issues/61346.
+    // Regression Test for https://github.com/LionelPerrault/flutter/issues/61346.
     Widget buildNavigator() {
       return Navigator(
         pages: const <Page<void>>[
@@ -692,7 +692,7 @@ void main() {
   });
 
   testWidgets('Pages update does update overlay correctly', (WidgetTester tester) async {
-    // Regression Test for https://github.com/flutter/flutter/issues/64941.
+    // Regression Test for https://github.com/LionelPerrault/flutter/issues/64941.
     List<Page<void>> pages = const <Page<void>>[
       MaterialPage<void>(
         key:  ValueKey<int>(0),
@@ -915,7 +915,7 @@ void main() {
   });
 
   testWidgets('pushReplacement correctly reports didReplace to the observer', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/56892.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/56892.
     final Map<String, WidgetBuilder> routes = <String, WidgetBuilder>{
       '/' : (BuildContext context) => const OnTapPage(
         id: '/',
@@ -1064,7 +1064,7 @@ void main() {
   });
 
   testWidgets('pushAndRemoveUntil does not remove routes below the first route that pass the predicate', (WidgetTester tester) async {
-    // Regression https://github.com/flutter/flutter/issues/56688
+    // Regression https://github.com/LionelPerrault/flutter/issues/56688
     final GlobalKey<NavigatorState> navigator = GlobalKey<NavigatorState>();
     final Map<String, WidgetBuilder> routes = <String, WidgetBuilder>{
       '/': (BuildContext context) => const Text('home'),
@@ -1737,7 +1737,7 @@ void main() {
   });
 
   testWidgets("Popping immediately after pushing doesn't crash", (WidgetTester tester) async {
-    // Added this test to protect against regression of https://github.com/flutter/flutter/issues/45539
+    // Added this test to protect against regression of https://github.com/LionelPerrault/flutter/issues/45539
     final Map<String, WidgetBuilder> routes = <String, WidgetBuilder>{
       '/' : (BuildContext context) => OnTapPage(id: '/', onTap: () {
         Navigator.pushNamed(context, '/A');
@@ -1839,7 +1839,7 @@ void main() {
   });
 
   testWidgets('OverlayEntry of topmost initial route is marked as opaque', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/38038.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/38038.
 
     final Key root = UniqueKey();
     final Key intermediate = UniqueKey();
@@ -1863,7 +1863,7 @@ void main() {
   });
 
   testWidgets('OverlayEntry of topmost route is set to opaque after Push', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/38038.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/38038.
 
     final GlobalKey<NavigatorState> navigator = GlobalKey<NavigatorState>();
     await tester.pumpWidget(
@@ -1890,7 +1890,7 @@ void main() {
   });
 
   testWidgets('OverlayEntry of topmost route is set to opaque after Replace', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/38038.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/38038.
 
     final GlobalKey<NavigatorState> navigator = GlobalKey<NavigatorState>();
     await tester.pumpWidget(
@@ -1935,7 +1935,7 @@ void main() {
   });
 
   testWidgets('Pushing opaque Route does not rebuild routes below', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/45797.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/45797.
 
     final GlobalKey<NavigatorState> navigator = GlobalKey<NavigatorState>();
     final Key bottomRoute = UniqueKey();
@@ -2132,7 +2132,7 @@ void main() {
   });
 
   testWidgets('pushAndRemove until animates the push', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/25080.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/25080.
 
     const Duration kFourTenthsOfTheTransitionDuration = Duration(milliseconds: 120);
     final GlobalKey<NavigatorState> navigator = GlobalKey<NavigatorState>();
@@ -2256,7 +2256,7 @@ void main() {
   });
 
   testWidgets('Route announce correctly for first route and last route', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/57133.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/57133.
     Route<void>? previousOfFirst = NotAnnounced();
     Route<void>? nextOfFirst = NotAnnounced();
     Route<void>? popNextOfFirst = NotAnnounced();
@@ -2746,7 +2746,7 @@ void main() {
     });
 
     testWidgets('can handle duplicate page key if update before transition finishes', (WidgetTester tester) async {
-      // Regression test for https://github.com/flutter/flutter/issues/97363.
+      // Regression test for https://github.com/LionelPerrault/flutter/issues/97363.
       final GlobalKey<NavigatorState> navigator = GlobalKey<NavigatorState>();
       final List<TestPage> myPages1 = <TestPage>[
         const TestPage(key: ValueKey<String>('1'), name:'initial'),
@@ -3132,7 +3132,7 @@ void main() {
     });
 
     testWidgets('Pop no animation page does not crash', (WidgetTester tester) async {
-      // Regression Test for https://github.com/flutter/flutter/issues/86604.
+      // Regression Test for https://github.com/LionelPerrault/flutter/issues/86604.
       Widget buildNavigator(bool secondPage) {
         return TestDependencies(
           child: Navigator(
@@ -3440,7 +3440,7 @@ void main() {
       expect(find.text('forth'), findsOneWidget);
     });
 
-    //Regression test for https://github.com/flutter/flutter/issues/115887
+    //Regression test for https://github.com/LionelPerrault/flutter/issues/115887
     testWidgets('Complex case 2', (WidgetTester tester) async {
       final GlobalKey<NavigatorState> navigator = GlobalKey<NavigatorState>();
       List<TestPage> myPages = <TestPage>[
@@ -3754,7 +3754,7 @@ void main() {
     });
 
     testWidgets('can update pages before a pageless route has finished popping', (WidgetTester tester) async {
-      // Regression test for https://github.com/flutter/flutter/issues/68162.
+      // Regression test for https://github.com/LionelPerrault/flutter/issues/68162.
       final GlobalKey<NavigatorState> navigator = GlobalKey<NavigatorState>();
       List<Page<dynamic>> myPages = <TestPage>[
         const TestPage(key: ValueKey<String>('1'), name: 'initial'),

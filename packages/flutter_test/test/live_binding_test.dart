@@ -95,7 +95,7 @@ void main() {
   });
 
   testWidgets("reassembleApplication doesn't get stuck", (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/79150
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/79150
 
     await expectLater(tester.binding.reassembleApplication(), completes);
   }, timeout: const Timeout(Duration(seconds: 30)));

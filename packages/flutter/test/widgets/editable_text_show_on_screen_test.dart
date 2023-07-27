@@ -174,7 +174,7 @@ void main() {
   });
 
   testWidgets('entering text does not scroll when scrollPhysics.allowImplicitScrolling = false', (WidgetTester tester) async {
-    // regression test for https://github.com/flutter/flutter/issues/19523
+    // regression test for https://github.com/LionelPerrault/flutter/issues/19523
 
     final ScrollController scrollController = ScrollController(initialScrollOffset: 100.0);
     final TextEditingController controller = TextEditingController();
@@ -224,7 +224,7 @@ void main() {
   });
 
   testWidgets('entering text does not scroll a surrounding PageView', (WidgetTester tester) async {
-    // regression test for https://github.com/flutter/flutter/issues/19523
+    // regression test for https://github.com/LionelPerrault/flutter/issues/19523
 
     final TextEditingController textController = TextEditingController();
     final PageController pageController = PageController(initialPage: 1);
@@ -421,7 +421,7 @@ void main() {
   testWidgets(
     'A pinned persistent header should not scroll when its descendant EditableText gains focus',
     (WidgetTester tester) async {
-      // Regression test for https://github.com/flutter/flutter/issues/25507.
+      // Regression test for https://github.com/LionelPerrault/flutter/issues/25507.
       ScrollController controller;
       final TextEditingController textEditingController = TextEditingController();
       final FocusNode focusNode = FocusNode();
@@ -483,7 +483,7 @@ void main() {
   testWidgets(
     'A pinned persistent header should not scroll when its descendant EditableText gains focus (no animation)',
     (WidgetTester tester) async {
-      // Regression test for https://github.com/flutter/flutter/issues/25507.
+      // Regression test for https://github.com/LionelPerrault/flutter/issues/25507.
       ScrollController controller;
       final TextEditingController textEditingController = TextEditingController();
       final FocusNode focusNode = FocusNode();
@@ -738,7 +738,7 @@ void main() {
         expect(editableScrollController.offset, greaterThan(0.0));
       });
 
-      // Regression text for https://github.com/flutter/flutter/pull/74722.
+      // Regression text for https://github.com/LionelPerrault/flutter/pull/74722.
       testWidgets('does NOT randomly trigger when cursor blinks', (WidgetTester tester) async {
         textEditingController.text = 'a' * 100;
         textEditingController.selection = const TextSelection.collapsed(offset: 0);

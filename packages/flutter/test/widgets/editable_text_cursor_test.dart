@@ -462,7 +462,7 @@ void main() {
   });
 
   testWidgets('Cursor does not show when not focused', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/106512 .
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/106512 .
     final FocusNode focusNode = FocusNode();
     await tester.pumpWidget(
       MaterialApp(
@@ -772,7 +772,7 @@ void main() {
   });
 
   testWidgets('Turning showCursor off stops the cursor', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/108187.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/108187.
     final bool debugDeterministicCursor = EditableText.debugDeterministicCursor;
     // This doesn't really matter.
     EditableText.debugDeterministicCursor = false;
@@ -819,7 +819,7 @@ void main() {
     expect(editableTextState.cursorCurrentlyVisible, false);
   });
 
-  // Regression test for https://github.com/flutter/flutter/pull/30475.
+  // Regression test for https://github.com/LionelPerrault/flutter/pull/30475.
   testWidgets('Trying to select with the floating cursor does not crash', (WidgetTester tester) async {
     const String text = 'hello world this is fun and cool and awesome!';
     controller.text = text;
@@ -1244,7 +1244,7 @@ void main() {
       renderEditable,
       paints..rect(color: cursorColor, rect: caretRect),
     );
-  }, skip: isBrowser && !isCanvasKit); // https://github.com/flutter/flutter/issues/56308
+  }, skip: isBrowser && !isCanvasKit); // https://github.com/LionelPerrault/flutter/issues/56308
 
   testWidgets('getLocalRectForCaret reports the real caret Rect', (WidgetTester tester) async {
     EditableText.debugDeterministicCursor = true;

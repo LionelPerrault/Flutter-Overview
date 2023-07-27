@@ -22,7 +22,7 @@ class EventPrinter extends TestWatcher {
         <String, dynamic>{
           'vmServiceUri': vmServiceUri?.toString(),
           // TODO(bkonyi): remove references to Observatory
-          // See https://github.com/flutter/flutter/issues/121271
+          // See https://github.com/LionelPerrault/flutter/issues/121271
           'observatoryUri': vmServiceUri?.toString()
         });
     _parent?.handleStartedDevice(vmServiceUri);

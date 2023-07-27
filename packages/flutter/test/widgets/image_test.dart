@@ -1768,7 +1768,7 @@ void main() {
       await testRotatedImage(tester, true);
       await testRotatedImage(tester, false);
     },
-    skip: kIsWeb, // https://github.com/flutter/flutter/issues/87933.
+    skip: kIsWeb, // https://github.com/LionelPerrault/flutter/issues/87933.
   );
 
   testWidgets(
@@ -1818,7 +1818,7 @@ void main() {
         matchesGoldenFile('transparent_image.png'),
       );
     },
-    skip: kIsWeb, // https://github.com/flutter/flutter/issues/87933.
+    skip: kIsWeb, // https://github.com/LionelPerrault/flutter/issues/87933.
   );
 
   testWidgets('Reports image size when painted', (WidgetTester tester) async {
@@ -1899,7 +1899,7 @@ void main() {
     // Image cache listener go away and Image stream listeners go away.
     // Image is now at zero.
     expect(image.debugGetOpenHandleStackTraces()!.length, 0);
-  }, skip: kIsWeb); // https://github.com/flutter/flutter/issues/87442
+  }, skip: kIsWeb); // https://github.com/LionelPerrault/flutter/issues/87442
 
   testWidgets('Keeps stream alive when ticker mode is disabled',  (WidgetTester tester) async {
     imageCache.maximumSize = 0;
@@ -2010,7 +2010,7 @@ void main() {
       find.byKey(key),
       matchesGoldenFile('image_test.missing.2.png'),
     );
-  }, skip: kIsWeb); // https://github.com/flutter/flutter/issues/74935 (broken assets not being reported on web)
+  }, skip: kIsWeb); // https://github.com/LionelPerrault/flutter/issues/74935 (broken assets not being reported on web)
 
   testWidgets('Image.file throws a non-implemented error on web', (WidgetTester tester) async {
     const String expectedError =

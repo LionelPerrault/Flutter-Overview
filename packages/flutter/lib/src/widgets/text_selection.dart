@@ -225,7 +225,7 @@ abstract class TextSelectionControls {
   /// This function is asynchronous since interacting with the clipboard is
   /// asynchronous. Race conditions may exist with this API as currently
   /// implemented.
-  // TODO(ianh): https://github.com/flutter/flutter/issues/11427
+  // TODO(ianh): https://github.com/LionelPerrault/flutter/issues/11427
   @Deprecated(
     'Use `contextMenuBuilder` instead. '
     'This feature was deprecated after v3.3.0-0.5.pre.',
@@ -1297,7 +1297,7 @@ class SelectionOverlay {
   /// large for tapping (as it's not meant to be tapped) so it does not call
   /// [onSelectionHandleTapped] even when tapped.
   /// {@endtemplate}
-  // See https://github.com/flutter/flutter/issues/39376#issuecomment-848406415
+  // See https://github.com/LionelPerrault/flutter/issues/39376#issuecomment-848406415
   // for provenance.
   final VoidCallback? onSelectionHandleTapped;
 
@@ -1630,7 +1630,7 @@ class SelectionOverlay {
 // TODO(justinmc): Currently this fades in but not out on all platforms. It
 // should follow the correct fading behavior for the current platform, then be
 // made public and de-duplicated with widgets/selectable_region.dart.
-// https://github.com/flutter/flutter/issues/107732
+// https://github.com/LionelPerrault/flutter/issues/107732
 // Wrap the given child in the widgets common to both contextMenuBuilder and
 // TextSelectionControls.buildToolbar.
 class _SelectionToolbarWrapper extends StatefulWidget {
@@ -2153,7 +2153,7 @@ class TextSelectionGestureDetectorBuilder {
     // in callbacks variants that provide them [TapGestureRecognizer.onSecondaryTap]
     // vs [TapGestureRecognizer.onSecondaryTapUp] instead of having to track state in
     // renderEditable. When this migration is complete we should remove this hack.
-    // See https://github.com/flutter/flutter/issues/115130.
+    // See https://github.com/LionelPerrault/flutter/issues/115130.
     renderEditable.handleTapDown(TapDownDetails(globalPosition: details.globalPosition));
     // The selection overlay should only be shown when the user is interacting
     // through a touch screen (via either a finger or a stylus). A mouse shouldn't
@@ -2162,7 +2162,7 @@ class TextSelectionGestureDetectorBuilder {
     final PointerDeviceKind? kind = details.kind;
     // TODO(justinmc): Should a desktop platform show its selection toolbar when
     // receiving a tap event?  Say a Windows device with a touchscreen.
-    // https://github.com/flutter/flutter/issues/106586
+    // https://github.com/LionelPerrault/flutter/issues/106586
     _shouldShowSelectionToolbar = kind == null
       || kind == PointerDeviceKind.touch
       || kind == PointerDeviceKind.stylus;
@@ -2308,7 +2308,7 @@ class TextSelectionGestureDetectorBuilder {
             case PointerDeviceKind.stylus:
             case PointerDeviceKind.invertedStylus:
               // TODO(camsim99): Determine spell check toolbar behavior in these cases:
-              // https://github.com/flutter/flutter/issues/119573.
+              // https://github.com/LionelPerrault/flutter/issues/119573.
               // Precise devices should place the cursor at a precise position if the
               // word at the text position is not misspelled.
               renderEditable.selectPosition(cause: SelectionChangedCause.tap);
@@ -2518,7 +2518,7 @@ class TextSelectionGestureDetectorBuilder {
     // in callbacks variants that provide them [TapGestureRecognizer.onSecondaryTap]
     // vs [TapGestureRecognizer.onSecondaryTapUp] instead of having to track state in
     // renderEditable. When this migration is complete we should remove this hack.
-    // See https://github.com/flutter/flutter/issues/115130.
+    // See https://github.com/LionelPerrault/flutter/issues/115130.
     renderEditable.handleSecondaryTapDown(TapDownDetails(globalPosition: details.globalPosition));
     _shouldShowSelectionToolbar = true;
   }
@@ -3529,7 +3529,7 @@ enum LiveTextInputStatus {
 
 // TODO(justinmc): Deprecate this after TextSelectionControls.buildToolbar is
 // deleted, when users should migrate back to TextSelectionControls.buildHandle.
-// See https://github.com/flutter/flutter/pull/124262
+// See https://github.com/LionelPerrault/flutter/pull/124262
 /// [TextSelectionControls] that specifically do not manage the toolbar in order
 /// to leave that to [EditableText.contextMenuBuilder].
 mixin TextSelectionHandleControls on TextSelectionControls {

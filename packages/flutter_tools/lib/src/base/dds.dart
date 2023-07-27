@@ -80,7 +80,7 @@ class DartDevelopmentService {
             if (_existingDdsUri == null) {
               String parsedUrl = e.message.split(' ').firstWhere((String e) => e.startsWith('http'));
               // Trim trailing full stops from the message.
-              // https://github.com/flutter/flutter/issues/118609.
+              // https://github.com/LionelPerrault/flutter/issues/118609.
               if (parsedUrl.endsWith('.')) {
                 parsedUrl = parsedUrl.substring(0, parsedUrl.length - 1);
               }
@@ -92,7 +92,7 @@ class DartDevelopmentService {
           }
           logger.printError(
             'DDS has failed to start and there is not an existing DDS instance '
-            'available to connect to. Please file an issue at https://github.com/flutter/flutter/issues '
+            'available to connect to. Please file an issue at https://github.com/LionelPerrault/flutter/issues '
             'with the following error message:\n\n ${e.message}.'
           );
           // DDS was unable to start for an unknown reason. Raise a StateError

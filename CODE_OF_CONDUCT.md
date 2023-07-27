@@ -1,4 +1,4 @@
-<!-- when updating this file also update https://github.com/flutter/.github/blob/main/CODE_OF_CONDUCT.md -->
+<!-- when updating this file also update https://github.com/LionelPerrault/.github/blob/main/CODE_OF_CONDUCT.md -->
 
 # Code of conduct
 
@@ -39,7 +39,7 @@ solutions are merged into one mediocre solution. A conflict is
 addressed when the participants agree that the final solution is
 _better_ than all the conflicting proposals. Sometimes the solution is
 more work than either of the proposals. [Embrace the yak
-shave](https://github.com/flutter/flutter/wiki/Style-guide-for-Flutter-repo#lazy-programming).
+shave](https://github.com/LionelPerrault/flutter/wiki/Style-guide-for-Flutter-repo#lazy-programming).
 
 ## Questions
 

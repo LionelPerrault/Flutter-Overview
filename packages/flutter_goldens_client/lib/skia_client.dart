@@ -14,7 +14,7 @@ import 'package:process/process.dart';
 
 // If you are here trying to figure out how to use golden files in the Flutter
 // repo itself, consider reading this wiki page:
-// https://github.com/flutter/flutter/wiki/Writing-a-golden-file-test-for-package%3Aflutter
+// https://github.com/LionelPerrault/flutter/wiki/Writing-a-golden-file-test-for-package%3Aflutter
 
 const String _kFlutterRootKey = 'FLUTTER_ROOT';
 const String _kGoldctlKey = 'GOLDCTL';
@@ -233,7 +233,7 @@ class SkiaGoldClient {
         ..writeln('Visit https://flutter-gold.skia.org/ to view and approve ')
         ..writeln('the image(s), or revert the associated change. For more ')
         ..writeln('information, visit the wiki: ')
-        ..writeln('https://github.com/flutter/flutter/wiki/Writing-a-golden-file-test-for-package:flutter')
+        ..writeln('https://github.com/LionelPerrault/flutter/wiki/Writing-a-golden-file-test-for-package:flutter')
         ..writeln()
         ..writeln('Debug information for Gold --------------------------------')
         ..writeln('stdout: ${result.stdout}')
@@ -429,7 +429,7 @@ class SkiaGoldClient {
       } on FormatException catch (error) {
         // Ideally we'd use something like package:test's printOnError, but best reliability
         // in getting logs on CI for now we're just using print.
-        // See also: https://github.com/flutter/flutter/issues/91285
+        // See also: https://github.com/LionelPerrault/flutter/issues/91285
         print( // ignore: avoid_print
           'Formatting error detected requesting expectations from Flutter Gold.\n'
           'error: $error\n'

@@ -64,7 +64,7 @@ class FlutterDeviceScreenshot {
     // TODO(egarciad): InstrumentationRegistry requires the uiautomator dependency.
     // However, Flutter adds test dependencies to release builds.
     // As a result, disable screenshots with instrumentation until the issue is fixed.
-    // https://github.com/flutter/flutter/issues/56591
+    // https://github.com/LionelPerrault/flutter/issues/56591
     return false;
   }
 

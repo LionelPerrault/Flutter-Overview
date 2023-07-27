@@ -418,7 +418,7 @@ Future<XcodeBuildResult> buildXcodeProject({
       if (!resultBundle.existsSync()) {
         globals.printTrace('The xcresult bundle are not generated. Displaying xcresult is disabled.');
       } else {
-        // Discard unwanted errors. See: https://github.com/flutter/flutter/issues/95354
+        // Discard unwanted errors. See: https://github.com/LionelPerrault/flutter/issues/95354
         final XCResultIssueDiscarder warningDiscarder = XCResultIssueDiscarder(typeMatcher: XCResultIssueType.warning);
         final XCResultIssueDiscarder dartBuildErrorDiscarder = XCResultIssueDiscarder(messageMatcher: RegExp(r'Command PhaseScriptExecution failed with a nonzero exit code'));
         final XCResultGenerator xcResultGenerator = XCResultGenerator(resultPath: resultBundle.absolute.path, xcode: globals.xcode!, processUtils: globals.processUtils);

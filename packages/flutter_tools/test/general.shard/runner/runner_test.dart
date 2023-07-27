@@ -108,7 +108,7 @@ void main() {
     // completes, but ideally we'd want it to complete when execution resumes
     // runner.run. Currently the distinction does not matter, but if it ever
     // does, this test might fail to catch a regression of
-    // https://github.com/flutter/flutter/issues/56406.
+    // https://github.com/LionelPerrault/flutter/issues/56406.
     final Completer<void> commandCompleter = Completer<void>();
     testUsingContext('error handling crash report (asynchronous crash)', () async {
       final Completer<void> completer = Completer<void>();
@@ -523,7 +523,7 @@ class CustomBugInstructions extends UserMessages {
 /// A fake [CrashReporter] that waits for a [Future] to complete.
 ///
 /// Used to exacerbate a race between the success and failure paths of
-/// [runner.run]. See https://github.com/flutter/flutter/issues/56406.
+/// [runner.run]. See https://github.com/LionelPerrault/flutter/issues/56406.
 class WaitingCrashReporter implements CrashReporter {
   WaitingCrashReporter(Future<void> future) : _future = future;
 

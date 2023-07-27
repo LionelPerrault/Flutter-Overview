@@ -397,7 +397,7 @@ class FlutterPlugin implements Plugin<Project> {
             String flutterBuildMode = buildModeFor(buildType)
             // In AGP 3.5, the embedding must be added as an API implementation,
             // so java8 features are desugared against the runtime classpath.
-            // For more, see https://github.com/flutter/flutter/issues/40126
+            // For more, see https://github.com/LionelPerrault/flutter/issues/40126
             if (!supportsBuildMode(flutterBuildMode)) {
                 return
             }
@@ -413,7 +413,7 @@ class FlutterPlugin implements Plugin<Project> {
             // default method implementations when the interface is implemented by a plugin.
             //
             // See https://issuetracker.google.com/139821726, and
-            // https://github.com/flutter/flutter/issues/72185 for more details.
+            // https://github.com/LionelPerrault/flutter/issues/72185 for more details.
             addApiDependencies(
               pluginProject,
               buildType.name,
@@ -549,7 +549,7 @@ class FlutterPlugin implements Plugin<Project> {
             }
             // TODO(amirh): log an error if this plugin was specified to be an Android
             // plugin according to the new schema, and was missing a build.gradle file.
-            // https://github.com/flutter/flutter/issues/40784
+            // https://github.com/LionelPerrault/flutter/issues/40784
         }
         return androidPlugins
     }
@@ -697,7 +697,7 @@ class FlutterPlugin implements Plugin<Project> {
     //
     // Format of the output of this task can be used in debugging what version of Java Gradle is using.
     // Not recomended for use in time sensitive commands like `flutter run` or `flutter build` as
-    // Gradle is slower than we want. Particularly in light of https://github.com/flutter/flutter/issues/119196.
+    // Gradle is slower than we want. Particularly in light of https://github.com/LionelPerrault/flutter/issues/119196.
     private static void addTaskForJavaVersion(Project project) {
         // Warning: the name of this task is used by other code. Change with caution.
         project.tasks.register('javaVersion') {
@@ -860,7 +860,7 @@ class FlutterPlugin implements Plugin<Project> {
         return target
     }
 
-    // TODO: Remove this AGP hack. https://github.com/flutter/flutter/issues/109560
+    // TODO: Remove this AGP hack. https://github.com/LionelPerrault/flutter/issues/109560
     /**
      * In AGP 4.0, the Android linter task depends on the JAR tasks that generate `libapp.so`.
      * When building APKs, this causes an issue where building release requires the debug JAR,

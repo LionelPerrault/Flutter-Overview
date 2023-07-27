@@ -42,7 +42,7 @@ export 'dart:ui' show
   TileMode,
   VertexMode,
   // TODO(werainkhatri): remove these after their deprecation period in engine
-  // https://github.com/flutter/flutter/pull/99505
+  // https://github.com/LionelPerrault/flutter/pull/99505
   hashList, // ignore: deprecated_member_use
   hashValues; // ignore: deprecated_member_use
 

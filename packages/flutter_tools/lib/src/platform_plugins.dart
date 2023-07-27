@@ -245,7 +245,7 @@ class IOSPlugin extends PluginPlatform implements NativeOrDartPlugin, DarwinPlug
        sharedDarwinSource = sharedDarwinSource ?? false;
 
   factory IOSPlugin.fromYaml(String name, YamlMap yaml) {
-    assert(validate(yaml)); // TODO(zanderso): https://github.com/flutter/flutter/issues/67241
+    assert(validate(yaml)); // TODO(zanderso): https://github.com/LionelPerrault/flutter/issues/67241
     return IOSPlugin(
       name: name,
       classPrefix: '',
@@ -323,7 +323,7 @@ class MacOSPlugin extends PluginPlatform implements NativeOrDartPlugin, DarwinPl
 
   factory MacOSPlugin.fromYaml(String name, YamlMap yaml) {
     assert(validate(yaml));
-    // Treat 'none' as not present. See https://github.com/flutter/flutter/issues/57497.
+    // Treat 'none' as not present. See https://github.com/LionelPerrault/flutter/issues/57497.
     String? pluginClass = yaml[kPluginClass] as String?;
     if (pluginClass == 'none') {
       pluginClass = null;
@@ -399,7 +399,7 @@ class WindowsPlugin extends PluginPlatform
 
   factory WindowsPlugin.fromYaml(String name, YamlMap yaml) {
     assert(validate(yaml));
-    // Treat 'none' as not present. See https://github.com/flutter/flutter/issues/57497.
+    // Treat 'none' as not present. See https://github.com/LionelPerrault/flutter/issues/57497.
     String? pluginClass = yaml[kPluginClass] as String?;
     if (pluginClass == 'none') {
       pluginClass = null;
@@ -489,7 +489,7 @@ class LinuxPlugin extends PluginPlatform implements NativeOrDartPlugin {
 
   factory LinuxPlugin.fromYaml(String name, YamlMap yaml) {
     assert(validate(yaml));
-    // Treat 'none' as not present. See https://github.com/flutter/flutter/issues/57497.
+    // Treat 'none' as not present. See https://github.com/LionelPerrault/flutter/issues/57497.
     String? pluginClass = yaml[kPluginClass] as String?;
     if (pluginClass == 'none') {
       pluginClass = null;

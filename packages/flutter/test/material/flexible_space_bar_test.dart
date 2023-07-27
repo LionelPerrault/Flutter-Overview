@@ -137,7 +137,7 @@ void main() {
   });
 
   testWidgetsWithLeakTracking('FlexibleSpaceBar.background is visible when using height other than kToolbarHeight', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/80451
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/80451
     await tester.pumpWidget(
       MaterialApp(
         home: Scaffold(
@@ -436,7 +436,7 @@ void main() {
     semantics.dispose();
   });
 
-  // This is a regression test for https://github.com/flutter/flutter/issues/14227
+  // This is a regression test for https://github.com/LionelPerrault/flutter/issues/14227
   testWidgetsWithLeakTracking('FlexibleSpaceBar sets width constraints for the title', (WidgetTester tester) async {
     const double titleFontSize = 20.0;
     const double height = 300.0;

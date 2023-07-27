@@ -508,7 +508,7 @@ void main() {
     'Chip constrains the avatar, label, and delete icons to the bounds of '
     'the chip when it exceeds the available space',
     (WidgetTester tester) async {
-      // Regression test for https://github.com/flutter/flutter/issues/11523
+      // Regression test for https://github.com/LionelPerrault/flutter/issues/11523
       Widget chipBuilder (String text, {Widget? avatar, VoidCallback? onDeleted}) {
         return MaterialApp(
           home: Scaffold(
@@ -2620,7 +2620,7 @@ void main() {
   });
 
   testWidgetsWithLeakTracking('Chips should use InkWell instead of InkResponse.', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/28646
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/28646
     await tester.pumpWidget(
       MaterialApp(
         home: Material(
@@ -3307,7 +3307,7 @@ void main() {
   });
 
   testWidgetsWithLeakTracking('intrinsicHeight implementation meets constraints', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/49478.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/49478.
     await tester.pumpWidget(wrapForChip(
       child: const Chip(
         label: Text('text'),

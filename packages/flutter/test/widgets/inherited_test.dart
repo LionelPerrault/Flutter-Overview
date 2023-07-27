@@ -450,7 +450,7 @@ void main() {
   });
 
   testWidgets('initState() dependency on Inherited asserts', (WidgetTester tester) async {
-    // This is a regression test for https://github.com/flutter/flutter/issues/5491
+    // This is a regression test for https://github.com/LionelPerrault/flutter/issues/5491
     bool exceptionCaught = false;
 
     final TestInherited parent = TestInherited(child: ExpectFail(() {

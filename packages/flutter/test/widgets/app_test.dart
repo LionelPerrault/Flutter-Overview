@@ -586,7 +586,7 @@ void main() {
     if (!kIsWeb) {
       // On web, `flutter test` does not guarantee a particular locale, but
       // when using `flutter_tester`, we guarantee that it's en-US, zh-CN.
-      // https://github.com/flutter/flutter/issues/93290
+      // https://github.com/LionelPerrault/flutter/issues/93290
       expect(localesArg, const <Locale>[Locale('en', 'US'), Locale('zh', 'CN')]);
     }
     expect(supportedLocalesArg, const <Locale>[Locale('en', 'US')]);

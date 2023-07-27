@@ -1041,7 +1041,7 @@ class _IntrinsicDimensionsCacheEntry {
 /// positioned at 0,0. If this is not true, then use [RenderShiftedBox] instead.
 ///
 /// See
-/// [proxy_box.dart](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/rendering/proxy_box.dart)
+/// [proxy_box.dart](https://github.com/LionelPerrault/flutter/blob/master/packages/flutter/lib/src/rendering/proxy_box.dart)
 /// for examples of inheriting from [RenderProxyBox].
 ///
 /// #### Using RenderShiftedBox
@@ -1052,7 +1052,7 @@ class _IntrinsicDimensionsCacheEntry {
 /// default layout algorithm.
 ///
 /// See
-/// [shifted_box.dart](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/rendering/shifted_box.dart)
+/// [shifted_box.dart](https://github.com/LionelPerrault/flutter/blob/master/packages/flutter/lib/src/rendering/shifted_box.dart)
 /// for examples of inheriting from [RenderShiftedBox].
 ///
 /// #### Kinds of children and child-specific data
@@ -1905,7 +1905,7 @@ abstract class RenderBox extends RenderObject {
         ErrorSummary('The ${objectRuntimeType(this, 'RenderBox')} class does not implement "computeDryLayout".'),
         ErrorHint(
           'If you are not writing your own RenderBox subclass, then this is not\n'
-          'your fault. Contact support: https://github.com/flutter/flutter/issues/new?template=2_bug.yml',
+          'your fault. Contact support: https://github.com/LionelPerrault/flutter/issues/new?template=2_bug.yml',
         ),
       ]),
     ));
@@ -2262,7 +2262,7 @@ abstract class RenderBox extends RenderObject {
           DiagnosticsProperty<Size>('Size', _size, style: DiagnosticsTreeStyle.errorProperty),
           ErrorHint(
             'If you are not writing your own RenderBox subclass, then this is not '
-            'your fault. Contact support: https://github.com/flutter/flutter/issues/new?template=2_bug.yml',
+            'your fault. Contact support: https://github.com/LionelPerrault/flutter/issues/new?template=2_bug.yml',
           ),
         ]);
       }
@@ -2311,7 +2311,7 @@ abstract class RenderBox extends RenderObject {
             ...failures,
             ErrorHint(
               'If you are not writing your own RenderBox subclass, then this is not\n'
-              'your fault. Contact support: https://github.com/flutter/flutter/issues/new?template=2_bug.yml',
+              'your fault. Contact support: https://github.com/LionelPerrault/flutter/issues/new?template=2_bug.yml',
             ),
           ]);
         }
@@ -2337,7 +2337,7 @@ abstract class RenderBox extends RenderObject {
             ),
             ErrorHint(
               'If you are not writing your own RenderBox subclass, then this is not\n'
-              'your fault. Contact support: https://github.com/flutter/flutter/issues/new?template=2_bug.yml',
+              'your fault. Contact support: https://github.com/LionelPerrault/flutter/issues/new?template=2_bug.yml',
             ),
           ]);
         }

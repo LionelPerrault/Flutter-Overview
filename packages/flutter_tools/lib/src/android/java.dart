@@ -227,6 +227,6 @@ String _formatJavaVersionWarning(String javaVersionRaw) {
   return 'Could not parse java version from: \n'
     '$javaVersionRaw \n'
     'If there is a version please look for an existing bug '
-    'https://github.com/flutter/flutter/issues/ '
+    'https://github.com/LionelPerrault/flutter/issues/ '
     'and if one does not exist file a new issue.';
 }

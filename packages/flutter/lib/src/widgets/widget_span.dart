@@ -297,7 +297,7 @@ class _WidgetSpanParentData extends ParentDataWidget<TextParentData> {
 // widgets.
 //
 // TODO(LongCatIsLooong): this shouldn't happen automatically, at least there
-// should be a way to opt out: https://github.com/flutter/flutter/issues/126962
+// should be a way to opt out: https://github.com/LionelPerrault/flutter/issues/126962
 class _AutoScaleInlineWidget extends SingleChildRenderObjectWidget {
   const _AutoScaleInlineWidget({ required this.span, required this.textScaleFactor, required super.child });
 

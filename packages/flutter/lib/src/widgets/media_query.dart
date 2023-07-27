@@ -310,7 +310,7 @@ class MediaQueryData {
   // TODO(LongCatIsLooong): remove this after textScaleFactor is removed. To
   // maintain backward compatibility and also keep the const constructor this
   // has to be kept as a private field.
-  // https://github.com/flutter/flutter/issues/128825
+  // https://github.com/LionelPerrault/flutter/issues/128825
   final double _textScaleFactor;
 
   /// The font scaling strategy to use for laying out textual contents.
@@ -1799,7 +1799,7 @@ class _MediaQueryFromViewState extends State<_MediaQueryFromView> with WidgetsBi
 
 const TextScaler _kUnspecifiedTextScaler = _UnspecifiedTextScaler();
 // TODO(LongCatIsLooong): Remove once `MediaQueryData.textScaleFactor` is
-// removed: https://github.com/flutter/flutter/issues/128825.
+// removed: https://github.com/LionelPerrault/flutter/issues/128825.
 class _UnspecifiedTextScaler implements TextScaler {
   const _UnspecifiedTextScaler();
 

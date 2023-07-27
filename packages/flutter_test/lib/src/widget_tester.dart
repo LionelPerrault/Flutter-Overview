@@ -141,7 +141,7 @@ void testWidgets(
     // IDEs may make assumptions about the format of this suffix in order to
     // support running tests directly from the editor (where they may have
     // access to only the test name, provided by the analysis server).
-    // See https://github.com/flutter/flutter/issues/86659.
+    // See https://github.com/LionelPerrault/flutter/issues/86659.
     final String combinedDescription = variationDescription.isNotEmpty
         ? '$description (variant: $variationDescription)'
         : description;
@@ -1037,7 +1037,7 @@ class WidgetTester extends WidgetController implements HitTestDispatcher, Ticker
 
   void _verifySemanticsHandlesWereDisposed() {
     assert(_lastRecordedSemanticsHandles != null);
-    // TODO(goderbauer): Fix known leak in web engine when running integration tests and remove this "correction", https://github.com/flutter/flutter/issues/121640.
+    // TODO(goderbauer): Fix known leak in web engine when running integration tests and remove this "correction", https://github.com/LionelPerrault/flutter/issues/121640.
     final int knownWebEngineLeakForLiveTestsCorrection = kIsWeb && binding is LiveTestWidgetsFlutterBinding ? 1 : 0;
 
     if (_currentSemanticsHandles - knownWebEngineLeakForLiveTestsCorrection > _lastRecordedSemanticsHandles!) {

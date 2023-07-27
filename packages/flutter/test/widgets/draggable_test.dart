@@ -4,7 +4,7 @@
 
 // TODO(gspencergoog): Remove this tag once this test's state leaks/test
 // dependencies have been fixed.
-// https://github.com/flutter/flutter/issues/85160
+// https://github.com/LionelPerrault/flutter/issues/85160
 // Fails with "flutter test --test-randomize-ordering-seed=123"
 @Tags(<String>['no-shuffle'])
 library;
@@ -92,7 +92,7 @@ void main() {
     expect(moveCount, 1);
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/76825
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/76825
   testWidgets('Drag and drop - onLeave callback fires correctly with generic parameter', (WidgetTester tester) async {
     final Map<String,int> leftBehind = <String,int>{
       'Target 1': 0,
@@ -243,7 +243,7 @@ void main() {
     expect(leftBehind['Target 2'], equals(1));
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/76825
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/76825
   testWidgets('Drag and drop - onMove callback fires correctly with generic parameter', (WidgetTester tester) async {
     final Map<String,int> targetMoveCount = <String,int>{
       'Target 1': 0,
@@ -2205,7 +2205,7 @@ void main() {
     expect(didTap, isFalse);
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/6128.
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/6128.
   testWidgets('Draggable plays nice with onTap', (WidgetTester tester) async {
     await tester.pumpWidget(
       Directionality(
@@ -2751,7 +2751,7 @@ void main() {
       );
     });
 
-  // Regression test for https://github.com/flutter/flutter/issues/72483
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/72483
   testWidgets('Drag and drop - DragTarget<Object> can accept Draggable<int> data', (WidgetTester tester) async {
     final List<Object> accepted = <Object>[];
     await tester.pumpWidget(MaterialApp(
@@ -3076,7 +3076,7 @@ void main() {
     expect(tester.widget<Listener>(find.byType(Listener).first).behavior, hitTestBehavior);
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/92083
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/92083
   testWidgets('feedback respect the MouseRegion cursor configure', (WidgetTester tester) async {
     await tester.pumpWidget(
       const MaterialApp(

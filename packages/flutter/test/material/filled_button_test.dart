@@ -275,7 +275,7 @@ void main() {
     await tester.pumpAndSettle();
     await expectLater(tester, meetsGuideline(textContrastGuideline));
   },
-    skip: isBrowser, // https://github.com/flutter/flutter/issues/44115
+    skip: isBrowser, // https://github.com/LionelPerrault/flutter/issues/44115
   );
 
   testWidgetsWithLeakTracking('FilledButton default overlayColor and elevation resolve pressed state', (WidgetTester tester) async {
@@ -1535,7 +1535,7 @@ void main() {
   }, variant: TargetPlatformVariant.all());
 
   testWidgetsWithLeakTracking('FilledButton.icon does not overflow', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/77815
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/77815
     await tester.pumpWidget(
       MaterialApp(
         home: Scaffold(
@@ -1743,7 +1743,7 @@ void main() {
   });
 
   testWidgetsWithLeakTracking('FilledButton in SelectionArea changes mouse cursor when hovered', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/104595.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/104595.
     await tester.pumpWidget(MaterialApp(
       home: SelectionArea(
         child: FilledButton(

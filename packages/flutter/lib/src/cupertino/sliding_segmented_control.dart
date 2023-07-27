@@ -536,7 +536,7 @@ class _SegmentedControlState<T> extends State<CupertinoSlidingSegmentedControl<T
     // Additionally, start the thumb animation if the highlighted segment
     // changes. If the thumbController is already running, the render object's
     // paint method will create a new tween to drive the animation with.
-    // TODO(LongCatIsLooong): https://github.com/flutter/flutter/issues/74356:
+    // TODO(LongCatIsLooong): https://github.com/LionelPerrault/flutter/issues/74356:
     // the current thumb will be painted at the same location twice (before and
     // after the new animation starts).
     thumbController.animateWith(_kThumbSpringAnimationSimulation);

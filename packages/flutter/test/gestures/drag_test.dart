@@ -1454,7 +1454,7 @@ void main() {
     'On multiple pointers, the last tracking pointer can be rejected by [resolvePointer] when the '
     'other pointer already accepted the VerticalDragGestureRecognizer',
     (GestureTester tester) {
-      // Regressing test for https://github.com/flutter/flutter/issues/68373
+      // Regressing test for https://github.com/LionelPerrault/flutter/issues/68373
       final List<String> logs = <String>[];
       final VerticalDragGestureRecognizer drag = VerticalDragGestureRecognizer()
         ..onDown = (DragDownDetails details) { logs.add('downD'); }
@@ -1522,7 +1522,7 @@ void main() {
   );
 
   testGesture('Does not crash when one of the 2 pointers wins by default and is then released', (GestureTester tester) {
-    // Regression test for https://github.com/flutter/flutter/issues/82784
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/82784
 
     bool didStartDrag = false;
     final HorizontalDragGestureRecognizer drag = HorizontalDragGestureRecognizer()

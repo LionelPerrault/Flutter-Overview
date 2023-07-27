@@ -18,7 +18,7 @@ body:
     attributes:
       label: Is there an existing issue for this?
       options:
-      - label: I have searched the [existing issues](https://github.com/flutter/flutter/issues)
+      - label: I have searched the [existing issues](https://github.com/LionelPerrault/flutter/issues)
         required: true
       - label: I have read the [guide to filing a bug](https://flutter.dev/docs/resources/bug-reports)
         required: true

@@ -72,7 +72,7 @@ void main() {
   }
 
   testWidgets('Do not crash when replacing scroll position during the drag', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/89681
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/89681
     bool showScrollbars = false;
     await tester.pumpWidget(
       Directionality(
@@ -393,7 +393,7 @@ void main() {
     }, variant: TargetPlatformVariant.all());
 
     testWidgets('Ballistic animation on fling should not leak Ticker', (WidgetTester tester) async {
-      // Regression test for https://github.com/flutter/flutter/issues/101061
+      // Regression test for https://github.com/LionelPerrault/flutter/issues/101061
       await tester.pumpWidget(
         Directionality(
           textDirection: TextDirection.ltr,
@@ -887,7 +887,7 @@ void main() {
   });
 
   testWidgets('Do not crash when remove the tree during animation.', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/89214
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/89214
     await tester.pumpWidget(boilerplateWidget(
       null,
       onScrollNotification: (ScrollNotification notification) {
@@ -1443,7 +1443,7 @@ void main() {
   });
 
   testWidgets('DraggableScrollableSheet should not reset programmatic drag on rebuild', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/101114
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/101114
     const Key stackKey = ValueKey<String>('stack');
     const Key containerKey = ValueKey<String>('container');
     final DraggableScrollableController controller = DraggableScrollableController();
@@ -1509,7 +1509,7 @@ void main() {
   });
 
   testWidgets('DraggableScrollableSheet should respect NeverScrollableScrollPhysics', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/121021
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/121021
     final DraggableScrollableController controller = DraggableScrollableController();
     Widget buildFrame(ScrollPhysics? physics) {
       return MaterialApp(
@@ -1554,7 +1554,7 @@ void main() {
   });
 
   testWidgets('DraggableScrollableSheet should not rebuild every frame while dragging', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/67219
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/67219
     int buildCount = 0;
     await tester.pumpWidget(MaterialApp(
       home: StatefulBuilder(

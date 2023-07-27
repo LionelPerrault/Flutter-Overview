@@ -432,7 +432,7 @@ void main() {
   });
 
   test('Listenable.merge does not leak', () {
-    // Regression test for https://github.com/flutter/flutter/issues/25163.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/25163.
 
     final TestNotifier source1 = TestNotifier();
     final TestNotifier source2 = TestNotifier();

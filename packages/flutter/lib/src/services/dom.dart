@@ -6,7 +6,7 @@ import 'dart:js_interop';
 
 /// This file includes static interop helpers for Flutter Web.
 // TODO(joshualitt): This file will eventually be removed,
-// https://github.com/flutter/flutter/issues/113402.
+// https://github.com/LionelPerrault/flutter/issues/113402.
 
 /// [DomWindow] interop object.
 @JS()

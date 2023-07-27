@@ -200,7 +200,7 @@ void main() {
     expect(findRoute('home', count: 1, skipOffstage: false), findsOneWidget);
     expect(findRoute('Foo', count: 1), findsOneWidget);
     expect(findRoute('Bar'), findsNothing);
-  }, skip: isBrowser); // https://github.com/flutter/flutter/issues/33615
+  }, skip: isBrowser); // https://github.com/LionelPerrault/flutter/issues/33615
 
   testWidgets('restorablePush adds route on all platforms', (WidgetTester tester) async {
     await tester.pumpWidget(const TestWidget());
@@ -243,7 +243,7 @@ void main() {
     expect(findRoute('home', skipOffstage: false), findsNothing);
     expect(findRoute('Foo', count: 1), findsOneWidget);
     expect(findRoute('Bar'), findsNothing);
-  }, skip: isBrowser); // https://github.com/flutter/flutter/issues/33615
+  }, skip: isBrowser); // https://github.com/LionelPerrault/flutter/issues/33615
 
   testWidgets('restorablePushReplacement adds route on all platforms', (WidgetTester tester) async {
     await tester.pumpWidget(const TestWidget());
@@ -286,7 +286,7 @@ void main() {
     expect(findRoute('home', skipOffstage: false), findsNothing);
     expect(findRoute('Foo', count: 1), findsOneWidget);
     expect(findRoute('Bar'), findsNothing);
-  }, skip: isBrowser); // https://github.com/flutter/flutter/issues/33615
+  }, skip: isBrowser); // https://github.com/LionelPerrault/flutter/issues/33615
 
   testWidgets('restorablePushAndRemoveUntil adds route on all platforms', (WidgetTester tester) async {
     await tester.pumpWidget(const TestWidget());
@@ -332,7 +332,7 @@ void main() {
     expect(findRoute('home', skipOffstage: false), findsNothing);
     expect(findRoute('Foo', count: 1), findsOneWidget);
     expect(findRoute('Bar'), findsNothing);
-  }, skip: isBrowser); // https://github.com/flutter/flutter/issues/33615
+  }, skip: isBrowser); // https://github.com/LionelPerrault/flutter/issues/33615
 
   testWidgets('restorableReplace adds route on all platforms', (WidgetTester tester) async {
     await tester.pumpWidget(const TestWidget());
@@ -390,7 +390,7 @@ void main() {
     expect(findRoute('home', skipOffstage: false), findsNothing);
     expect(findRoute('Foo', count: 0, skipOffstage: false), findsOneWidget);
     expect(findRoute('Anchor', count: 2), findsOneWidget);
-  }, skip: isBrowser); // https://github.com/flutter/flutter/issues/33615
+  }, skip: isBrowser); // https://github.com/LionelPerrault/flutter/issues/33615
 
   testWidgets('restorableReplaceRouteBelow adds route on all platforms', (WidgetTester tester) async {
     await tester.pumpWidget(const TestWidget());
@@ -671,7 +671,7 @@ void main() {
     expect(restoredRouteFuture.route, isNull);
     expect(restoredRouteFuture.isPresent, isFalse);
     expect(restoredRouteFuture.enabled, isFalse);
-  }, skip: isBrowser); // https://github.com/flutter/flutter/issues/33615
+  }, skip: isBrowser); // https://github.com/LionelPerrault/flutter/issues/33615
 
   testWidgets('RestorableRouteFuture in unrestorable context', (WidgetTester tester) async {
     await tester.pumpWidget(const TestWidget());
@@ -763,27 +763,27 @@ void main() {
     expect(
       () => tester.state<NavigatorState>(find.byType(Navigator)).restorablePush((BuildContext _, Object? __) => FakeRoute()),
       throwsBuilderAssertionError,
-      skip: isBrowser, // https://github.com/flutter/flutter/issues/33615
+      skip: isBrowser, // https://github.com/LionelPerrault/flutter/issues/33615
     );
     expect(
       () => tester.state<NavigatorState>(find.byType(Navigator)).restorablePushReplacement((BuildContext _, Object? __) => FakeRoute()),
       throwsBuilderAssertionError,
-      skip: isBrowser, // https://github.com/flutter/flutter/issues/33615
+      skip: isBrowser, // https://github.com/LionelPerrault/flutter/issues/33615
     );
     expect(
       () => tester.state<NavigatorState>(find.byType(Navigator)).restorablePushAndRemoveUntil((BuildContext _, Object? __) => FakeRoute(), (Route<Object?> _) => false),
       throwsBuilderAssertionError,
-      skip: isBrowser, // https://github.com/flutter/flutter/issues/33615
+      skip: isBrowser, // https://github.com/LionelPerrault/flutter/issues/33615
     );
     expect(
       () => tester.state<NavigatorState>(find.byType(Navigator)).restorableReplace(newRouteBuilder: (BuildContext _, Object? __) => FakeRoute(), oldRoute: oldRoute),
       throwsBuilderAssertionError,
-      skip: isBrowser, // https://github.com/flutter/flutter/issues/33615
+      skip: isBrowser, // https://github.com/LionelPerrault/flutter/issues/33615
     );
     expect(
       () => tester.state<NavigatorState>(find.byType(Navigator)).restorableReplaceRouteBelow(newRouteBuilder: (BuildContext _, Object? __) => FakeRoute(), anchorRoute: oldRoute),
       throwsBuilderAssertionError,
-      skip: isBrowser, // https://github.com/flutter/flutter/issues/33615
+      skip: isBrowser, // https://github.com/LionelPerrault/flutter/issues/33615
     );
   });
 

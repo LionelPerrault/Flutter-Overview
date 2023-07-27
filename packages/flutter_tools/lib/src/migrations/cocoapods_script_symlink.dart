@@ -12,7 +12,7 @@ import '../xcode_project.dart';
 // relative path of the symlink. The -f flag returns the original "--canonicalize" behavior the CocoaPods script relies on.
 // This has been fixed upstream in CocoaPods, but migrate a copy of their workaround so users don't need to update.
 //
-// See https://github.com/flutter/flutter/issues/123890#issuecomment-1494825976.
+// See https://github.com/LionelPerrault/flutter/issues/123890#issuecomment-1494825976.
 class CocoaPodsScriptReadlink extends ProjectMigrator {
   CocoaPodsScriptReadlink(
     XcodeBasedProject project,

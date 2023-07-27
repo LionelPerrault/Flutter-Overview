@@ -83,7 +83,7 @@ abstract class GoldenFileComparator {
   /// historical golden files.
   ///
   /// Version numbers are used in golden file tests for package:flutter. You can
-  /// learn more about these tests [here](https://github.com/flutter/flutter/wiki/Writing-a-golden-file-test-for-package:flutter).
+  /// learn more about these tests [here](https://github.com/LionelPerrault/flutter/wiki/Writing-a-golden-file-test-for-package:flutter).
   Uri getTestUri(Uri key, int? version) {
     if (version == null) {
       return key;
@@ -191,7 +191,7 @@ abstract class WebGoldenComparator {
   /// historical golden files.
   ///
   /// Version numbers are used in golden file tests for package:flutter. You can
-  /// learn more about these tests [here](https://github.com/flutter/flutter/wiki/Writing-a-golden-file-test-for-package:flutter).
+  /// learn more about these tests [here](https://github.com/LionelPerrault/flutter/wiki/Writing-a-golden-file-test-for-package:flutter).
   Uri getTestUri(Uri key, int? version) {
     if (version == null) {
       return key;
@@ -275,7 +275,7 @@ class TrivialComparator implements GoldenFileComparator {
   Future<bool> compare(Uint8List imageBytes, Uri golden) {
     // Ideally we would use markTestSkipped here but in some situations,
     // comparators are called outside of tests.
-    // See also: https://github.com/flutter/flutter/issues/91285
+    // See also: https://github.com/LionelPerrault/flutter/issues/91285
     // ignore: avoid_print
     print('Golden file comparison requested for "$golden"; skipping...');
     return Future<bool>.value(true);
@@ -299,7 +299,7 @@ class _TrivialWebGoldenComparator implements WebGoldenComparator {
   Future<bool> compare(double width, double height, Uri golden) {
     // Ideally we would use markTestSkipped here but in some situations,
     // comparators are called outside of tests.
-    // See also: https://github.com/flutter/flutter/issues/91285
+    // See also: https://github.com/LionelPerrault/flutter/issues/91285
     // ignore: avoid_print
     print('Golden comparison requested for "$golden"; skipping...');
     return Future<bool>.value(true);

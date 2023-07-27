@@ -31,7 +31,7 @@ class RemoveBitcodeMigration extends ProjectMigrator {
     if (line.contains('ENABLE_BITCODE = YES;')) {
       if (!migrationRequired) {
         // Only print for the first discovered change found.
-        logger.printWarning('Disabling deprecated bitcode Xcode build setting. See https://github.com/flutter/flutter/issues/107887 for additional details.');
+        logger.printWarning('Disabling deprecated bitcode Xcode build setting. See https://github.com/LionelPerrault/flutter/issues/107887 for additional details.');
       }
       return line.replaceAll('ENABLE_BITCODE = YES', 'ENABLE_BITCODE = NO');
     }

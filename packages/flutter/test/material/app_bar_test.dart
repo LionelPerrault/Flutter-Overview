@@ -1560,7 +1560,7 @@ void main() {
     }
 
     testWidgets('Respects forceElevated parameter', (WidgetTester tester) async {
-      // Regression test for https://github.com/flutter/flutter/issues/59158.
+      // Regression test for https://github.com/LionelPerrault/flutter/issues/59158.
       AppBar getAppBar() => tester.widget<AppBar>(find.byType(AppBar));
       Material getMaterial() => tester.widget<Material>(find.byType(Material));
       final bool useMaterial3 = ThemeData().useMaterial3;
@@ -1583,7 +1583,7 @@ void main() {
     });
 
     testWidgets('Uses elevation of AppBarTheme by default', (WidgetTester tester) async {
-      // Regression test for https://github.com/flutter/flutter/issues/73525.
+      // Regression test for https://github.com/LionelPerrault/flutter/issues/73525.
       Material getMaterial() => tester.widget<Material>(find.byType(Material));
 
       await tester.pumpWidget(buildSliverAppBar(false, themeElevation: 12.0));
@@ -1812,7 +1812,7 @@ void main() {
   });
 
   testWidgets('AppBar in body excludes bottom SafeArea padding', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/26163
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/26163
     await tester.pumpWidget(
       Localizations(
         locale: const Locale('en', 'US'),
@@ -1997,7 +1997,7 @@ void main() {
   });
 
   testWidgets('Material2 - AppBar ink splash draw on the correct canvas', (WidgetTester tester) async {
-    // This is a regression test for https://github.com/flutter/flutter/issues/58665
+    // This is a regression test for https://github.com/LionelPerrault/flutter/issues/58665
     final Key key = UniqueKey();
     await tester.pumpWidget(
       MaterialApp(
@@ -2044,7 +2044,7 @@ void main() {
   });
 
   testWidgets('Material3 - AppBar ink splash draw on the correct canvas', (WidgetTester tester) async {
-    // This is a regression test for https://github.com/flutter/flutter/issues/58665
+    // This is a regression test for https://github.com/LionelPerrault/flutter/issues/58665
     final Key key = UniqueKey();
     await tester.pumpWidget(
       MaterialApp(
@@ -2627,7 +2627,7 @@ void main() {
   });
 
   testWidgets('SliverAppBar with flexible space has correct semantics order', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/64922.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/64922.
     final SemanticsTester semantics = SemanticsTester(tester);
 
     await tester.pumpWidget(
@@ -2944,7 +2944,7 @@ void main() {
   });
 
   testWidgets('Changing SliverAppBar snap from true to false', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/17598
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/17598
     const double appBarHeight = 256.0;
     bool snap = true;
 
@@ -3473,7 +3473,7 @@ void main() {
     expect(actionIconColor(), material3 ? Colors.yellow : Colors.blue);
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/107305
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/107305
   group('Material3 - Icons are colored correctly by IconTheme and ActionIconTheme', () {
     testWidgets('Material3 - Icons and IconButtons are colored by IconTheme', (WidgetTester tester) async {
       const Color iconColor = Color(0xff00ff00);
@@ -3760,7 +3760,7 @@ void main() {
       expect(actionIconButtonColor(), Colors.purple);
     });
 
-    // This is a regression test for https://github.com/flutter/flutter/issues/130485.
+    // This is a regression test for https://github.com/LionelPerrault/flutter/issues/130485.
     testWidgets('Material3 - AppBar.iconTheme is correctly applied in dark mode', (WidgetTester tester) async {
       final ThemeData themeData = ThemeData(
         colorScheme: const ColorScheme.dark().copyWith(onSurfaceVariant: Colors.red),
@@ -3788,7 +3788,7 @@ void main() {
       expect(actionIconButtonColor(), Colors.white);
     });
 
-    // This is a regression test for https://github.com/flutter/flutter/issues/130485.
+    // This is a regression test for https://github.com/LionelPerrault/flutter/issues/130485.
     testWidgets('Material3 - AppBar.foregroundColor is correctly applied in dark mode', (WidgetTester tester) async {
       final ThemeData themeData = ThemeData(
         colorScheme: const ColorScheme.dark().copyWith(onSurfaceVariant: Colors.red),
@@ -3816,7 +3816,7 @@ void main() {
       expect(actionIconButtonColor(), Colors.white);
     });
 
-    // This is a regression test for https://github.com/flutter/flutter/issues/130485.
+    // This is a regression test for https://github.com/LionelPerrault/flutter/issues/130485.
     testWidgets('Material3 - AppBar.iconTheme is correctly applied in light mode', (WidgetTester tester) async {
       final ThemeData themeData = ThemeData(
         colorScheme: const ColorScheme.light().copyWith(onSurfaceVariant: Colors.red),
@@ -3844,7 +3844,7 @@ void main() {
       expect(actionIconButtonColor(), Colors.black87);
     });
 
-    // This is a regression test for https://github.com/flutter/flutter/issues/130485.
+    // This is a regression test for https://github.com/LionelPerrault/flutter/issues/130485.
     testWidgets('Material3 - AppBar.foregroundColor is correctly applied in light mode', (WidgetTester tester) async {
       final ThemeData themeData = ThemeData(
         colorScheme: const ColorScheme.light().copyWith(onSurfaceVariant: Colors.red),
@@ -4384,7 +4384,7 @@ void main() {
     });
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/80256
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/80256
   testWidgets('The second page should have a back button even it has a end drawer', (WidgetTester tester) async {
     final Page<void> page1 = MaterialPage<void>(
         key: const ValueKey<String>('1'),
@@ -4978,7 +4978,7 @@ void main() {
   testWidgets(
     'SliverAppBar large & medium title respects automaticallyImplyLeading',
     (WidgetTester tester) async {
-      // This is a regression test for https://github.com/flutter/flutter/issues/121511
+      // This is a regression test for https://github.com/LionelPerrault/flutter/issues/121511
       const String title = 'AppBar Title';
       const double titleSpacing = 16.0;
 
@@ -5034,7 +5034,7 @@ void main() {
   });
 
   testWidgets('SliverAppBar.medium with bottom widget', (WidgetTester tester) async {
-    // This is a regression test for https://github.com/flutter/flutter/issues/115091
+    // This is a regression test for https://github.com/LionelPerrault/flutter/issues/115091
     const double collapsedAppBarHeight = 64;
     const double expandedAppBarHeight = 112;
     const double bottomHeight = 48;
@@ -5094,7 +5094,7 @@ void main() {
   });
 
   testWidgets('SliverAppBar.large with bottom widget', (WidgetTester tester) async {
-    // This is a regression test for https://github.com/flutter/flutter/issues/115091
+    // This is a regression test for https://github.com/LionelPerrault/flutter/issues/115091
     const double collapsedAppBarHeight = 64;
     const double expandedAppBarHeight = 152;
     const double bottomHeight = 48;
@@ -5222,7 +5222,7 @@ void main() {
 
     await tester.pumpWidget(buildAppBar());
 
-    // TODO(tahatesser): https://github.com/flutter/flutter/issues/99933
+    // TODO(tahatesser): https://github.com/LionelPerrault/flutter/issues/99933
     // A bug in the HTML renderer and/or Chrome 96+ causes a
     // discrepancy in the paragraph height.
     const bool hasIssue99933 = kIsWeb && !bool.fromEnvironment('FLUTTER_WEB_USE_SKIA');

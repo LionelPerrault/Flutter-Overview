@@ -18,12 +18,12 @@
 If you need help, consider asking for advice on the #hackers-new channel on [Discord].
 
 <!-- Links -->
-[Contributor Guide]: https://github.com/flutter/flutter/wiki/Tree-hygiene#overview
-[Tree Hygiene]: https://github.com/flutter/flutter/wiki/Tree-hygiene
-[test-exempt]: https://github.com/flutter/flutter/wiki/Tree-hygiene#tests
-[Flutter Style Guide]: https://github.com/flutter/flutter/wiki/Style-guide-for-Flutter-repo
-[Features we expect every widget to implement]: https://github.com/flutter/flutter/wiki/Style-guide-for-Flutter-repo#features-we-expect-every-widget-to-implement
+[Contributor Guide]: https://github.com/LionelPerrault/flutter/wiki/Tree-hygiene#overview
+[Tree Hygiene]: https://github.com/LionelPerrault/flutter/wiki/Tree-hygiene
+[test-exempt]: https://github.com/LionelPerrault/flutter/wiki/Tree-hygiene#tests
+[Flutter Style Guide]: https://github.com/LionelPerrault/flutter/wiki/Style-guide-for-Flutter-repo
+[Features we expect every widget to implement]: https://github.com/LionelPerrault/flutter/wiki/Style-guide-for-Flutter-repo#features-we-expect-every-widget-to-implement
 [CLA]: https://cla.developers.google.com/
-[flutter/tests]: https://github.com/flutter/tests
-[breaking change policy]: https://github.com/flutter/flutter/wiki/Tree-hygiene#handling-breaking-changes
-[Discord]: https://github.com/flutter/flutter/wiki/Chat
+[flutter/tests]: https://github.com/LionelPerrault/tests
+[breaking change policy]: https://github.com/LionelPerrault/flutter/wiki/Tree-hygiene#handling-breaking-changes
+[Discord]: https://github.com/LionelPerrault/flutter/wiki/Chat

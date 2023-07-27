@@ -5,7 +5,7 @@
 // no-shuffle:
 //   //TODO(gspencergoog): Remove this tag once this test's state leaks/test
 //   dependencies have been fixed.
-//   https://github.com/flutter/flutter/issues/85160
+//   https://github.com/LionelPerrault/flutter/issues/85160
 //   Fails with "flutter test --test-randomize-ordering-seed=456"
 // reduced-test-set:
 //   This file is run as part of a reduced test set in CI on Mac and Windows
@@ -578,7 +578,7 @@ void main() {
   });
 
   testWidgets('Dropdown in ListView', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/12053
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/12053
     // Positions a DropdownButton at the left and right edges of the screen,
     // forcing it to be sized down to the viewport width
     const String value = 'foo';
@@ -613,7 +613,7 @@ void main() {
   });
 
   testWidgets('Dropdown menu can position correctly inside a nested navigator', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/66870
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/66870
     await tester.pumpWidget(
       MaterialApp(
         theme: ThemeData(useMaterial3: false),
@@ -927,7 +927,7 @@ void main() {
   });
 
   testWidgets('Dropdown button can have a text style with no fontSize specified', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/33425
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/33425
     const String value = 'foo';
     final UniqueKey itemKey = UniqueKey();
 
@@ -1065,7 +1065,7 @@ void main() {
   });
 
   testWidgets('Size of DropdownButton with no items', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/26419
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/26419
     final Key buttonKey = UniqueKey();
     List<String>? items;
 
@@ -1432,7 +1432,7 @@ void main() {
     expect(enabledHintBox.size, equals(disabledHintBox.size));
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/70177
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/70177
   testWidgets('disabledHint behavior test', (WidgetTester tester) async {
     Widget build({ List<String>? items, ValueChanged<String?>? onChanged, String? value, Widget? hint, Widget? disabledHint }) => buildFrame(
       items: items,
@@ -1987,7 +1987,7 @@ void main() {
   });
 
   testWidgets('Dropdown menu respects parent size limits', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/24417
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/24417
     int? selectedIndex;
     await tester.pumpWidget(
       MaterialApp(
@@ -2118,7 +2118,7 @@ void main() {
   });
 
   testWidgets('DropdownButton hint displays properly when selectedItemBuilder is defined', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/42340
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/42340
     final List<String> items = <String>['1', '2', '3'];
     String? selectedItem;
 
@@ -2263,7 +2263,7 @@ void main() {
   });
 
   testWidgets('DropdownButton menu items do not resize when its route is popped', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/44877.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/44877.
     const List<String> items = <String>[
       'one',
       'two',
@@ -2478,7 +2478,7 @@ void main() {
     expect(value, equals('two'));
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/77655.
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/77655.
   testWidgets('DropdownButton selecting a null valued item should be selected', (WidgetTester tester) async {
     final List<MapEntry<String?, String>> items = <MapEntry<String?, String>>[
       const MapEntry<String?, String>(null, 'None'),
@@ -3142,7 +3142,7 @@ void main() {
     expect(menuHeight, defaultMenuHeight);
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/89029
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/89029
   testWidgets('menu position test with `menuMaxHeight`', (WidgetTester tester) async {
     final Key buttonKey = UniqueKey();
     await tester.pumpWidget(buildFrame(
@@ -3165,7 +3165,7 @@ void main() {
     );
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/76614
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/76614
   testWidgets('Do not crash if used in very short screen', (WidgetTester tester) async {
     // The default item height is 48.0 pixels and needs two items padding since
     // the menu requires empty space surrounding the menu. Finally, the constraint height
@@ -3500,7 +3500,7 @@ void main() {
   });
 
   testWidgets('Conflicting scrollbars are not applied by ScrollBehavior to Dropdown', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/83819
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/83819
     // Open the dropdown menu
     final Key buttonKey = UniqueKey();
     await tester.pumpWidget(buildFrame(
@@ -3564,7 +3564,7 @@ void main() {
     );
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/88574
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/88574
   testWidgets("specifying itemHeight affects popup menu items' height", (WidgetTester tester) async {
     const String value = 'One';
     const double itemHeight = 80;
@@ -3605,7 +3605,7 @@ void main() {
     }
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/92438
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/92438
   testWidgets('Do not throw due to the double precision', (WidgetTester tester) async {
     const String value = 'One';
     const double itemHeight = 77.701;

@@ -1296,7 +1296,7 @@ void main() {
       expect(transformationController.value.getMaxScaleOnAxis(), greaterThan(1.0));
     });
 
-    // Regression test for https://github.com/flutter/flutter/issues/65304
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/65304
     testWidgets('can view beyond boundary when necessary for a small child', (WidgetTester tester) async {
       final TransformationController transformationController = TransformationController();
       await tester.pumpWidget(

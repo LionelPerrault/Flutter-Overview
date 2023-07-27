@@ -734,7 +734,7 @@ flutter:
     expect(flutterManifest, matchesManifest());
   });
 
-    // Regression test for https://github.com/flutter/flutter/issues/31764
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/31764
   testWithoutContext('FlutterManifest returns proper error when font detail is malformed', () {
     const String manifest = '''
 name: test

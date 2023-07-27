@@ -239,7 +239,7 @@ void main() {
     expect(fakeVmServiceHost?.hasRemainingExpectations, false);
   }));
 
-  // Regression test for https://github.com/flutter/flutter/issues/60613
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/60613
   testUsingContext('ResidentRunner calls appFailedToStart if initial compilation fails', () => testbed.run(() async {
     globals.fs.file(globals.fs.path.join('lib', 'main.dart'))
       .createSync(recursive: true);
@@ -262,7 +262,7 @@ void main() {
     expect(await residentRunner.waitForAppToFinish(), 1);
   }));
 
-  // Regression test for https://github.com/flutter/flutter/issues/60613
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/60613
   testUsingContext('ResidentRunner calls appFailedToStart if initial compilation fails - cold mode', () => testbed.run(() async {
     globals.fs.file(globals.fs.path.join('lib', 'main.dart'))
       .createSync(recursive: true);
@@ -283,7 +283,7 @@ void main() {
     expect(await residentRunner.waitForAppToFinish(), 1);
   }));
 
-  // Regression test for https://github.com/flutter/flutter/issues/60613
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/60613
   testUsingContext('ResidentRunner calls appFailedToStart if exception is thrown - cold mode', () => testbed.run(() async {
     globals.fs.file(globals.fs.path.join('lib', 'main.dart'))
       .createSync(recursive: true);
@@ -2276,7 +2276,7 @@ flutter:
   }));
 
   testUsingContext('Failed DDS start outputs error message', () => testbed.run(() async {
-    // See https://github.com/flutter/flutter/issues/72385 for context.
+    // See https://github.com/LionelPerrault/flutter/issues/72385 for context.
     final FakeDevice device = FakeDevice()
       ..dds = DartDevelopmentService();
     ddsLauncherCallback = (

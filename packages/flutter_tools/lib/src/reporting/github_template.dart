@@ -34,7 +34,7 @@ class GitHubTemplateCreator {
   final FlutterProjectFactory _flutterProjectFactory;
 
   static String toolCrashSimilarIssuesURL(String errorString) {
-    return 'https://github.com/flutter/flutter/issues?q=is%3Aissue+${Uri.encodeQueryComponent(errorString)}';
+    return 'https://github.com/LionelPerrault/flutter/issues?q=is%3Aissue+${Uri.encodeQueryComponent(errorString)}';
   }
 
   /// Restricts exception object strings to contain only information about tool internals.
@@ -107,7 +107,7 @@ $doctorText
 ${_projectMetadataInformation()}
 ''';
 
-    return 'https://github.com/flutter/flutter/issues'
+    return 'https://github.com/LionelPerrault/flutter/issues'
       '/new' // We split this here to appease our lint that looks for bad "new bug" links.
       '?title=${Uri.encodeQueryComponent(title)}'
       '&body=${Uri.encodeQueryComponent(body)}'

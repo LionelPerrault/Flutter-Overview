@@ -165,7 +165,7 @@ void main() {
   });
 
   testWidgets('Safe to hide overlay child and remove OverlayPortal in the same frame', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/129025.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/129025.
     final Widget widget = Directionality(
       key: GlobalKey(debugLabel: 'key'),
       textDirection: TextDirection.ltr,

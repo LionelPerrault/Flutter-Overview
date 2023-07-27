@@ -12,7 +12,7 @@ import '../rendering/rendering_tester.dart' show TestClipPaintingContext;
 import 'states.dart';
 
 void main() {
-  // Regression test for https://github.com/flutter/flutter/issues/100451
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/100451
   testWidgets('GridView.builder respects findChildIndexCallback', (WidgetTester tester) async {
     bool finderCalled = false;
     int itemCount = 7;
@@ -581,7 +581,7 @@ void main() {
   });
 
   testWidgets('GridView crossAxisSpacing', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/27151.
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/27151.
     final Key target = UniqueKey();
 
     Widget build(TextDirection textDirection) {

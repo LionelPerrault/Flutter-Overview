@@ -16,7 +16,7 @@ import '../rendering/mock_canvas.dart';
 
 void main() {
   testWidgetsWithLeakTracking('Material3 - Shadow effect is not doubled', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/123064
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/123064
     debugDisableShadows = false;
 
     const double elevation = 1;
@@ -42,7 +42,7 @@ void main() {
   });
 
   testWidgetsWithLeakTracking('Material3 - Only one layer with `color` is painted', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/122667
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/122667
     const Color bottomAppBarColor = Colors.black45;
 
     await tester.pumpWidget(
@@ -152,7 +152,7 @@ void main() {
       find.byKey(key),
       matchesGoldenFile('m2_bottom_app_bar.custom_shape.2.png'),
     );
-  }, skip: isBrowser); // https://github.com/flutter/flutter/issues/44572
+  }, skip: isBrowser); // https://github.com/LionelPerrault/flutter/issues/44572
 
   testWidgetsWithLeakTracking('Material3 - Custom shape', (WidgetTester tester) async {
     final Key key = UniqueKey();
@@ -196,7 +196,7 @@ void main() {
       find.byKey(key),
       matchesGoldenFile('m3_bottom_app_bar.custom_shape.2.png'),
     );
-  }, skip: isBrowser); // https://github.com/flutter/flutter/issues/44572
+  }, skip: isBrowser); // https://github.com/LionelPerrault/flutter/issues/44572
 
   testWidgetsWithLeakTracking('Custom Padding', (WidgetTester tester) async {
     const EdgeInsets customPadding = EdgeInsets.all(10);
@@ -633,7 +633,7 @@ void main() {
   });
 
   testWidgetsWithLeakTracking('Material2 - BottomAppBar with shape when Scaffold.bottomNavigationBar == null', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/80878
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/80878
     final ThemeData theme = ThemeData(useMaterial3: false);
     await tester.pumpWidget(
       MaterialApp(
@@ -669,7 +669,7 @@ void main() {
   });
 
   testWidgetsWithLeakTracking('Material3 - BottomAppBar with shape when Scaffold.bottomNavigationBar == null', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/80878
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/80878
     final ThemeData theme = ThemeData(useMaterial3: true);
     await tester.pumpWidget(
       MaterialApp(
@@ -705,7 +705,7 @@ void main() {
   });
 
   testWidgetsWithLeakTracking('notch with margin and top padding, home safe area', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/90024
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/90024
     await tester.pumpWidget(
       const MediaQuery(
         data: MediaQueryData(

@@ -130,7 +130,7 @@ void main() {
     listenerLogs.clear();
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/90838
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/90838
   test('should not crash if the first event is a Removed event', () {
     final List<PointerEvent> events = <PointerEvent>[];
     setUpWithOneAnnotation(logEvents: events);

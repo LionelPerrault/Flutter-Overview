@@ -2049,7 +2049,7 @@ void main() {
 
     await gesture.removePointer();
   },
-    skip: isBrowser, // https://github.com/flutter/flutter/issues/44115
+    skip: isBrowser, // https://github.com/LionelPerrault/flutter/issues/44115
   );
 
   testWidgetsWithLeakTracking('IconButton uses stateful color for icon color in different states - M3', (WidgetTester tester) async {
@@ -2753,7 +2753,7 @@ void main() {
     });
 
     testWidgetsWithLeakTracking("IconButton.styleFrom doesn't throw exception on passing only one cursor", (WidgetTester tester) async {
-      // This is a regression test for https://github.com/flutter/flutter/issues/118071.
+      // This is a regression test for https://github.com/LionelPerrault/flutter/issues/118071.
       await tester.pumpWidget(
         Directionality(
           textDirection: TextDirection.ltr,
@@ -2773,7 +2773,7 @@ void main() {
     });
 
     testWidgetsWithLeakTracking('Material3 - IconButton memory leak', (WidgetTester tester) async {
-      // This is a regression test for https://github.com/flutter/flutter/issues/130708.
+      // This is a regression test for https://github.com/LionelPerrault/flutter/issues/130708.
       Widget buildWidget(bool showIconButton) {
         return showIconButton
           ? MaterialApp(

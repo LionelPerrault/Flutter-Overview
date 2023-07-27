@@ -83,9 +83,9 @@ void main() {
     ));
 
     await expectLater(find.byType(Wrap), matchesGoldenFile('test.icons.sample.png'));
-  }, skip: isBrowser); // https://github.com/flutter/flutter/issues/39998
+  }, skip: isBrowser); // https://github.com/LionelPerrault/flutter/issues/39998
 
-  // Regression test for https://github.com/flutter/flutter/issues/95886
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/95886
   testWidgetsWithLeakTracking('Another sample of icons look as expected', (WidgetTester tester) async {
     await _loadIconFont();
 
@@ -104,7 +104,7 @@ void main() {
     ));
 
     await expectLater(find.byType(Wrap), matchesGoldenFile('test.icons.sample2.png'));
-  }, skip: isBrowser); // https://github.com/flutter/flutter/issues/39998
+  }, skip: isBrowser); // https://github.com/LionelPerrault/flutter/issues/39998
 
   testWidgetsWithLeakTracking('Another sample of icons look as expected', (WidgetTester tester) async {
     await _loadIconFont();
@@ -124,9 +124,9 @@ void main() {
     ));
 
     await expectLater(find.byType(Wrap), matchesGoldenFile('test.icons.sample3.png'));
-  }, skip: isBrowser); // https://github.com/flutter/flutter/issues/39998
+  }, skip: isBrowser); // https://github.com/LionelPerrault/flutter/issues/39998
 
-  // Regression test for https://github.com/flutter/flutter/issues/103202.
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/103202.
   testWidgetsWithLeakTracking('Another sample of icons look as expected', (WidgetTester tester) async {
     await _loadIconFont();
 
@@ -145,7 +145,7 @@ void main() {
     ));
 
     await expectLater(find.byType(Wrap), matchesGoldenFile('test.icons.sample4.png'));
-  }, skip: isBrowser); // https://github.com/flutter/flutter/issues/39998
+  }, skip: isBrowser); // https://github.com/LionelPerrault/flutter/issues/39998
 }
 
 // Loads the cached material icon font.

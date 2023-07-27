@@ -205,7 +205,7 @@ void main() {
     expect(lineRect.bottom, dividerRect.bottom - customIndent);
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/39533
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/39533
   testWidgets('createBorderSide does not throw exception with null context', (WidgetTester tester) async {
     // Passing a null context used to throw an exception but no longer does.
     expect(() => Divider.createBorderSide(null), isNot(throwsAssertionError));

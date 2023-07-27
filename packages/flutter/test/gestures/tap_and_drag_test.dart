@@ -435,7 +435,7 @@ void main() {
   testGesture('Beats TapGestureRecognizer when mouse pointer moves past kPrecisePointerPanSlop', (GestureTester tester) {
     setUpTapAndPanGestureRecognizer();
 
-    // This is a regression test for https://github.com/flutter/flutter/issues/122141.
+    // This is a regression test for https://github.com/LionelPerrault/flutter/issues/122141.
     final TapGestureRecognizer taps = TapGestureRecognizer()
       ..onTapDown = (TapDownDetails details) {
         events.add('tapdown');
@@ -693,7 +693,7 @@ void main() {
       'panend#2']);
   });
 
-  // This is a regression test for https://github.com/flutter/flutter/issues/129161.
+  // This is a regression test for https://github.com/LionelPerrault/flutter/issues/129161.
   testGesture('Beats TapGestureRecognizer and DoubleTapGestureRecognizer when the pointer has not moved and this recognizer is the first in the arena', (GestureTester tester) {
     setUpTapAndPanGestureRecognizer();
 
@@ -856,7 +856,7 @@ void main() {
     expect(events, <String>['down#1', 'up#1']);
   });
 
-  // This is a regression test for https://github.com/flutter/flutter/issues/102084.
+  // This is a regression test for https://github.com/LionelPerrault/flutter/issues/102084.
   testGesture('Does not call onDragEnd if not provided', (GestureTester tester) {
     tapAndDrag = TapAndDragGestureRecognizer()
       ..dragStartBehavior = DragStartBehavior.down

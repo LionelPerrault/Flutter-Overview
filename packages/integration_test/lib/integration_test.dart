@@ -402,8 +402,8 @@ https://flutter.dev/docs/testing/integration-tests#testing-on-firebase-test-lab
     // Delay for a sufficient time so either old FrameTimings are flushed and not
     // interfering our measurements here, or new FrameTimings are all reported.
     // TODO(CareF): remove this when flush FrameTiming is readily in engine.
-    //              See https://github.com/flutter/flutter/issues/64808
-    //              and https://github.com/flutter/flutter/issues/67593
+    //              See https://github.com/LionelPerrault/flutter/issues/64808
+    //              and https://github.com/LionelPerrault/flutter/issues/67593
     final List<FrameTiming> frameTimings = <FrameTiming>[];
     Future<void> delayForFrameTimings() async {
       int count = 0;
@@ -440,7 +440,7 @@ https://flutter.dev/docs/testing/integration-tests#testing-on-firebase-test-lab
   Widget wrapWithDefaultView(Widget rootWidget) {
     // This is a workaround where screenshots of root widgets have incorrect
     // bounds.
-    // TODO(jiahaog): Remove when https://github.com/flutter/flutter/issues/66006 is fixed.
+    // TODO(jiahaog): Remove when https://github.com/LionelPerrault/flutter/issues/66006 is fixed.
     return super.wrapWithDefaultView(RepaintBoundary(child: rootWidget));
   }
 
@@ -456,7 +456,7 @@ https://flutter.dev/docs/testing/integration-tests#testing-on-firebase-test-lab
     // [AutomatedTestWidgetsFlutterBinding] that does not log the stack traces
     // live, and avoids the doubly logged stack trace.
     // TODO(jiahaog): Integration test binding should not inherit from
-    // `LiveTestWidgetsFlutterBinding` https://github.com/flutter/flutter/issues/81534
+    // `LiveTestWidgetsFlutterBinding` https://github.com/LionelPerrault/flutter/issues/81534
   }
 }
 

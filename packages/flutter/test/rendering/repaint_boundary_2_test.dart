@@ -7,7 +7,7 @@ import 'package:flutter_test/flutter_test.dart';
 
 void main() {
   testWidgets('repaint boundary with constraint changes', (WidgetTester tester) async {
-    // Regression test for as https://github.com/flutter/flutter/issues/39151.
+    // Regression test for as https://github.com/LionelPerrault/flutter/issues/39151.
     await tester.pumpWidget(const RelayoutBoundariesCrash());
     tester.state<RelayoutBoundariesCrashState>(find.byType(RelayoutBoundariesCrash))._toggleMode();
     await tester.pump();

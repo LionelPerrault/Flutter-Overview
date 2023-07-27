@@ -16,7 +16,7 @@ export 'package:flutter_goldens_client/skia_client.dart';
 
 // If you are here trying to figure out how to use golden files in the Flutter
 // repo itself, consider reading this wiki page:
-// https://github.com/flutter/flutter/wiki/Writing-a-golden-file-test-for-package%3Aflutter
+// https://github.com/LionelPerrault/flutter/wiki/Writing-a-golden-file-test-for-package%3Aflutter
 
 const String _kFlutterRootKey = 'FLUTTER_ROOT';
 
@@ -400,7 +400,7 @@ class FlutterSkippingFileComparator extends FlutterGoldenFileComparator {
   Future<bool> compare(Uint8List imageBytes, Uri golden) async {
     // Ideally we would use markTestSkipped here but in some situations,
     // comparators are called outside of tests.
-    // See also: https://github.com/flutter/flutter/issues/91285
+    // See also: https://github.com/LionelPerrault/flutter/issues/91285
     // ignore: avoid_print
     print('Skipping "$golden" test: $reason');
     return true;
@@ -515,7 +515,7 @@ class FlutterLocalFileComparator extends FlutterGoldenFileComparator with LocalC
       // There is no baseline for this test.
       // Ideally we would use markTestSkipped here but in some situations,
       // comparators are called outside of tests.
-      // See also: https://github.com/flutter/flutter/issues/91285
+      // See also: https://github.com/LionelPerrault/flutter/issues/91285
       // ignore: avoid_print
       print(
         'No expectations provided by Skia Gold for test: $golden. '

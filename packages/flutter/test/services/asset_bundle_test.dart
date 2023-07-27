@@ -157,7 +157,7 @@ void main() {
   });
 
   test('AssetImage.obtainKey succeeds with ImageConfiguration.empty', () async {
-    // This is a regression test for https://github.com/flutter/flutter/issues/12392
+    // This is a regression test for https://github.com/LionelPerrault/flutter/issues/12392
     final AssetImage assetImage = AssetImage('one', bundle: TestAssetBundle());
     final AssetBundleImageKey key = await assetImage.obtainKey(ImageConfiguration.empty);
     expect(key.name, 'one');
@@ -182,14 +182,14 @@ void main() {
       '   Unable to load asset: "key".\n'
       '   HTTP status code: 400\n',
     );
-  }, skip: isBrowser); // https://github.com/flutter/flutter/issues/39998
+  }, skip: isBrowser); // https://github.com/LionelPerrault/flutter/issues/39998
 
   test('toString works as intended', () {
     final Uri uri = Uri.http('example.org', '/path');
     final NetworkAssetBundle bundle = NetworkAssetBundle(uri);
 
     expect(bundle.toString(), 'NetworkAssetBundle#${shortHash(bundle)}($uri)');
-  }, skip: isBrowser); // https://github.com/flutter/flutter/issues/39998
+  }, skip: isBrowser); // https://github.com/LionelPerrault/flutter/issues/39998
 
   test('Throws expected exceptions when loading not exists asset', () async {
     late final FlutterError error;
@@ -205,7 +205,7 @@ void main() {
         'The asset does not exist or has empty data.',
       ),
     );
-  }, skip: isBrowser); // https://github.com/flutter/flutter/issues/56314
+  }, skip: isBrowser); // https://github.com/LionelPerrault/flutter/issues/56314
 
   test('loadStructuredBinaryData correctly loads ByteData', () async {
     final TestAssetBundle bundle = TestAssetBundle();

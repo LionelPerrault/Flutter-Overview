@@ -61,7 +61,7 @@ void main() {
   });
 
   test('Interrupted velocity estimation', () {
-    // Regression test for https://github.com/flutter/flutter/pull/7510
+    // Regression test for https://github.com/LionelPerrault/flutter/pull/7510
     final VelocityTracker tracker = VelocityTracker.withKind(PointerDeviceKind.touch);
     for (final PointerEvent event in interruptedVelocityEventData) {
       if (event is PointerDownEvent || event is PointerMoveEvent) {

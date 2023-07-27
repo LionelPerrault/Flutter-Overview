@@ -175,7 +175,7 @@ class AndroidStudio {
 
     // TODO(andrewkolos): This is a bug. We shouldn't treat an unknown
     // version as equivalent to 0.0.
-    // See https://github.com/flutter/flutter/issues/121468.
+    // See https://github.com/LionelPerrault/flutter/issues/121468.
     final int major = version?.major ?? 0;
     final int minor = version?.minor ?? 0;
     final String? homeDirPath = globals.fsUtils.homeDirPath;
@@ -516,7 +516,7 @@ the configured path by running this command: flutter config --android-studio-dir
         javaPath = globals.fs.path.join(directory, 'jre', 'jdk', 'Contents', 'Home');
       } else if (version != null && version!.major < 2022) {
         javaPath = globals.fs.path.join(directory, 'jre', 'Contents', 'Home');
-      // See https://github.com/flutter/flutter/issues/125246 for more context.
+      // See https://github.com/LionelPerrault/flutter/issues/125246 for more context.
       } else {
         javaPath = globals.fs.path.join(directory, 'jbr', 'Contents', 'Home');
       }

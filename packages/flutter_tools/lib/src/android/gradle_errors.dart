@@ -244,8 +244,8 @@ final GradleHandledError networkErrorHandler = GradleHandledError(
 /// If this handler runs on a bot (e.g. a CI bot), the $HOME/.gradle is automatically deleted.
 ///
 /// See also:
-///  * https://github.com/flutter/flutter/issues/51195
-///  * https://github.com/flutter/flutter/issues/89959
+///  * https://github.com/LionelPerrault/flutter/issues/51195
+///  * https://github.com/LionelPerrault/flutter/issues/89959
 ///  * https://docs.gradle.org/current/userguide/directory_layout.html#dir:gradle_user_home
 @visibleForTesting
 final GradleHandledError zipExceptionHandler = GradleHandledError(
@@ -471,7 +471,7 @@ final GradleHandledError minSdkVersionHandler = GradleHandledError(
 );
 
 /// Handler when https://issuetracker.google.com/issues/141126614 or
-/// https://github.com/flutter/flutter/issues/58247 is triggered.
+/// https://github.com/LionelPerrault/flutter/issues/58247 is triggered.
 @visibleForTesting
 final GradleHandledError transformInputIssueHandler = GradleHandledError(
   test: (String line) {
@@ -496,7 +496,7 @@ final GradleHandledError transformInputIssueHandler = GradleHandledError(
       '}'
     );
     globals.printBox(
-      'This issue appears to be https://github.com/flutter/flutter/issues/58247.\n'
+      'This issue appears to be https://github.com/LionelPerrault/flutter/issues/58247.\n'
       '$textInBold',
       title: _boxTitle,
     );
@@ -647,7 +647,7 @@ final GradleHandledError jvm11RequiredHandler = GradleHandledError(
   eventLabel: 'java11-required',
 );
 
-/// Handles SSL exceptions: https://github.com/flutter/flutter/issues/104628
+/// Handles SSL exceptions: https://github.com/LionelPerrault/flutter/issues/104628
 @visibleForTesting
 final GradleHandledError sslExceptionHandler = GradleHandledError(
   test: _lineMatcher(const <String>[
@@ -686,7 +686,7 @@ final GradleHandledError incompatibleJavaAndGradleVersionsHandler = GradleHandle
     required bool multidexEnabled,
   }) async {
     // TODO(reidbaker): Replace URL with constant defined in
-    // https://github.com/flutter/flutter/pull/123916.
+    // https://github.com/LionelPerrault/flutter/pull/123916.
     globals.printBox(
       "${globals.logger.terminal.warningMark} Your project's Gradle version "
       'is incompatible with the Java version that Flutter is using for Gradle.\n\n'

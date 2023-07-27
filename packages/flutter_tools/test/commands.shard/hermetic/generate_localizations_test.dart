@@ -281,7 +281,7 @@ format: true
     ProcessManager: () => FakeProcessManager.any(),
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/119594
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/119594
   testUsingContext('dart format is working when the untranslated messages file is produced', () async {
     final File arbFile = fileSystem.file(fileSystem.path.join('lib', 'l10n', 'app_en.arb'))
       ..createSync(recursive: true);
@@ -335,7 +335,7 @@ untranslated-messages-file: lib/l10n/untranslated.json
     ProcessManager: () => FakeProcessManager.any(),
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/120530.
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/120530.
   testWithoutContext('dart format is run when generateLocalizations is called through build target', () async {
     final File arbFile = fileSystem.file(fileSystem.path.join('lib', 'l10n', 'app_en.arb'))
       ..createSync(recursive: true);

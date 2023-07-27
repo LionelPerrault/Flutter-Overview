@@ -6,7 +6,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
-  // Regression test for https://github.com/flutter/flutter/issues/96024
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/96024
   testWidgets('CustomScrollView.center update test 1', (WidgetTester tester) async {
     final Key centerKey = UniqueKey();
     late StateSetter setState;

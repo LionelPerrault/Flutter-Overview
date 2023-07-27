@@ -142,7 +142,7 @@ class TextMagnifierConfiguration {
 /// To check the status of the magnifier, see [MagnifierController.shown].
 // TODO(antholeole): This whole paradigm can be removed once portals
 // lands - then the magnifier can be controlled though a widget in the tree.
-// https://github.com/flutter/flutter/pull/105335
+// https://github.com/LionelPerrault/flutter/pull/105335
 class MagnifierController {
   /// If there is no in / out animation for the magnifier, [animationController] should be left
   /// null.
@@ -358,7 +358,7 @@ class MagnifierController {
 /// [MagnifierDecoration] does not expose [ShapeDecoration.color], [ShapeDecoration.image],
 /// or [ShapeDecoration.gradient], since they will be covered by the [RawMagnifier]'s lens.
 ///
-/// Also takes an [opacity] (see https://github.com/flutter/engine/pull/34435).
+/// Also takes an [opacity] (see https://github.com/LionelPerrault/engine/pull/34435).
 class MagnifierDecoration extends ShapeDecoration {
   /// Constructs a [MagnifierDecoration].
   ///

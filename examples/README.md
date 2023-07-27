@@ -6,7 +6,7 @@ use `flutter run` inside that example's directory. See the [getting started
 guide](https://flutter.dev/getting-started/) to install the `flutter` tool.
 
 For additional samples, see the
-[`flutter/samples`](https://github.com/flutter/samples) repo.
+[`flutter/samples`](https://github.com/LionelPerrault/samples) repo.
 
 Available examples include:
 
@@ -14,7 +14,7 @@ Available examples include:
   that shows the text "Hello, world!"
 
 - **Flutter gallery** The flutter gallery app no longer lives in this repo.
-  Please see the [gallery repo](https://github.com/flutter/gallery).
+  Please see the [gallery repo](https://github.com/LionelPerrault/gallery).
 
 - **Layers** The [layers vignettes](layers) show how to use the various layers
   in the Flutter framework. For details, see the [layers

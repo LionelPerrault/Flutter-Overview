@@ -69,7 +69,7 @@ class CupertinoDesktopTextSelectionToolbar extends StatelessWidget {
   /// Creates a 5x5 matrix that increases saturation when used with [ColorFilter.matrix].
   ///
   /// The numbers were taken from this comment:
-  /// [Cupertino blurs should boost saturation](https://github.com/flutter/flutter/issues/29483#issuecomment-477334981).
+  /// [Cupertino blurs should boost saturation](https://github.com/LionelPerrault/flutter/issues/29483#issuecomment-477334981).
   static List<double> _matrixWithSaturation(double saturation) {
     final double r = 0.213 * (1 - saturation);
     final double g = 0.715 * (1 - saturation);
@@ -105,7 +105,7 @@ class CupertinoDesktopTextSelectionToolbar extends StatelessWidget {
       ),
       child: BackdropFilter(
         // Flutter web doesn't support ImageFilter.compose on CanvasKit yet
-        // (https://github.com/flutter/flutter/issues/120123).
+        // (https://github.com/LionelPerrault/flutter/issues/120123).
         filter: kIsWeb
             ? ImageFilter.blur(
                 sigmaX: _kToolbarBlurSigma,

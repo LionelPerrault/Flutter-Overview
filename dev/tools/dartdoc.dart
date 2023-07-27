@@ -27,7 +27,7 @@ const String kPlatformIntegrationPackageName = 'platform_integration';
 /// This script also updates the index.html file so that it can be placed
 /// at the root of api.flutter.dev. We are keeping the files inside of
 /// api.flutter.dev/flutter for now, so we need to manipulate paths
-/// a bit. See https://github.com/flutter/flutter/issues/3900 for more info.
+/// a bit. See https://github.com/LionelPerrault/flutter/issues/3900 for more info.
 ///
 /// This will only work on UNIX systems, not Windows. It requires that 'git' be
 /// in your path. It requires that 'flutter' has been run previously. It uses
@@ -161,7 +161,7 @@ Future<void> main(List<String> arguments) async {
     if (args['validate-links'] as bool) '--validate-links' else '--no-validate-links',
     '--link-to-source-excludes', '../../bin/cache',
     '--link-to-source-root', '../..',
-    '--link-to-source-uri-template', 'https://github.com/flutter/flutter/blob/master/%f%#L%l%',
+    '--link-to-source-uri-template', 'https://github.com/LionelPerrault/flutter/blob/master/%f%#L%l%',
     '--inject-html',
     '--use-base-href',
     '--header', 'styles.html',

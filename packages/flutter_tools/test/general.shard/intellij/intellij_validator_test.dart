@@ -442,7 +442,7 @@ void createIntellijFlutterPluginJar(String pluginJarPath, FileSystem fileSystem,
   <id>io.flutter</id>
   <name>Flutter</name>
   <description>Support for developing Flutter applications.</description>
-  <vendor url="https://github.com/flutter/flutter-intellij">flutter.io</vendor>
+  <vendor url="https://github.com/LionelPerrault/flutter-intellij">flutter.io</vendor>
 
   <category>Custom Languages</category>
 

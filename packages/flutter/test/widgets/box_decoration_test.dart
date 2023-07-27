@@ -120,7 +120,7 @@ Future<void> main() async {
   });
 
   testWidgets('BoxDecoration paints its border correctly', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/7672
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/7672
 
     const Key key = Key('Container with BoxDecoration');
     Widget buildFrame(Border border) {
@@ -171,7 +171,7 @@ Future<void> main() async {
   });
 
   testWidgets('BoxDecoration paints its border correctly', (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/12165
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/12165
     await tester.pumpWidget(
       Column(
         children: <Widget>[
@@ -547,7 +547,7 @@ Future<void> main() async {
   });
 
   testWidgets("BoxDecoration doesn't crash with BorderRadiusDirectional", (WidgetTester tester) async {
-    // Regression test for https://github.com/flutter/flutter/issues/88039
+    // Regression test for https://github.com/LionelPerrault/flutter/issues/88039
 
     await tester.pumpWidget(
       Directionality(

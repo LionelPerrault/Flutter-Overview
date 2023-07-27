@@ -136,7 +136,7 @@ class TimelineSummary {
   ///   "99th_percentile_frame_build_time_millis": The p-th percentile frame
   ///   rasterization time in milliseconds. 90 and 99-th percentile number is
   ///   usually a better metric to estimate worse cases. See discussion in
-  ///   https://github.com/flutter/flutter/pull/19121#issuecomment-419520765
+  ///   https://github.com/LionelPerrault/flutter/pull/19121#issuecomment-419520765
   ///   See [computePercentileFrameBuildTimeMillis].
   /// * "worst_frame_build_time_millis": The longest frame build time.
   ///   See [computeWorstFrameBuildTimeMillis].

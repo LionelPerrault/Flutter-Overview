@@ -202,7 +202,7 @@ Future<void> main() async {
     FlutterError.resetErrorCount();
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/62223
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/62223
   test('Error reporting - empty stack', () async {
     expect(console, isEmpty);
     FlutterError.dumpErrorToConsole(FlutterErrorDetails(

@@ -25,7 +25,7 @@ void main() {
     tryToDelete(tempDir);
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/126691
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/126691
   testWithoutContext('flutter run --start-paused prints DevTools URI', () async {
     final Completer<void> completer = Completer<void>();
     const String matcher = 'The Flutter DevTools debugger and profiler on';

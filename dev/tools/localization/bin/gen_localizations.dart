@@ -535,7 +535,7 @@ void main(List<String> rawArgs) {
     // Encodes the material_kn.arb file and the cupertino_en.arb files before
     // generating localizations. This prevents a subset of Emacs users from
     // crashing when opening up the Flutter source code.
-    // See https://github.com/flutter/flutter/issues/36704 for more context.
+    // See https://github.com/LionelPerrault/flutter/issues/36704 for more context.
     encodeKnArbFiles(directory);
   }
 

@@ -561,7 +561,7 @@ class IOSDeployDebugger {
   /// (such as .copying_lock or .processing_lock), this may indicate the
   /// symbols may still be fetching or something went wrong when fetching them.
   ///
-  /// Used for debugging test flakes: https://github.com/flutter/flutter/issues/121231
+  /// Used for debugging test flakes: https://github.com/LionelPerrault/flutter/issues/121231
   Future<void> checkForSymbolsFiles(FileSystem fileSystem) async {
     if (symbolsDirectoryPath == null) {
       _logger.printTrace('No path provided for Symbols directory.');

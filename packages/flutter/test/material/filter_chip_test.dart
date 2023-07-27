@@ -646,7 +646,7 @@ void main() {
   });
 
   testWidgetsWithLeakTracking('M3 width should not change with selection', (WidgetTester tester) async {
-    // Regression tests for: https://github.com/flutter/flutter/issues/110645
+    // Regression tests for: https://github.com/LionelPerrault/flutter/issues/110645
 
     // For the text "FilterChip" the chip should default to 175 regardless of selection.
     const int expectedWidth = 175;

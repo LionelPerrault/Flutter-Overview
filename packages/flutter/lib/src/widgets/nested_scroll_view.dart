@@ -153,14 +153,14 @@ typedef NestedScrollViewHeaderSliversBuilder = List<Widget> Function(BuildContex
 ///
 /// ### Snapping and Floating [SliverAppBar]s
 ///
-// See https://github.com/flutter/flutter/issues/59189
+// See https://github.com/LionelPerrault/flutter/issues/59189
 /// Currently, [NestedScrollView] does not support simultaneously floating and
 /// snapping the outer scrollable, e.g. when using [SliverAppBar.floating] &
 /// [SliverAppBar.snap] at the same time.
 ///
 /// ### Stretching [SliverAppBar]s
 ///
-// See https://github.com/flutter/flutter/issues/54059
+// See https://github.com/LionelPerrault/flutter/issues/54059
 /// Currently, [NestedScrollView] does not support stretching the outer
 /// scrollable, e.g. when using [SliverAppBar.stretch].
 ///
@@ -347,7 +347,7 @@ class NestedScrollView extends StatefulWidget {
           // scroll direction, and so we could assume
           // `NestedScrollView.scrollDirection` for the PrimaryScrollController,
           // but use cases already exist where the axes are mismatched.
-          // https://github.com/flutter/flutter/issues/102001
+          // https://github.com/LionelPerrault/flutter/issues/102001
           controller: innerController,
           child: body,
         ),
@@ -640,7 +640,7 @@ class _NestedScrollCoordinator implements ScrollActivityDelegate, ScrollHoldCont
         // It's possible that NestedScrollView built twice before layout phase
         // in the same frame. This can happen when the FocusManager schedules a microTask
         // that marks NestedScrollView dirty during the warm up frame.
-        // https://github.com/flutter/flutter/pull/75308
+        // https://github.com/LionelPerrault/flutter/pull/75308
         continue;
       } else if (position.pixels > position.minScrollExtent) {
         return true;

@@ -402,7 +402,7 @@ void main() {
     expect(scrollable().semanticChildCount, 4);
   });
 
-  // Regression test for https://github.com/flutter/flutter/issues/72292
+  // Regression test for https://github.com/LionelPerrault/flutter/issues/72292
   testWidgets('ListView.builder and SingleChildScrollView can work well together', (WidgetTester tester) async {
     Widget builder(int itemCount) {
       return Directionality(

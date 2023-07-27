@@ -513,7 +513,7 @@ class HotRunner extends ResidentRunner {
       final DevFS? devFS = device.devFS;
       if (devFS == null) {
         // This is sometimes null, however we don't know why and have not been
-        // able to reproduce, https://github.com/flutter/flutter/issues/108653
+        // able to reproduce, https://github.com/LionelPerrault/flutter/issues/108653
         continue;
       }
       devFS.assetPathsToEvict.clear();
@@ -1534,7 +1534,7 @@ class ProjectFileInvalidator {
       packageConfig = await _createPackageConfig(packagesPath);
       // The frontend_server might be monitoring the package_config.json file,
       // Pub should always produce both files.
-      // TODO(zanderso): remove after https://github.com/flutter/flutter/issues/55249
+      // TODO(zanderso): remove after https://github.com/LionelPerrault/flutter/issues/55249
       if (_fileSystem.path.basename(packagesPath) == '.packages') {
         final File packageConfigFile = _fileSystem.file(packagesPath)
           .parent.childDirectory('.dart_tool')

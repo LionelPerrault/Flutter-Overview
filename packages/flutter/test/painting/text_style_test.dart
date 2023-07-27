@@ -31,7 +31,7 @@ class _DartUiTextStyleToStringMatcher extends Matcher {
     _propertyToString('wordSpacing', textStyle.wordSpacing),
     _propertyToString('height', textStyle.height),
     // TODO(LongCatIsLooong): web support for
-    // https://github.com/flutter/flutter/issues/72521
+    // https://github.com/LionelPerrault/flutter/issues/72521
     if (!kIsWeb) _propertyToString('leadingDistribution', textStyle.leadingDistribution),
     _propertyToString('locale', textStyle.locale),
     _propertyToString('background', textStyle.background),
